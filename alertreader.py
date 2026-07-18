@@ -39,7 +39,7 @@ def parseLoadedAlert(alert, finalAlerts, activeAlerts):
                     if(index == -1):
                         activeAlerts.append(Alert(currentLocation, currentEffectiveTime, currentExpiryTime))
                     else:
-                        activeAlerts[index].expiryTime = currentExpiryTime
+                        activeAlerts[index].endTime = currentExpiryTime
                         if(currentExpiryTime == currentEffectiveTime):
                             finalAlerts.append(activeAlerts.pop(index)) 
                  
@@ -84,12 +84,12 @@ def main():
     finalAlerts = []
     activeAlerts = []
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts)
+    print("\n\nFinal Alerts:")
     for alert in finalAlerts:
         print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}")    
+    print("\n\nActive Alerts:")
+    for alert in activeAlerts:
+        print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}")
     
-
-
-    
-
 if __name__ == "__main__":
     main()
