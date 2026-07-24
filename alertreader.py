@@ -2,20 +2,23 @@ import re
 import requests as req
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-
+import csv
 
 class Alert:
 
-    def __init__(self, location, startTime, expiryTime):
+    def __init__(self, location, startTime, expiryTime, province):
         self.location = location
         self.startTime = startTime
         self.endTime = None
         self.expiryTime = expiryTime
+        self.province = province
 
     location: str
+    province: str
     startTime: datetime
     endTime: datetime
     expiryTime: datetime
+
 
 def searchAlertList(alertList, location) -> int:
     for i in range(len(alertList)):
@@ -24,7 +27,7 @@ def searchAlertList(alertList, location) -> int:
     return -1
 
 # Return true if the warning is a tornado warning, false otherwise
-def parseLoadedAlert(alert, finalAlerts, activeAlerts):
+def parseLoadedAlert(alert, finalAlerts, activeAlerts, prov):
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
     for elm in alert.findall("cap:info", ns):
         if(elm.find("cap:language", ns).text == "en-CA"):
@@ -36,16 +39,21 @@ def parseLoadedAlert(alert, finalAlerts, activeAlerts):
                     currentExpiryTime = datetime.strptime(elm.find("cap:expires", ns).text[:16], "%Y-%m-%dT%H:%M")
                     index = searchAlertList(activeAlerts, currentLocation)
                     # If the alert is not already in the list, add it to the active alerts list
-                    if(index == -1):
-                        activeAlerts.append(Alert(currentLocation, currentEffectiveTime, currentExpiryTime))
-                    else:
-                        activeAlerts[index].endTime = currentExpiryTime
-                        if(currentExpiryTime == currentEffectiveTime):
-                            finalAlerts.append(activeAlerts.pop(index)) 
-                 
-                
 
-             
+                    # Check for cases where the alert is cancelled --- could be actually getting cancelled (i.e., the alert is on the active list)
+                    # Could also be a case where the alert is "cancelled" but is not on the active list (a so-called "second cancellation")
+                    if(index != -1):
+                        if(currentEffectiveTime == currentExpiryTime or elm.find("cap:responseType", ns).text == "AllClear"):
+                            activeAlerts[index].endTime = currentEffectiveTime
+                            finalAlerts.append(activeAlerts.pop(index))
+                    else:
+                        if(currentEffectiveTime != currentExpiryTime and elm.find("cap:responseType", ns).text != "AllClear"):
+
+                            # Handle great lakes specific tag, which is always Ontario
+                            if(prov == "GL"):
+                                prov = "ON"
+                            activeAlerts.append(Alert(currentLocation, currentEffectiveTime, currentExpiryTime, prov))
+                 
 
 def readHourAlerts(date, hour, designation, finalAlerts, activeAlerts, session):
     # Scrape the HTML page for the hour
@@ -60,9 +68,12 @@ def readHourAlerts(date, hour, designation, finalAlerts, activeAlerts, session):
         # Load in each link, parse into tree format for intrepretation
         for link in download_links:
             print(f'downloading: {URL}{link}...')
+            # Grab provinical code from the link
+            prov = link[2:4]
+
             alertContent = session.get(f'{URL}{link}', timeout=10).content
             alert = ET.fromstring(alertContent)
-            parseLoadedAlert(alert, finalAlerts, activeAlerts)
+            parseLoadedAlert(alert, finalAlerts, activeAlerts, prov)
 
 # Run the hourly alert reader for the entire day, for water and land alerts
 def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts):
@@ -77,6 +88,14 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts):
 
         currentHour = currentHour + timedelta(hours=1)
 
+    # Once all alerts have been read, check if any of the "active" alerts have actually passed their expiry time
+    for alert in activeAlerts:
+        if(alert.expiryTime < endHour +timedelta(hours=1)):
+            alert.endTime = alert.expiryTime
+            finalAlerts.append(alert)
+
+
+
 
 def main():
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
@@ -84,12 +103,17 @@ def main():
     finalAlerts = []
     activeAlerts = []
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts)
+
+
+    finalAlerts.sort(key=lambda x: x.startTime)
+    activeAlerts.sort(key=lambda x: x.startTime)
+
     print("\n\nFinal Alerts:")
     for alert in finalAlerts:
-        print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}")    
+        print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}, Province: {alert.province}")    
     print("\n\nActive Alerts:")
     for alert in activeAlerts:
-        print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}")
-    
+        print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
+
 if __name__ == "__main__":
     main()
