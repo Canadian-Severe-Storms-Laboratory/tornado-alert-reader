@@ -28,11 +28,18 @@ def searchAlertList(alertList, location) -> int:
 
 # Return true if the warning is a tornado warning, false otherwise
 def parseLoadedAlert(alert, finalAlerts, activeAlerts, prov):
+    # Standard nameespace for CAP 1.2 XML files
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
+
+    # search for the "info" tags, and only continue read the English version to avoid duplicates
     for elm in alert.findall("cap:info", ns):
         if(elm.find("cap:language", ns).text == "en-CA"):
+             
+             # Only read further if the alert is tornado-related
              if(elm.find("cap:event", ns).text == "tornado"):
                 print("Tornado warning found!")
+
+                # Read each individual 
                 for area in elm.findall("cap:area", ns):
                     currentLocation = area.find("cap:areaDesc", ns).text
                     currentEffectiveTime = datetime.strptime(elm.find("cap:effective", ns).text[:16], "%Y-%m-%dT%H:%M")
@@ -68,43 +75,58 @@ def readHourAlerts(date, hour, designation, finalAlerts, activeAlerts, session):
         # Load in each link, parse into tree format for intrepretation
         for link in download_links:
             print(f'downloading: {URL}{link}...')
-            # Grab provinical code from the link
+
+            # Grab provinical code from the link string
             prov = link[2:4]
 
+            # Read the actual XML content
             alertContent = session.get(f'{URL}{link}', timeout=10).content
+
+            # Insert into an XML tree and pass that to the parser
             alert = ET.fromstring(alertContent)
             parseLoadedAlert(alert, finalAlerts, activeAlerts, prov)
 
 # Run the hourly alert reader for the entire day, for water and land alerts
 def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts):
     
+    # Set up session to interact with MSC datamart
     session = req.Session()
+
+    # Loop through each hour in the range
     while(currentHour <= endHour):
-        # Do Something
         print(f'Working on --- Date: {currentHour.year}{currentHour.month:02d}{currentHour.day:02d} Hour: {currentHour.hour:02d}')
+
+        # Format the date to match ECCC's directory structure
         datetimeString = f"{currentHour.year}{currentHour.month:02d}{currentHour.day:02d}"
+
+        # Read water and land alerts for the hour
         readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "LAND", finalAlerts, activeAlerts, session)
         readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "WATR", finalAlerts, activeAlerts, session)
 
+        # Step forward an hour
         currentHour = currentHour + timedelta(hours=1)
 
     # Once all alerts have been read, check if any of the "active" alerts have actually passed their expiry time
     for alert in activeAlerts:
         if(alert.expiryTime < endHour +timedelta(hours=1)):
             alert.endTime = alert.expiryTime
-            finalAlerts.append(alert)
+            finalAlerts.append(activeAlerts.pop(activeAlerts.index(alert)))
 
+def writeAlertsToCSV(alerts, filename):
+    with open(filename, mode='w', newline='') as alertFile:
+        csvWriter = csv.writer(alertFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        for alert in alerts:
+            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.endTime.strftime("%H:%M")])
 
-
-
-def main():
+def main():    
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
     endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
     finalAlerts = []
     activeAlerts = []
+
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts)
 
-
+    # Sort alert list before adding to file, so everything is in chronological order
     finalAlerts.sort(key=lambda x: x.startTime)
     activeAlerts.sort(key=lambda x: x.startTime)
 
@@ -114,6 +136,10 @@ def main():
     print("\n\nActive Alerts:")
     for alert in activeAlerts:
         print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
+
+    
+    writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
+
 
 if __name__ == "__main__":
     main()
