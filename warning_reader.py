@@ -4,10 +4,26 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 import csv
 
+class XMLWarning:
+    def __init__(self, xml, prov, uri, msgType, startTime, expiryTime):
+        self.xml = xml
+        self.prov = prov
+        self.msgType = msgType
+        self.uri = uri
+        self.startTime = startTime
+        self.expiryTime = expiryTime
+    xml: ET
+    prov: str
+    msgType: str
+    uri: str
+    startTime: datetime    
+    expiryTime: datetime
+
 class Alert:
 
-    def __init__(self, location, startTime, expiryTime, province):
+    def __init__(self, location, startUri, startTime, expiryTime, province):
         self.location = location
+        self.startUri = startUri
         self.startTime = startTime
         self.endTime = None
         self.expiryTime = expiryTime
@@ -15,6 +31,7 @@ class Alert:
 
     location: str
     province: str
+    uri: str
     startTime: datetime
     endTime: datetime
     expiryTime: datetime
@@ -26,9 +43,9 @@ def searchAlertList(alertList, location) -> int:
             return i
     return -1
 
-# Return true if the warning is a tornado warning, false otherwise
-def parseLoadedAlert(alert, finalAlerts, activeAlerts, prov):
-    # Standard nameespace for CAP 1.2 XML files
+# Takes an alert (entire XML) and stores each info block as its own objecct along with the start/expiry times for easy sorting, and the province from the URI
+def treeToAlert(alert, prov, URI, allAlerts):
+    # Standard namespace for CAP 1.2 XML files
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
 
     # search for the "info" tags, and only continue read the English version to avoid duplicates
@@ -37,32 +54,39 @@ def parseLoadedAlert(alert, finalAlerts, activeAlerts, prov):
              
              # Only read further if the alert is tornado-related
              if(elm.find("cap:event", ns).text == "tornado"):
-                print("Tornado warning found!")
+                allAlerts.append(XMLWarning(elm, prov, URI, elm.find("cap:responseType", ns).text, datetime.strptime(elm.find("cap:effective", ns).text[:19], "%Y-%m-%dT%H:%M:%S"), datetime.strptime(elm.find("cap:expires", ns).text[:19], "%Y-%m-%dT%H:%M:%S")))
 
-                # Read each individual 
-                for area in elm.findall("cap:area", ns):
-                    currentLocation = area.find("cap:areaDesc", ns).text
-                    currentEffectiveTime = datetime.strptime(elm.find("cap:effective", ns).text[:16], "%Y-%m-%dT%H:%M")
-                    currentExpiryTime = datetime.strptime(elm.find("cap:expires", ns).text[:16], "%Y-%m-%dT%H:%M")
-                    index = searchAlertList(activeAlerts, currentLocation)
-                    # If the alert is not already in the list, add it to the active alerts list
 
-                    # Check for cases where the alert is cancelled --- could be actually getting cancelled (i.e., the alert is on the active list)
-                    # Could also be a case where the alert is "cancelled" but is not on the active list (a so-called "second cancellation")
-                    if(index != -1):
-                        if(currentEffectiveTime == currentExpiryTime or elm.find("cap:responseType", ns).text == "AllClear"):
-                            activeAlerts[index].endTime = currentEffectiveTime
-                            finalAlerts.append(activeAlerts.pop(index))
-                    else:
-                        if(currentEffectiveTime != currentExpiryTime and elm.find("cap:responseType", ns).text != "AllClear"):
+def parseAlerts(finalAlerts, activeAlerts, allAlerts):
+    # Standard namespace for CAP 1.2 XML files
+    ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
 
-                            # Handle great lakes specific tag, which is always Ontario
-                            if(prov == "GL"):
-                                prov = "ON"
-                            activeAlerts.append(Alert(currentLocation, currentEffectiveTime, currentExpiryTime, prov))
+    for alert in allAlerts:
+
+        # Read each individual 
+        for area in alert.xml.findall("cap:area", ns):
+            currentLocation = area.find("cap:areaDesc", ns).text
+            index = searchAlertList(activeAlerts, currentLocation)
+            # Check for cases where the alert is cancelled --- could be actually getting cancelled (i.e., the alert is on the active list)
+            # Could also be a case where the alert is "cancelled" but is not on the active list (a so-called "second cancellation")
+            if(index != -1):
+                if(alert.startTime == alert.expiryTime or alert.msgType == "AllClear"):
+                    activeAlerts[index].endTime = alert.startTime
+                    activeAlerts[index].endUri = alert.uri
+                    print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
+                    finalAlerts.append(activeAlerts.pop(index))
+            else:
+                if(alert.startTime != alert.expiryTime and alert.msgType != "AllClear"):
+                    
+                    # Handle great lakes specific tag, which is always Ontario
+                    if(alert.prov == "GL"):
+                        alert.prov = "ON"
+
+                    print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
+                    activeAlerts.append(Alert(currentLocation, alert.uri, alert.startTime, alert.expiryTime, alert.prov))
                  
 
-def readHourAlerts(date, hour, designation, finalAlerts, activeAlerts, session):
+def readHourAlerts(date, hour, designation, allAlerts, session):
     # Scrape the HTML page for the hour
     URL = f'https://dd.weather.gc.ca/{date}/WXO-DD/alerts/cap/{date}/{designation}/{hour}/'
     response = session.get(URL, timeout=10)
@@ -84,10 +108,10 @@ def readHourAlerts(date, hour, designation, finalAlerts, activeAlerts, session):
 
             # Insert into an XML tree and pass that to the parser
             alert = ET.fromstring(alertContent)
-            parseLoadedAlert(alert, finalAlerts, activeAlerts, prov)
+            treeToAlert(alert, prov, f'{URL}{link}', allAlerts)
 
 # Run the hourly alert reader for the entire day, for water and land alerts
-def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts):
+def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts):
     
     # Set up session to interact with MSC datamart
     session = req.Session()
@@ -100,11 +124,18 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts):
         datetimeString = f"{currentHour.year}{currentHour.month:02d}{currentHour.day:02d}"
 
         # Read water and land alerts for the hour
-        readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "LAND", finalAlerts, activeAlerts, session)
-        readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "WATR", finalAlerts, activeAlerts, session)
+        readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "LAND", allAlerts, session)
+        readHourAlerts(datetimeString, f"{currentHour.hour:02d}", "WATR", allAlerts, session)
 
         # Step forward an hour
         currentHour = currentHour + timedelta(hours=1)
+
+    # Now all of the tornado warning info blocks are stored in the allAlerts list. Sort this list by time, then step through and apply some 
+    # logic to parse out individual warning threads for area descriptions
+
+    allAlerts.sort(key = lambda x: x.startTime)
+
+    parseAlerts(finalAlerts, activeAlerts, allAlerts)
 
     # Once all alerts have been read, check if any of the "active" alerts have actually passed their expiry time
     for alert in activeAlerts:
@@ -121,10 +152,11 @@ def writeAlertsToCSV(alerts, filename):
 def main():    
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
     endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    allAlerts = []
     finalAlerts = []
     activeAlerts = []
 
-    readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts)
+    readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts)
 
     # Sort alert list before adding to file, so everything is in chronological order
     finalAlerts.sort(key=lambda x: x.startTime)
@@ -138,7 +170,7 @@ def main():
         print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
     
-    writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
+    #writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
 
 
 if __name__ == "__main__":
