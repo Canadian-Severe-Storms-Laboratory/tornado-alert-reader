@@ -1,7 +1,9 @@
+from pathlib import Path
 import re
 import requests as req
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
+import geojson
 import csv
 import json
 
@@ -22,13 +24,14 @@ class XMLWarning:
 
 class Alert:
 
-    def __init__(self, location, startUri, startTime, expiryTime, province):
+    def __init__(self, location, startUri, startTime, expiryTime, province, jsonLink):
         self.location = location
         self.startUri = startUri
         self.startTime = startTime
         self.endTime = None
         self.expiryTime = expiryTime
         self.province = province
+        self.jsonLink = jsonLink
 
     location: str
     province: str
@@ -37,21 +40,27 @@ class Alert:
     startTime: datetime
     endTime: datetime
     expiryTime: datetime
+    jsonLink: str
 
 
 # Reads in active alerts from the standarized JSON file produced by previous 24h run
 def readActiveAlerts(activeAlerts, filename):
-    with open(filename, mode="r") as f:
-        alertsDict = json.load(f)
 
-        for alert in alertsDict:
-            activeAlerts.append(Alert(
-                location=alert["location"],
-                startUri=alert["startUri"],
-                startTime=datetime.fromisoformat(alert["startTime"]),
-                expiryTime=datetime.fromisoformat(alert["expiryTime"]),
-                province=alert["province"]
-))
+    try:
+        with open(filename, mode="r") as f:
+            alertsDict = json.load(f)
+
+            for alert in alertsDict:
+                activeAlerts.append(Alert(
+                    location=alert["location"],
+                    startUri=alert["startUri"],
+                    startTime=datetime.fromisoformat(alert["startTime"]),
+                    expiryTime=datetime.fromisoformat(alert["expiryTime"]),
+                    province=alert["province"],
+                    jsonLink=alert["jsonLink"]
+                ))
+    except FileNotFoundError:
+        return
 
 def writeAlertsToJSON(activeAlerts, filename):
     alertList = []
@@ -61,7 +70,8 @@ def writeAlertsToJSON(activeAlerts, filename):
             "startUri": alert.startUri,
             "startTime": alert.startTime.isoformat(),
             "expiryTime": alert.expiryTime.isoformat(),
-            "province": alert.province}
+            "province": alert.province,
+            "jsonLink": alert.jsonLink}
             )
     
         with open(filename, mode="w") as f:
@@ -74,6 +84,38 @@ def searchAlertList(alertList, location) -> int:
             return i
     return -1
 
+
+def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
+
+    # Generate filename based on location and start time
+    jsonPath = f"Archived Files/Polygons/{startTime.strftime("%Y/%m/%d")}/" + f"{currentLocation}-{startTime.strftime("%H%M%S")}.geojson".replace(" ", "").replace(":", "")
+
+    # Convert the text list of (lat, lon) coordinates to a list of float (lon, lat) to fit GEOJSON format
+    points = []
+    for coordPair in polygonText.split():
+        latString, lonString = coordPair.split(",")
+        lat = float(latString)
+        lon = float(lonString)
+        points.append((lon, lat))
+    Path(jsonPath).parent.mkdir(parents=True, exist_ok=True)
+
+    # Create the polygon object and write to the file
+    polygon = geojson.Polygon([points])
+    with open(jsonPath, mode="w") as f:
+        geojson.dump(polygon, f)
+
+    return jsonPath
+
+def downloadCAP(URL, session, startTime, currentLocation, startend) -> str:
+    capPath = f"Archived Files/CAP Alerts/{startTime.strftime("%Y-%m-%d")}/" + f"{startend}-{currentLocation}-{startTime.strftime("%H%M%S")}.cap".replace(" ", "").replace(":", "")
+    session.get(URL)
+
+    # create directory, if needed
+    Path(capPath).parent.mkdir(parents=True, exist_ok=True)
+
+    with open(capPath, "w") as f:
+        f.write(session.get(URL, timeout=10).text)
+    return capPath
 
 # Takes an alert (entire XML) and stores each info block as its own objecct along with the start/expiry times for easy sorting, and the province from the URI
 def treeToAlert(alert, prov, URI, allAlerts):
@@ -89,7 +131,7 @@ def treeToAlert(alert, prov, URI, allAlerts):
                 allAlerts.append(XMLWarning(elm, prov, URI, elm.find("cap:responseType", ns).text, datetime.strptime(elm.find("cap:effective", ns).text[:19], "%Y-%m-%dT%H:%M:%S"), datetime.strptime(elm.find("cap:expires", ns).text[:19], "%Y-%m-%dT%H:%M:%S")))
 
 
-def parseAlerts(finalAlerts, activeAlerts, allAlerts):
+def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
     # Standard namespace for CAP 1.2 XML files
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
 
@@ -103,8 +145,10 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts):
             # Could also be a case where the alert is "cancelled" but is not on the active list (a so-called "second cancellation")
             if(index != -1):
                 if(alert.startTime == alert.expiryTime or alert.msgType == "AllClear"):
+                    # Download the end link under the start time so it gets saved in the same folder even if the start and end times are different dates
+                    capPath = downloadCAP(alert.uri, session, activeAlerts[index].startTime, currentLocation, "end")
                     activeAlerts[index].endTime = alert.startTime
-                    activeAlerts[index].endUri = alert.uri
+                    activeAlerts[index].endUri = capPath
                     print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
                     finalAlerts.append(activeAlerts.pop(index))
             else:
@@ -115,7 +159,11 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts):
                         alert.prov = "ON"
 
                     print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
-                    activeAlerts.append(Alert(currentLocation, alert.uri, alert.startTime, alert.expiryTime, alert.prov))
+
+                    # Create GeoJson Polygon for warned area 
+                    jsonpath = generateGEOJSON(area.find("cap:polygon", ns).text, currentLocation, alert.startTime)
+                    capPath = downloadCAP(alert.uri, session, alert.startTime, currentLocation, "start")
+                    activeAlerts.append(Alert(currentLocation, capPath, alert.startTime, alert.expiryTime, alert.prov, jsonpath))
                  
 
 def readHourAlerts(date, hour, designation, allAlerts, session):
@@ -167,7 +215,7 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
 
     allAlerts.sort(key = lambda x: x.startTime)
 
-    parseAlerts(finalAlerts, activeAlerts, allAlerts)
+    parseAlerts(finalAlerts, activeAlerts, allAlerts, session)
 
     # Once all alerts have been read, check if any of the "active" alerts have actually passed their expiry time
     for alert in activeAlerts:
@@ -179,7 +227,7 @@ def writeAlertsToCSV(alerts, filename):
     with open(filename, mode='a', newline='') as alertFile:
         csvWriter = csv.writer(alertFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for alert in alerts:
-            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri])
+            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri, alert.jsonLink])
 
 def main():    
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
@@ -187,12 +235,11 @@ def main():
     allAlerts = []
     finalAlerts = []
     activeAlerts = []
-
     readActiveAlerts(activeAlerts, "active_alerts.json")
 
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts)
 
-    # Sort alert list before adding to file, so everything is in chronological order
+    #Sort alert list before adding to file, so everything is in chronological order
     finalAlerts.sort(key=lambda x: x.startTime)
     activeAlerts.sort(key=lambda x: x.startTime)
 
