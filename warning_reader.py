@@ -3,6 +3,7 @@ import requests as req
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 import csv
+import json
 
 class XMLWarning:
     def __init__(self, xml, prov, uri, msgType, startTime, expiryTime):
@@ -31,10 +32,40 @@ class Alert:
 
     location: str
     province: str
-    uri: str
+    startUri: str
+    endUri: str
     startTime: datetime
     endTime: datetime
     expiryTime: datetime
+
+
+# Reads in active alerts from the standarized JSON file produced by previous 24h run
+def readActiveAlerts(activeAlerts, filename):
+    with open(filename, mode="r") as f:
+        alertsDict = json.load(f)
+
+        for alert in alertsDict:
+            activeAlerts.append(Alert(
+                location=alert["location"],
+                startUri=alert["startUri"],
+                startTime=datetime.fromisoformat(alert["startTime"]),
+                expiryTime=datetime.fromisoformat(alert["expiryTime"]),
+                province=alert["province"]
+))
+
+def writeAlertsToJSON(activeAlerts, filename):
+    alertList = []
+    for alert in activeAlerts:
+        alertList.append(
+            {"location": alert.location,
+            "startUri": alert.startUri,
+            "startTime": alert.startTime.isoformat(),
+            "expiryTime": alert.expiryTime.isoformat(),
+            "province": alert.province}
+            )
+    
+        with open(filename, mode="w") as f:
+            json.dump(alertList, f, indent=2)
 
 
 def searchAlertList(alertList, location) -> int:
@@ -42,6 +73,7 @@ def searchAlertList(alertList, location) -> int:
         if(alertList[i].location == location):
             return i
     return -1
+
 
 # Takes an alert (entire XML) and stores each info block as its own objecct along with the start/expiry times for easy sorting, and the province from the URI
 def treeToAlert(alert, prov, URI, allAlerts):
@@ -144,10 +176,10 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
             finalAlerts.append(activeAlerts.pop(activeAlerts.index(alert)))
 
 def writeAlertsToCSV(alerts, filename):
-    with open(filename, mode='w', newline='') as alertFile:
+    with open(filename, mode='a', newline='') as alertFile:
         csvWriter = csv.writer(alertFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for alert in alerts:
-            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.endTime.strftime("%H:%M")])
+            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri])
 
 def main():    
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
@@ -155,6 +187,8 @@ def main():
     allAlerts = []
     finalAlerts = []
     activeAlerts = []
+
+    readActiveAlerts(activeAlerts, "active_alerts.json")
 
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts)
 
@@ -169,8 +203,11 @@ def main():
     for alert in activeAlerts:
         print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
-    
-    #writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
+    # Save finished alerts to CSV
+    writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
+
+    # Save active alerts to a live JSON file that will be read next execution
+    writeAlertsToJSON(activeAlerts, "active_alerts.json")
 
 
 if __name__ == "__main__":
