@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.0318285640.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-12T04:14:48-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – April 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's initiative to introduce free-form polygons to represent the true threat area of a weather hazard is tentatively set for June 2026 deployment. Data changes will appear in CAP following this deployment, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – avril 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) l’initiative d’ECCC visant à introduire des polygones libres pour représenter la véritable zone de menace d’un danger météorologique devrait être déployée provisoirement en juin 2026. Des changements de données apparaîtront dans le PAC à la suite de ce déploiement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.3699206392.2026,2026-07-12T03:26:01-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.4057050681.2026,2026-07-12T03:26:59-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3833869627.2026,2026-07-12T03:55:05-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3682513297.2026,2026-07-12T03:56:24-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-12T04:14:48-00:00</effective>
+        <onset>2026-07-12T04:14:00-00:00</onset>
+        <expires>2026-07-12T05:43:48-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - in effect</headline>
+        <description>At 10:14 p.m. Central Standard Time Saturday, Environment Canada has updated a tornado warning for South Central Saskatchewan. Extra care and attention should be exercised. The following localities are included in the warning: Shellbrook, Duck Lake, Beardy's Reserve, Prince Albert, Wahpeton Reserve, Meath Park, Davis and One Arrow Reserve. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible.</description>
+        <instruction>Take cover immediately if threatening weather approaches. Please consult local media for more information.</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260712041448684/SK_00_01_LAND/TRW/32601523905502042202607120501_SK_00_01_LAND/actual/en_proper_complete_c-fr_not_present_u/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20636 M:106459 C:122214</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 10:14 p.m. Central Standard Time Saturday, Environment Canada has updated a tornado warning for South Central Saskatchewan. Extra care and attention should be exercised. The following localities are included in the warning: Shellbrook, Duck Lake, Beardy's Reserve, Prince Albert, Wahpeton Reserve, Meath Park, Davis and One Arrow Reserve. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible. Take cover immediately if threatening weather approaches. Please consult local media for more information.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada: TORNADO in this mobile coverage area.
+Take immediate cover in a basement or interior room if weather threat approaches. Shelter from flying debris if outside.
+Tornado Warning, 10:14 p.m. CST Saturday 11 July
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>065273</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-12T05:14:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extreme</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>very high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>red</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.0318285640.2026-en-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>R.M. of Duck Lake including Duck Lake and Beardy's Res.</areaDesc>
+            <polygon>52.9257,-106.0032 52.9139,-106.0032 52.8993,-106.0052 52.8679,-106.0183 52.8551,-106.0494 52.7962,-106.0812 52.7805,-106.0808 52.7701,-106.1157 52.7481,-106.0879 52.729,-106.0957 52.713,-106.0841 52.7123,-106.1348 52.7115,-106.1927 52.7129,-106.2951 52.7357,-106.2977 52.7571,-106.2946 52.7551,-106.3616 52.7571,-106.4416 52.7991,-106.4456 52.843,-106.4416 52.8427,-106.4419 52.8423,-106.4427 52.8409,-106.4802 52.8421,-106.5235 52.8363,-106.5222 52.8274,-106.5233 52.8276,-106.5654 52.8277,-106.5849 52.8475,-106.6099 52.9269,-106.4852 52.9298,-106.4806 52.9401,-106.4644 53.0389,-106.4131 53.1035,-106.312 53.1238,-106.28 53.1872,-106.2352 53.2247,-106.0688 53.214,-106.0079 53.2134,-106.0049 53.203,-106.0005 53.1734,-105.9881 53.1532,-106.0036 53.1418,-106.0039 52.9257,-106.0032</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>065240</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715845</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715859</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of St Louis including One Arrow Res. and Domremy</areaDesc>
+            <polygon>52.9175,-105.9138 52.9235,-105.8685 52.9358,-105.8441 52.9342,-105.8145 52.9291,-105.7967 52.9308,-105.7383 52.933,-105.6618 52.9289,-105.4866 52.8451,-105.4794 52.7546,-105.4847 52.7506,-105.6278 52.7545,-105.7759 52.7324,-105.7715 52.7111,-105.7759 52.7087,-105.8789 52.7106,-106.0033 52.7054,-106.0032 52.6983,-106.0636 52.6983,-106.0956 52.6983,-106.1177 52.7003,-106.1354 52.7123,-106.1348 52.7139,-106.1347 52.7383,-106.1334 52.7454,-106.152 52.7705,-106.1588 52.7951,-106.1409 52.8014,-106.1255 52.8716,-106.085 52.8896,-106.0522 52.9121,-106.0568 52.9285,-106.0241 52.9257,-106.0032 52.9255,-106.0015 52.9266,-105.9347 52.9175,-105.9138</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>065273</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715059</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715844</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715861</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-12T04:14:48-00:00</effective>
+        <onset>2026-07-12T04:14:00-00:00</onset>
+        <expires>2026-07-12T05:43:48-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - en vigueur</headline>
+        <description>À 22h14 heure normale du Centre le samedi, Environnement Canada a mis à jour une alerte de tornade pour le centre-sud  de la Saskatchewan. Une attention et des précautions additionnelles devraient être exercées. Les localités suivantes sont incluses à l'alerte: Shellbrook, Duck Lake, la réserve indienne Beardy's, Prince Albert, la réserve indienne Wahpeton, Meath Park, Davis et la réserve indienne One Arrow. Les météorologues d’Environnement Canada surveillent un orage violent produisant possiblement une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles.</description>
+        <instruction>Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260712041448684/SK_00_01_LAND/TRW/32601523905502042202607120501_SK_00_01_LAND/actual/en_proper_complete_c-fr_not_present_u/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20636 M:106459 C:122214</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 22h14 heure normale du Centre le samedi, Environnement Canada a mis à jour une alerte de tornade pour le centre-sud  de la Saskatchewan. Une attention et des précautions additionnelles devraient être exercées. Les localités suivantes sont incluses à l'alerte: Shellbrook, Duck Lake, la réserve indienne Beardy's, Prince Albert, la réserve indienne Wahpeton, Meath Park, Davis et la réserve indienne One Arrow. Les météorologues d’Environnement Canada surveillent un orage violent produisant possiblement une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
+Alerte de tornade, 22h14 HNC le samedi 11 juillet
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>065273</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-12T05:14:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extrême</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>très élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>rouge</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.0318285640.2026-fr-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>m.r. de Duck Lake incluant Duck Lake et la rés. ind. Beardy's</areaDesc>
+            <polygon>52.9257,-106.0032 52.9139,-106.0032 52.8993,-106.0052 52.8679,-106.0183 52.8551,-106.0494 52.7962,-106.0812 52.7805,-106.0808 52.7701,-106.1157 52.7481,-106.0879 52.729,-106.0957 52.713,-106.0841 52.7123,-106.1348 52.7115,-106.1927 52.7129,-106.2951 52.7357,-106.2977 52.7571,-106.2946 52.7551,-106.3616 52.7571,-106.4416 52.7991,-106.4456 52.843,-106.4416 52.8427,-106.4419 52.8423,-106.4427 52.8409,-106.4802 52.8421,-106.5235 52.8363,-106.5222 52.8274,-106.5233 52.8276,-106.5654 52.8277,-106.5849 52.8475,-106.6099 52.9269,-106.4852 52.9298,-106.4806 52.9401,-106.4644 53.0389,-106.4131 53.1035,-106.312 53.1238,-106.28 53.1872,-106.2352 53.2247,-106.0688 53.214,-106.0079 53.2134,-106.0049 53.203,-106.0005 53.1734,-105.9881 53.1532,-106.0036 53.1418,-106.0039 52.9257,-106.0032</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>065240</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715845</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715859</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de St Louis incluant la rés. ind. One Arrow et Domremy</areaDesc>
+            <polygon>52.9175,-105.9138 52.9235,-105.8685 52.9358,-105.8441 52.9342,-105.8145 52.9291,-105.7967 52.9308,-105.7383 52.933,-105.6618 52.9289,-105.4866 52.8451,-105.4794 52.7546,-105.4847 52.7506,-105.6278 52.7545,-105.7759 52.7324,-105.7715 52.7111,-105.7759 52.7087,-105.8789 52.7106,-106.0033 52.7054,-106.0032 52.6983,-106.0636 52.6983,-106.0956 52.6983,-106.1177 52.7003,-106.1354 52.7123,-106.1348 52.7139,-106.1347 52.7383,-106.1334 52.7454,-106.152 52.7705,-106.1588 52.7951,-106.1409 52.8014,-106.1255 52.8716,-106.085 52.8896,-106.0522 52.9121,-106.0568 52.9285,-106.0241 52.9257,-106.0032 52.9255,-106.0015 52.9266,-105.9347 52.9175,-105.9138</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>065273</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715059</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715844</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4715861</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>7sUdeKIgBFZdpuQY/OuuRGiCbsaLFkt1er6ke4mJVBw=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>JJ/0ifyRvESX7emE4lYLSr4zvzPDGLsoyALIVV28JXUx3PoEFXSCtPNDKZJobmKA
+AJ+ykaoWrvfVoqiq4Acp8254N6ETaLVsBGztTMWbvxiLEar9Za7LpIhAThA9SXu4
+OroNAyRGQb0JUbw+ePt93CGXQDlS7KJFE5NL4h31aDY3NVwkb4oJWqAdIqoAl+4J
+r3sm1/nYEhW2OG/awGJy4oZcEQfF1cRpJy+lJ+bu+zdDHciD5JY+cVF4BLEyof0b
+6TgJkY2GOpoTfit2AQkpddUGEjjkFnB/9Qq+lUsC20Wy62Ry4C1HaFf6RWrPUDiF
+dU5cYBcYLw6bH+vMWclQUg==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.3930841921.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-05T23:22:38-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – April 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's initiative to introduce free-form polygons to represent the true threat area of a weather hazard is tentatively set for June 2026 deployment. Data changes will appear in CAP following this deployment, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – avril 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) l’initiative d’ECCC visant à introduire des polygones libres pour représenter la véritable zone de menace d’un danger météorologique devrait être déployée provisoirement en juin 2026. Des changements de données apparaîtront dans le PAC à la suite de ce déploiement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.2894613575.2026,2026-07-05T23:00:00-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2889999377.2026,2026-07-05T23:01:01-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-05T23:22:38-00:00</effective>
+        <onset>2026-07-05T23:21:00-00:00</onset>
+        <expires>2026-07-06T00:50:38-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - in effect</headline>
+        <description>At 6:22 p.m. Central Daylight Time Sunday, Environment Canada has updated a tornado warning for Interlake Manitoba. Extra care and attention should be exercised. The following localities are included in the warning: Arborg, Hecla, Fisher River, Gypsumville and Ashern. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible.</description>
+        <instruction>Take cover immediately if threatening weather approaches. Please consult local media for more information.</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260705232238399/MB_00_01_LAND/TRW/2300005061229944013202607050501_MB_00_01_LAND/actual/en_proper_complete_c-fr_not_present_u/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20242 M:104194 C:119057</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 6:22 p.m. Central Daylight Time Sunday, Environment Canada has updated a tornado warning for Interlake Manitoba. Extra care and attention should be exercised. The following localities are included in the warning: Arborg, Hecla, Fisher River, Gypsumville and Ashern. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible. Take cover immediately if threatening weather approaches. Please consult local media for more information.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada: TORNADO in this mobile coverage area.
+Take immediate cover in a basement or interior room if weather threat approaches. Shelter from flying debris if outside.
+Tornado Warning, 6:22 p.m. CDT Sunday 5 July
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>054260</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-06T00:21:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extreme</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>very high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>red</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.3930841921.2026-en-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>R.M. of Grahamdale incl. Gypsumville Moosehorn and Camper</areaDesc>
+            <polygon>51.9676,-97.9225 51.8597,-97.7642 51.8198,-97.7595 51.8023,-97.7575 51.748,-97.759 51.7327,-98.0297 51.7483,-98.2946 51.5654,-98.2784 51.3616,-98.3037 51.3616,-98.1631 51.3028,-98.163 51.3028,-98.1623 51.3032,-98.151 51.3027,-98.1398 51.2747,-98.136 51.2438,-98.1396 51.2437,-98.1161 51.2291,-98.1158 51.2289,-98.1396 51.2145,-98.1393 51.2198,-98.0063 51.2152,-97.8835 51.1264,-97.8838 51.1238,-97.9171 51.1264,-97.9539 51.0383,-97.9541 51.0383,-97.8835 50.9495,-97.8838 50.943,-98.0598 50.9485,-98.3013 51.0342,-98.3145 51.1261,-98.3032 51.1261,-98.2561 51.185,-98.261 51.2439,-98.2561 51.2397,-98.3845 51.2442,-98.5383 51.2424,-98.6271 51.2579,-98.6297 51.2686,-98.7531 51.2966,-98.8515 51.675,-98.86 51.7098,-98.8822 51.7419,-98.8785 51.7552,-98.8769 51.7551,-98.7351 51.8185,-98.7426 51.8857,-98.7355 51.8866,-98.6651 51.8858,-98.5937 51.8591,-98.5907 51.8277,-98.5935 51.8311,-98.5277 51.828,-98.4506 51.9678,-98.4506 51.968,-98.1776 51.9701,-98.0541 51.9676,-97.9225</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054210</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618067</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618093</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619065</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Jackhead Res.</areaDesc>
+            <polygon>51.9496,-97.1947 51.6339,-97.2263 51.6334,-97.3045 51.6335,-97.3497 51.6335,-97.3555 51.6334,-97.6832 51.471,-97.6709 51.2893,-97.6842 51.2887,-97.7154 51.2894,-97.7421 51.2898,-97.7423 51.2965,-97.7427 51.3032,-97.7423 51.3033,-97.7443 51.3015,-97.8185 51.3035,-97.8841 51.2567,-97.8812 51.2152,-97.8835 51.2086,-98.0127 51.2145,-98.1393 51.2289,-98.1396 51.2291,-98.1158 51.2437,-98.1161 51.2438,-98.1396 51.2747,-98.1436 51.3027,-98.1398 51.3025,-98.1511 51.3027,-98.1625 51.3028,-98.163 51.3616,-98.1631 51.3616,-98.3037 51.5701,-98.3178 51.7483,-98.2946 51.7608,-98.0234 51.748,-97.759 51.8021,-97.7657 51.8065,-97.7655 51.8597,-97.7642 51.9676,-97.9225 52.1638,-97.8006 52.169,-97.4825 51.9496,-97.1947</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054221</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619061</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Fisher incl. Poplarfield</areaDesc>
+            <polygon>51.2158,-97.7469 51.2188,-97.607 51.2176,-97.4675 51.2617,-97.4698 51.3021,-97.4668 51.3029,-97.4218 51.3023,-97.3729 51.3033,-97.3682 51.1887,-97.3632 51.0678,-97.3684 51.0678,-97.3917 51.0503,-97.3903 51.0307,-97.3911 51.0309,-97.4377 51.0382,-97.4377 51.0382,-97.4618 50.9509,-97.4536 50.8606,-97.4628 50.856,-97.6618 50.8608,-97.8788 50.9494,-97.8787 50.9495,-97.8838 51.0383,-97.8835 51.0383,-97.9541 51.1264,-97.9539 51.1297,-97.9175 51.1264,-97.8838 51.2152,-97.8835 51.2576,-97.8865 51.3035,-97.8841 51.3056,-97.8182 51.3033,-97.7443 51.2604,-97.7427 51.2158,-97.7469</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054250</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618068</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Peguis Res. and Fisher River Res.</areaDesc>
+            <polygon>51.3715,-97.2381 51.3032,-97.2381 51.3019,-97.3013 51.3033,-97.3682 51.3023,-97.3729 51.3016,-97.419 51.3021,-97.4668 51.2611,-97.464 51.2176,-97.4675 51.2141,-97.6107 51.2158,-97.7469 51.26,-97.7487 51.3033,-97.7443 51.3032,-97.7423 51.2964,-97.7419 51.2898,-97.7423 51.2894,-97.7421 51.2898,-97.715 51.2893,-97.6842 51.46,-97.6943 51.6334,-97.6832 51.6335,-97.3555 51.6335,-97.3497 51.6334,-97.3045 51.6339,-97.2263 51.4363,-97.2381 51.3715,-97.2381</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054260</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619059</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-05T23:22:38-00:00</effective>
+        <onset>2026-07-05T23:21:00-00:00</onset>
+        <expires>2026-07-06T00:50:38-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - en vigueur</headline>
+        <description>À 18h22 heure avancée du Centre le dimanche, Environnement Canada a mis à jour une alerte de tornade pour Entre-les-Lacs au le Manitoba. Une attention et des précautions additionnelles devraient être exercées. Les localités suivantes sont incluses à l'alerte: Arborg, Hecla, Fisher River, Gypsumville et Ashern. Les météorologues d’Environnement Canada surveillent un orage violent produisant possiblement une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles.</description>
+        <instruction>Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260705232238399/MB_00_01_LAND/TRW/2300005061229944013202607050501_MB_00_01_LAND/actual/en_proper_complete_c-fr_not_present_u/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20242 M:104194 C:119057</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 18h22 heure avancée du Centre le dimanche, Environnement Canada a mis à jour une alerte de tornade pour Entre-les-Lacs au le Manitoba. Une attention et des précautions additionnelles devraient être exercées. Les localités suivantes sont incluses à l'alerte: Arborg, Hecla, Fisher River, Gypsumville et Ashern. Les météorologues d’Environnement Canada surveillent un orage violent produisant possiblement une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
+Alerte de tornade, 18h22 HAC le dimanche 5 juillet
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>054260</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-06T00:21:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extrême</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>très élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>rouge</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.3930841921.2026-fr-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>m.r. de Grahamdale incluant Gypsumville Moosehorn et Camper</areaDesc>
+            <polygon>51.9676,-97.9225 51.8597,-97.7642 51.8198,-97.7595 51.8023,-97.7575 51.748,-97.759 51.7327,-98.0297 51.7483,-98.2946 51.5654,-98.2784 51.3616,-98.3037 51.3616,-98.1631 51.3028,-98.163 51.3028,-98.1623 51.3032,-98.151 51.3027,-98.1398 51.2747,-98.136 51.2438,-98.1396 51.2437,-98.1161 51.2291,-98.1158 51.2289,-98.1396 51.2145,-98.1393 51.2198,-98.0063 51.2152,-97.8835 51.1264,-97.8838 51.1238,-97.9171 51.1264,-97.9539 51.0383,-97.9541 51.0383,-97.8835 50.9495,-97.8838 50.943,-98.0598 50.9485,-98.3013 51.0342,-98.3145 51.1261,-98.3032 51.1261,-98.2561 51.185,-98.261 51.2439,-98.2561 51.2397,-98.3845 51.2442,-98.5383 51.2424,-98.6271 51.2579,-98.6297 51.2686,-98.7531 51.2966,-98.8515 51.675,-98.86 51.7098,-98.8822 51.7419,-98.8785 51.7552,-98.8769 51.7551,-98.7351 51.8185,-98.7426 51.8857,-98.7355 51.8866,-98.6651 51.8858,-98.5937 51.8591,-98.5907 51.8277,-98.5935 51.8311,-98.5277 51.828,-98.4506 51.9678,-98.4506 51.968,-98.1776 51.9701,-98.0541 51.9676,-97.9225</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054210</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618067</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618093</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619065</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>rés. ind. Jackhead</areaDesc>
+            <polygon>51.9496,-97.1947 51.6339,-97.2263 51.6334,-97.3045 51.6335,-97.3497 51.6335,-97.3555 51.6334,-97.6832 51.471,-97.6709 51.2893,-97.6842 51.2887,-97.7154 51.2894,-97.7421 51.2898,-97.7423 51.2965,-97.7427 51.3032,-97.7423 51.3033,-97.7443 51.3015,-97.8185 51.3035,-97.8841 51.2567,-97.8812 51.2152,-97.8835 51.2086,-98.0127 51.2145,-98.1393 51.2289,-98.1396 51.2291,-98.1158 51.2437,-98.1161 51.2438,-98.1396 51.2747,-98.1436 51.3027,-98.1398 51.3025,-98.1511 51.3027,-98.1625 51.3028,-98.163 51.3616,-98.1631 51.3616,-98.3037 51.5701,-98.3178 51.7483,-98.2946 51.7608,-98.0234 51.748,-97.759 51.8021,-97.7657 51.8065,-97.7655 51.8597,-97.7642 51.9676,-97.9225 52.1638,-97.8006 52.169,-97.4825 51.9496,-97.1947</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054221</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619061</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Fisher incluant Poplarfield</areaDesc>
+            <polygon>51.2158,-97.7469 51.2188,-97.607 51.2176,-97.4675 51.2617,-97.4698 51.3021,-97.4668 51.3029,-97.4218 51.3023,-97.3729 51.3033,-97.3682 51.1887,-97.3632 51.0678,-97.3684 51.0678,-97.3917 51.0503,-97.3903 51.0307,-97.3911 51.0309,-97.4377 51.0382,-97.4377 51.0382,-97.4618 50.9509,-97.4536 50.8606,-97.4628 50.856,-97.6618 50.8608,-97.8788 50.9494,-97.8787 50.9495,-97.8838 51.0383,-97.8835 51.0383,-97.9541 51.1264,-97.9539 51.1297,-97.9175 51.1264,-97.8838 51.2152,-97.8835 51.2576,-97.8865 51.3035,-97.8841 51.3056,-97.8182 51.3033,-97.7443 51.2604,-97.7427 51.2158,-97.7469</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054250</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4618068</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>rés. ind. Peguis et rés. ind. Fisher River</areaDesc>
+            <polygon>51.3715,-97.2381 51.3032,-97.2381 51.3019,-97.3013 51.3033,-97.3682 51.3023,-97.3729 51.3016,-97.419 51.3021,-97.4668 51.2611,-97.464 51.2176,-97.4675 51.2141,-97.6107 51.2158,-97.7469 51.26,-97.7487 51.3033,-97.7443 51.3032,-97.7423 51.2964,-97.7419 51.2898,-97.7423 51.2894,-97.7421 51.2898,-97.715 51.2893,-97.6842 51.46,-97.6943 51.6334,-97.6832 51.6335,-97.3555 51.6335,-97.3497 51.6334,-97.3045 51.6339,-97.2263 51.4363,-97.2381 51.3715,-97.2381</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>054260</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4619059</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>D64FEOoTL/NFyV41E9e59LqKY/TXn3nl1LLGypcSJGM=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>oe9GC23euad6h0G7IWFQYLx2Men8fbOHRi6UUCiMkZhL5LmNY+Pr9+MPhTSoC83u
+pH7PHaDli+I1g12ZCBKDu3FRKVZbBsZbdFtMR2f52VK2u2cBdyS0Cxzt9BzvxzpA
+qcl74xBQEjCRVmJmBFiigt/tNp8z2+wlBM7FlYo28FbvqGkITO+It1iDpcdEMINn
+eSEtAdItrpFYMyE2jsBlM3u6lL8UCy2HKximi/ppMHcSkMXHZWytx5eyIxhA1SI8
+7qJ0QChaeKHLZ71iMueZTbvle+yzR4vM80vWQROFPdNtCWgQOobyg1H9OQyDVKpR
+LWw2uh/zK5eTa/1Y/gJALw==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

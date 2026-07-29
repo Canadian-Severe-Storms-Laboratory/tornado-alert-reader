@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.1787895262.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-12T01:15:19-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – April 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's initiative to introduce free-form polygons to represent the true threat area of a weather hazard is tentatively set for June 2026 deployment. Data changes will appear in CAP following this deployment, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – avril 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) l’initiative d’ECCC visant à introduire des polygones libres pour représenter la véritable zone de menace d’un danger météorologique devrait être déployée provisoirement en juin 2026. Des changements de données apparaîtront dans le PAC à la suite de ce déploiement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.4087774888.2026,2026-07-11T23:37:33-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.1505900011.2026,2026-07-11T23:38:51-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0299990259.2026,2026-07-11T23:46:38-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.1058543023.2026,2026-07-11T23:48:25-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0758925974.2026,2026-07-11T23:52:19-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.4119644615.2026,2026-07-11T23:54:03-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3754949042.2026,2026-07-12T00:07:49-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3311669576.2026,2026-07-12T00:09:43-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2824072947.2026,2026-07-12T00:18:03-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.1830097503.2026,2026-07-12T00:19:49-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0802238008.2026,2026-07-12T00:56:42-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3801626180.2026,2026-07-12T00:58:08-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Minor</severity>
+        <certainty>Unknown</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-12T01:15:19-00:00</effective>
+        <expires>2026-07-12T01:15:19-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - changed</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260712011519769/SK_00_01_LAND/TRW/233733968905502042202607110501_SK_00_01_LAND-0-n1755587911/system/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20623 M:106368 C:122071</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Transitioned_Out_CAP_Reference</valueName>
+            <value>cap-pac@canada.ca,urn:oid:2.49.0.1.124.0565094055.2026,2026-07-12T01:15:19-00:00;066110,066140</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Meadow Lake including Waterhen Res.</areaDesc>
+            <polygon>54.6355,-108.4152 54.5869,-108.4231 54.5918,-108.2327 54.5869,-108.0515 54.589,-108.0051 54.5861,-107.9683 54.5056,-107.9572 54.4126,-107.9682 54.4127,-107.962 54.413,-107.951 54.2866,-107.9379 54.1495,-107.9527 54.1581,-107.6357 54.1488,-107.3525 54.0614,-107.3332 53.9766,-107.3443 53.969,-107.554 53.9768,-107.7894 53.9768,-107.7902 53.8851,-107.7738 53.8018,-107.7901 53.7967,-107.8671 53.8018,-107.939 53.7549,-107.9304 53.7151,-107.9392 53.7155,-107.9294 53.7148,-107.9224 53.7138,-107.9222 53.6724,-107.9157 53.6277,-107.9221 53.623,-108.033 53.6274,-108.157 53.6215,-108.3222 53.6273,-108.511 53.6734,-108.5198 53.715,-108.5107 53.7119,-108.5833 53.7116,-108.5913 53.7149,-108.6821 53.8018,-108.6886 53.8023,-108.6886 53.9399,-108.6989 54.0637,-108.6827 54.0639,-108.6826 54.0569,-108.7621 54.0638,-108.8519 54.0689,-108.9026 54.1107,-108.9173 54.1506,-108.9021 54.146,-108.9687 54.1502,-109.0525 54.2127,-109.0613 54.2518,-109.0554 54.2741,-109.052 54.3012,-109.07 54.3257,-109.0203 54.3249,-108.9774 54.3019,-108.9408 54.2931,-108.8865 54.2975,-108.8518 54.3557,-108.8585 54.4125,-108.8518 54.4124,-108.8762 54.4516,-108.8901 54.4854,-108.8765 54.4853,-108.8003 54.4997,-108.8029 54.5145,-108.8008 54.5171,-108.7199 54.5141,-108.6498 54.5551,-108.6546 54.587,-108.6499 54.588,-108.6245 54.5871,-108.5994 54.6335,-108.606 54.6744,-108.5992 54.678,-108.5082 54.6743,-108.4237 54.6355,-108.4152</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066110</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717052</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717054</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717805</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717806</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717816</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Loon Lake including Loon Lake and Makwa</areaDesc>
+            <polygon>54.2824,-109.2949 54.2643,-109.2601 54.3,-109.2158 54.3012,-109.07 54.2741,-109.052 54.2517,-109.0489 54.2128,-109.0434 54.1502,-109.0525 54.1552,-108.9677 54.1506,-108.9021 54.1098,-108.8518 54.0638,-108.8519 54.0703,-108.7637 54.0639,-108.6826 53.9409,-108.6667 53.8035,-108.6814 53.8021,-108.6815 53.8018,-108.6886 53.7947,-108.8841 53.8021,-109.1283 53.7926,-109.575 53.802,-110.0056 53.8487,-110.0116 53.8895,-110.0056 53.9761,-110.013 54.0639,-110.0056 54.0697,-109.806 54.0637,-109.602 54.1835,-109.6136 54.3141,-109.6014 54.3366,-109.602 54.3347,-109.4966 54.2838,-109.3838 54.2824,-109.2949</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066140</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717807</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717808</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717809</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717815</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717820</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Minor</severity>
+        <certainty>Unknown</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-12T01:15:19-00:00</effective>
+        <expires>2026-07-12T01:15:19-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - changée</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260712011519769/SK_00_01_LAND/TRW/233733968905502042202607110501_SK_00_01_LAND-0-n1755587911/system/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20623 M:106368 C:122071</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Transitioned_Out_CAP_Reference</valueName>
+            <value>cap-pac@canada.ca,urn:oid:2.49.0.1.124.0565094055.2026,2026-07-12T01:15:19-00:00;066110,066140</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. de Meadow Lake incluant la rés. ind. Waterhen</areaDesc>
+            <polygon>54.6355,-108.4152 54.5869,-108.4231 54.5918,-108.2327 54.5869,-108.0515 54.589,-108.0051 54.5861,-107.9683 54.5056,-107.9572 54.4126,-107.9682 54.4127,-107.962 54.413,-107.951 54.2866,-107.9379 54.1495,-107.9527 54.1581,-107.6357 54.1488,-107.3525 54.0614,-107.3332 53.9766,-107.3443 53.969,-107.554 53.9768,-107.7894 53.9768,-107.7902 53.8851,-107.7738 53.8018,-107.7901 53.7967,-107.8671 53.8018,-107.939 53.7549,-107.9304 53.7151,-107.9392 53.7155,-107.9294 53.7148,-107.9224 53.7138,-107.9222 53.6724,-107.9157 53.6277,-107.9221 53.623,-108.033 53.6274,-108.157 53.6215,-108.3222 53.6273,-108.511 53.6734,-108.5198 53.715,-108.5107 53.7119,-108.5833 53.7116,-108.5913 53.7149,-108.6821 53.8018,-108.6886 53.8023,-108.6886 53.9399,-108.6989 54.0637,-108.6827 54.0639,-108.6826 54.0569,-108.7621 54.0638,-108.8519 54.0689,-108.9026 54.1107,-108.9173 54.1506,-108.9021 54.146,-108.9687 54.1502,-109.0525 54.2127,-109.0613 54.2518,-109.0554 54.2741,-109.052 54.3012,-109.07 54.3257,-109.0203 54.3249,-108.9774 54.3019,-108.9408 54.2931,-108.8865 54.2975,-108.8518 54.3557,-108.8585 54.4125,-108.8518 54.4124,-108.8762 54.4516,-108.8901 54.4854,-108.8765 54.4853,-108.8003 54.4997,-108.8029 54.5145,-108.8008 54.5171,-108.7199 54.5141,-108.6498 54.5551,-108.6546 54.587,-108.6499 54.588,-108.6245 54.5871,-108.5994 54.6335,-108.606 54.6744,-108.5992 54.678,-108.5082 54.6743,-108.4237 54.6355,-108.4152</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066110</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717052</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717054</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717805</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717806</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717816</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Loon Lake incluant Loon Lake et Makwa</areaDesc>
+            <polygon>54.2824,-109.2949 54.2643,-109.2601 54.3,-109.2158 54.3012,-109.07 54.2741,-109.052 54.2517,-109.0489 54.2128,-109.0434 54.1502,-109.0525 54.1552,-108.9677 54.1506,-108.9021 54.1098,-108.8518 54.0638,-108.8519 54.0703,-108.7637 54.0639,-108.6826 53.9409,-108.6667 53.8035,-108.6814 53.8021,-108.6815 53.8018,-108.6886 53.7947,-108.8841 53.8021,-109.1283 53.7926,-109.575 53.802,-110.0056 53.8487,-110.0116 53.8895,-110.0056 53.9761,-110.013 54.0639,-110.0056 54.0697,-109.806 54.0637,-109.602 54.1835,-109.6136 54.3141,-109.6014 54.3366,-109.602 54.3347,-109.4966 54.2838,-109.3838 54.2824,-109.2949</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066140</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717807</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717808</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717809</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717815</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717820</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>8vXOx7Sd1Q1LXSi5RqCp6W844+PJwRzSh8C+BsUZTqk=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>kQchpPsLhfsgqnNGiQPyKOm/LwERu0qdyMMVFnqt67oPbJTcKiNJct5nC19uVmYH
+FwF/LGuuZRA4BQR9gUX0lMBHGANeBvIH0paicZ2fsk/p8BcTxFQH8S6lrmdSSJOU
+ObS8bdIZmhs2k0/hOu+IQQlDGB+2aJAhwImRmCF1Vm56VeVkpIJVdc5jAZPLrGxt
+gvqzuXupO9iDGd35BxUAQ1jlsPJTtplSfVHVXyny+0vUS26BHLNh49KgGjLijniy
+dJ5birP5Grh0EEvUkgn+7iqlp++aCNpfZ8kDsFQSTRBk5BDucBCc0gbiJC3YkbGW
+egm73VERAc+x++djRfUOxg==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.0774874668.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-03T22:14:00-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – April 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's initiative to introduce free-form polygons to represent the true threat area of a weather hazard is tentatively set for June 2026 deployment. Data changes will appear in CAP following this deployment, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – avril 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) l’initiative d’ECCC visant à introduire des polygones libres pour représenter la véritable zone de menace d’un danger météorologique devrait être déployée provisoirement en juin 2026. Des changements de données apparaîtront dans le PAC à la suite de ce déploiement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.3770334969.2026,2026-07-03T22:05:56-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.1371258715.2026,2026-07-03T22:06:44-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3884344044.2026,2026-07-03T22:13:22-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-03T22:13:22-00:00</effective>
+        <onset>2026-07-03T22:12:00-00:00</onset>
+        <expires>2026-07-03T23:41:22-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - in effect</headline>
+        <description>
+At 4:12 p.m. CST, Environment Canada meteorologists are tracking a severe thunderstorm that is producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible.
+
+Tornado has been spotted on the ground near Edam.
+
+###
+
+This is a very dangerous and potentially life-threatening situation.
+
+Tornado warnings are issued when a thunderstorm is producing or is likely to produce a tornado.
+</description>
+        <instruction>
+Take cover immediately in a basement, interior room, or a sturdy shelter when threatening weather approaches. If no shelter is available, lie in a low spot and protect your head from flying debris. If you are out on the water when threatening weather approaches, return to shore and seek shelter, if possible. Otherwise, move away from the path of the tornado to escape. Wear your lifejacket, lie face down  and protect your head.
+</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260703221322362/SK_00_01_LAND/TRW/2205566071133453404202607030501_SK_00_01_LAND/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20058 M:103140 C:117552</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>text</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 4:13 p.m. Central Standard Time Friday, Environment Canada has issued a tornado warning for West Central Saskatchewan. Extra care and attention should be exercised in and around the following localities: Rabbit Lake, The Battlefords Park, Edam, Paynton, Turtleford, Glaslyn and Medstead. Environment Canada meteorologists are tracking a severe thunderstorm that is producing a tornado. Damaging winds, large hail and locally intense rainfall are also possible. Take cover immediately if threatening weather approaches. Please consult local media for more information.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada: TORNADO in this mobile coverage area.
+Take immediate cover in a basement or interior room if weather threat approaches. Shelter from flying debris if outside.
+Tornado Warning, 4:13 p.m. CST Friday 3 July
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>066251,066253</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-03T23:12:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extreme</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>very high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>red</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Turtle River including Edam and Vawn</areaDesc>
+            <polygon>52.9622,-108.6158 52.9456,-108.6193 52.9708,-108.6827 52.9736,-108.7455 52.9781,-108.7547 52.9844,-108.7674 52.9931,-108.7851 53.0012,-108.8367 53.0174,-108.8687 53.0878,-108.9416 53.1552,-108.9984 53.1853,-109.0395 53.2038,-109.0731 53.2056,-109.0763 53.2273,-109.0777 53.2413,-109.0786 53.2617,-109.0774 53.2777,-109.0764 53.2792,-109.029 53.2844,-108.8608 53.2779,-108.6372 53.2421,-108.6315 53.1905,-108.6365 53.1046,-108.6292 53.0161,-108.6371 53.0169,-108.6262 53.0162,-108.6161 52.9883,-108.6133 52.9791,-108.6142 52.9622,-108.6158</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066213</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717011</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Parkdale including Glaslyn and Fairholme</areaDesc>
+            <polygon>53.627,-108.1448 53.5704,-108.1522 53.569,-108.1827 53.5376,-108.2036 53.4921,-108.2023 53.4929,-108.1825 53.4542,-108.1836 53.447,-108.2072 53.3714,-108.2087 53.3701,-108.1921 53.1907,-108.1958 53.1887,-108.1958 53.1887,-108.198 53.1887,-108.1986 53.1886,-108.2074 53.1864,-108.4066 53.1864,-108.6361 53.1864,-108.6369 53.1864,-108.6428 53.2687,-108.6445 53.2781,-108.6447 53.362,-108.6464 53.3611,-108.6676 53.5369,-108.6692 53.545,-108.6424 53.5516,-108.6387 53.5478,-108.6693 53.6103,-108.6698 53.6349,-108.6437 53.6637,-108.6437 53.7119,-108.5833 53.715,-108.5795 53.7173,-108.5325 53.7188,-108.502 53.6338,-108.5005 53.6322,-108.1629 53.6314,-108.1442 53.627,-108.1448</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066251</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717048</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Meota including Meota and The Battlefords Prov. Park</areaDesc>
+            <polygon>53.1248,-108.1471 53.1031,-108.149 53.1013,-108.1747 53.103,-108.1979 53.0606,-108.1922 53.016,-108.1977 53.0167,-108.1882 53.0162,-108.1804 52.9738,-108.176 52.9292,-108.1806 52.9253,-108.3131 52.9293,-108.4467 52.915,-108.4439 52.9117,-108.4433 52.8961,-108.4461 52.8807,-108.4469 52.8927,-108.4952 52.9184,-108.5415 52.9456,-108.6193 52.9622,-108.6158 52.981,-108.6187 52.988,-108.6198 53.0162,-108.6161 53.0154,-108.6254 53.0161,-108.6371 53.103,-108.6441 53.1905,-108.6365 53.1942,-108.4093 53.1906,-108.1983 53.1688,-108.1949 53.1469,-108.1985 53.1493,-108.174 53.147,-108.1496 53.1248,-108.1471</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066253</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717812</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717813</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-07-03T22:13:22-00:00</effective>
+        <onset>2026-07-03T22:12:00-00:00</onset>
+        <expires>2026-07-03T23:41:22-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - en vigueur</headline>
+        <description>
+À 16h12 HNC, les météorologues d’Environnement Canada surveillent un orage violent produisant une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles.
+
+Une tornade a été observée au sol près d'Edam.
+
+###
+
+Il s’agit d’une situation très dangereuse et potentiellement mortelle.
+
+Une alerte de tornade est émise lorsqu’un orage violent produit ou est susceptible de produire une tornade.
+</description>
+        <instruction>
+Mettez-vous immédiatement à l’abri dans un sous-sol, une pièce intérieure ou un abri solide à l’approche de temps menaçant. Si aucun abri n’est disponible, couchez-vous dans un endroit bas et protégez votre tête des débris volants. Si vous êtes sur l’eau à l’approche de temps menaçant, gagnez le rivage et mettez-vous à l’abri, si possible. Sinon, éloignez-vous de la trajectoire de la tornade pour y échapper. Portez votre gilet de sauvetage, allongez-vous sur le ventre et protégez votre tête.
+</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260703221322362/SK_00_01_LAND/TRW/2205566071133453404202607030501_SK_00_01_LAND/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:20058 M:103140 C:117552</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>text</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 16h13 heure normale du Centre le vendredi, Environnement Canada a émis une alerte de tornade pour le centre-ouest  de la Saskatchewan. Une attention et des précautions additionnelles devraient être exercées près et autour des localités suivantes: Rabbit Lake, The Battlefords Park, Edam, Paynton, Turtleford, Glaslyn et Medstead. Les météorologues d’Environnement Canada surveillent un orage violent produisant une tornade. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>SK_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
+Alerte de tornade, 16h13 HNC le vendredi 3 juillet
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>066251,066253</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-03T23:12:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extrême</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>très élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>rouge</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. de Turtle River incluant Edam et Vawn</areaDesc>
+            <polygon>52.9622,-108.6158 52.9456,-108.6193 52.9708,-108.6827 52.9736,-108.7455 52.9781,-108.7547 52.9844,-108.7674 52.9931,-108.7851 53.0012,-108.8367 53.0174,-108.8687 53.0878,-108.9416 53.1552,-108.9984 53.1853,-109.0395 53.2038,-109.0731 53.2056,-109.0763 53.2273,-109.0777 53.2413,-109.0786 53.2617,-109.0774 53.2777,-109.0764 53.2792,-109.029 53.2844,-108.8608 53.2779,-108.6372 53.2421,-108.6315 53.1905,-108.6365 53.1046,-108.6292 53.0161,-108.6371 53.0169,-108.6262 53.0162,-108.6161 52.9883,-108.6133 52.9791,-108.6142 52.9622,-108.6158</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066213</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717011</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Parkdale incluant Glaslyn et Fairholme</areaDesc>
+            <polygon>53.627,-108.1448 53.5704,-108.1522 53.569,-108.1827 53.5376,-108.2036 53.4921,-108.2023 53.4929,-108.1825 53.4542,-108.1836 53.447,-108.2072 53.3714,-108.2087 53.3701,-108.1921 53.1907,-108.1958 53.1887,-108.1958 53.1887,-108.198 53.1887,-108.1986 53.1886,-108.2074 53.1864,-108.4066 53.1864,-108.6361 53.1864,-108.6369 53.1864,-108.6428 53.2687,-108.6445 53.2781,-108.6447 53.362,-108.6464 53.3611,-108.6676 53.5369,-108.6692 53.545,-108.6424 53.5516,-108.6387 53.5478,-108.6693 53.6103,-108.6698 53.6349,-108.6437 53.6637,-108.6437 53.7119,-108.5833 53.715,-108.5795 53.7173,-108.5325 53.7188,-108.502 53.6338,-108.5005 53.6322,-108.1629 53.6314,-108.1442 53.627,-108.1448</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066251</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717048</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Meota incluant Meota et The Battlefords Prov. Park</areaDesc>
+            <polygon>53.1248,-108.1471 53.1031,-108.149 53.1013,-108.1747 53.103,-108.1979 53.0606,-108.1922 53.016,-108.1977 53.0167,-108.1882 53.0162,-108.1804 52.9738,-108.176 52.9292,-108.1806 52.9253,-108.3131 52.9293,-108.4467 52.915,-108.4439 52.9117,-108.4433 52.8961,-108.4461 52.8807,-108.4469 52.8927,-108.4952 52.9184,-108.5415 52.9456,-108.6193 52.9622,-108.6158 52.981,-108.6187 52.988,-108.6198 53.0162,-108.6161 53.0154,-108.6254 53.0161,-108.6371 53.103,-108.6441 53.1905,-108.6365 53.1942,-108.4093 53.1906,-108.1983 53.1688,-108.1949 53.1469,-108.1985 53.1493,-108.174 53.147,-108.1496 53.1248,-108.1471</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>066253</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717812</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4717813</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>eOgNm9b7IcNCu6v+ZXA3Vond80duqPLJdo6/dgxSimE=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>nbZLh7jjJrWaQjPMc8DRogkBcN3UpHfqFv+sfiWQOesXlB4seE9wcat5cvCg71fH
+v0o+o2AP/cmHcm9gUkRJWY8/n8nrxOm74WyVgoXbGjXBjCde4Jr3RjdQ8lNjNJgN
+PolLKDtlTNbXLWuhaKKClDHuw9px/sl+kn5eDPk2/PV0+q+lrHvdVsVGp6o40yL5
+BzFM/77ZmcihWDRDIPLCe+WlO40+YKbDwOGazTiRsXcUQT6ISdcq+R0jwrDbyqGA
+JV0nE021ymDSbAUiqT8su7lwpqgNaXmQkm2Dwr4WHl/NBXrOYGuZw3oG+yKyO59o
+dbsFC8nPBMuw2DYQnsbljQ==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

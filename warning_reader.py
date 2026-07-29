@@ -7,6 +7,12 @@ import geojson
 import csv
 import json
 
+import urllib
+
+GITHUB_OWNER = "JThompson-007"
+GITHUB_REPO = "alertreader"
+GITHUB_BRANCH = "main"
+
 class XMLWarning:
     def __init__(self, xml, prov, uri, msgType, startTime, expiryTime):
         self.xml = xml
@@ -85,10 +91,14 @@ def searchAlertList(alertList, location) -> int:
     return -1
 
 
+def generateRepoLink(relativePath) -> str:
+    encoded_path = urllib.parse.quote(relativePath)
+    return f"https://github.com/{GITHUB_OWNER}/{GITHUB_REPO}/blob/{GITHUB_BRANCH}/{encoded_path}"
+
 def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
 
     # Generate filename based on location and start time
-    jsonPath = f"Archived Files/Polygons/{startTime.strftime("%Y/%m/%d")}/" + f"{currentLocation}-{startTime.strftime("%H%M%S")}.geojson".replace(" ", "").replace(":", "")
+    jsonPath = f"Archived_Files/Polygons/{startTime.strftime("%Y/%m/%d")}/" + f"{currentLocation}-{startTime.strftime("%H%M%S")}.geojson".replace(" ", "").replace(":", "")
 
     # Convert the text list of (lat, lon) coordinates to a list of float (lon, lat) to fit GEOJSON format
     points = []
@@ -107,7 +117,7 @@ def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
     return jsonPath
 
 def downloadCAP(URL, session, startTime, currentLocation, startend) -> str:
-    capPath = f"Archived Files/CAP Alerts/{startTime.strftime("%Y-%m-%d")}/" + f"{startend}-{currentLocation}-{startTime.strftime("%H%M%S")}.cap".replace(" ", "").replace(":", "")
+    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime("%Y/%m/%d")}/" + f"{startend}-{currentLocation}-{startTime.strftime("%H%M%S")}.cap".replace(" ", "").replace(":", "")
     session.get(URL)
 
     # create directory, if needed
@@ -146,7 +156,7 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
             if(index != -1):
                 if(alert.startTime == alert.expiryTime or alert.msgType == "AllClear"):
                     # Download the end link under the start time so it gets saved in the same folder even if the start and end times are different dates
-                    capPath = downloadCAP(alert.uri, session, activeAlerts[index].startTime, currentLocation, "end")
+                    capPath = generateRepoLink(downloadCAP(alert.uri, session, activeAlerts[index].startTime, currentLocation, "end"))
                     activeAlerts[index].endTime = alert.startTime
                     activeAlerts[index].endUri = capPath
                     print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
@@ -161,8 +171,8 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
                     print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
 
                     # Create GeoJson Polygon for warned area 
-                    jsonpath = generateGEOJSON(area.find("cap:polygon", ns).text, currentLocation, alert.startTime)
-                    capPath = downloadCAP(alert.uri, session, alert.startTime, currentLocation, "start")
+                    jsonpath = generateRepoLink(generateGEOJSON(area.find("cap:polygon", ns).text, currentLocation, alert.startTime))
+                    capPath = generateRepoLink(downloadCAP(alert.uri, session, alert.startTime, currentLocation, "start"))
                     activeAlerts.append(Alert(currentLocation, capPath, alert.startTime, alert.expiryTime, alert.prov, jsonpath))
                  
 
@@ -230,6 +240,7 @@ def writeAlertsToCSV(alerts, filename):
             csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri, alert.jsonLink])
 
 def main():    
+
     currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
     endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
     allAlerts = []
@@ -255,7 +266,6 @@ def main():
 
     # Save active alerts to a live JSON file that will be read next execution
     writeAlertsToJSON(activeAlerts, "active_alerts.json")
-
 
 if __name__ == "__main__":
     main()
