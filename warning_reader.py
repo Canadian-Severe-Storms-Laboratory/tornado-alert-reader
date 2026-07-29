@@ -2,12 +2,12 @@ from pathlib import Path
 import re
 import requests as req
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import geojson
 import csv
 import json
-
-import urllib
+import argparse
+import urllib.parse
 
 GITHUB_OWNER = "JThompson-007"
 GITHUB_REPO = "alertreader"
@@ -48,10 +48,28 @@ class Alert:
     expiryTime: datetime
     jsonLink: str
 
+# Parse arguments from github actions. --- NOTE: Claude generated code
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start", help="Start hour, format YYYY/MM/DD/HH")
+    parser.add_argument("--end", help="End hour, format YYYY/MM/DD/HH")
+    args = parser.parse_args()
+
+    if args.start and args.end:
+        currentHour = datetime.strptime(args.start, "%Y/%m/%d/%H")
+        endHour = datetime.strptime(args.end, "%Y/%m/%d/%H")
+    else:
+        # Default: sweep all of "yesterday" (UTC) if no args given --
+        # this is what runs automatically on the daily schedule.
+        yesterday = datetime.now(timezone.utc).date() - timedelta(days=1)
+        currentHour = datetime(yesterday.year, yesterday.month, yesterday.day, 0)
+        endHour = datetime(yesterday.year, yesterday.month, yesterday.day, 23)
+
+    return currentHour, endHour
+
 
 # Reads in active alerts from the standarized JSON file produced by previous 24h run
 def readActiveAlerts(activeAlerts, filename):
-
     try:
         with open(filename, mode="r") as f:
             alertsDict = json.load(f)
@@ -65,7 +83,11 @@ def readActiveAlerts(activeAlerts, filename):
                     province=alert["province"],
                     jsonLink=alert["jsonLink"]
                 ))
-    except FileNotFoundError:
+
+        # Open file in write mode to clear it; ensures records are removed even if new records aren't written at the end of the period
+        with open(filename, mode="w") as f:
+            pass
+    except (FileNotFoundError, json.JSONDecodeError):
         return
 
 def writeAlertsToJSON(activeAlerts, filename):
@@ -80,8 +102,8 @@ def writeAlertsToJSON(activeAlerts, filename):
             "jsonLink": alert.jsonLink}
             )
     
-        with open(filename, mode="w") as f:
-            json.dump(alertList, f, indent=2)
+    with open(filename, mode="w") as f:
+        json.dump(alertList, f, indent=2)    
 
 
 def searchAlertList(alertList, location) -> int:
@@ -98,7 +120,7 @@ def generateRepoLink(relativePath) -> str:
 def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
 
     # Generate filename based on location and start time
-    jsonPath = f"Archived_Files/Polygons/{startTime.strftime("%Y/%m/%d")}/" + f"{currentLocation}-{startTime.strftime("%H%M%S")}.geojson".replace(" ", "").replace(":", "")
+    jsonPath = f"Archived_Files/Polygons/{startTime.strftime('%Y/%m/%d')}/" + f"{currentLocation}-{startTime.strftime('%H%M%S')}.geojson".replace(" ", "").replace(":", "")
 
     # Convert the text list of (lat, lon) coordinates to a list of float (lon, lat) to fit GEOJSON format
     points = []
@@ -117,9 +139,7 @@ def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
     return jsonPath
 
 def downloadCAP(URL, session, startTime, currentLocation, startend) -> str:
-    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime("%Y/%m/%d")}/" + f"{startend}-{currentLocation}-{startTime.strftime("%H%M%S")}.cap".replace(" ", "").replace(":", "")
-    session.get(URL)
-
+    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime('%Y/%m/%d')}/" + f"{startend}-{currentLocation}-{startTime.strftime('%H%M%S')}.cap".replace(" ", "").replace(":", "")
     # create directory, if needed
     Path(capPath).parent.mkdir(parents=True, exist_ok=True)
 
@@ -159,7 +179,7 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
                     capPath = generateRepoLink(downloadCAP(alert.uri, session, activeAlerts[index].startTime, currentLocation, "end"))
                     activeAlerts[index].endTime = alert.startTime
                     activeAlerts[index].endUri = capPath
-                    print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
+                    #print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
                     finalAlerts.append(activeAlerts.pop(index))
             else:
                 if(alert.startTime != alert.expiryTime and alert.msgType != "AllClear"):
@@ -168,7 +188,7 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
                     if(alert.prov == "GL"):
                         alert.prov = "ON"
 
-                    print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
+                    #print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
 
                     # Create GeoJson Polygon for warned area 
                     jsonpath = generateRepoLink(generateGEOJSON(area.find("cap:polygon", ns).text, currentLocation, alert.startTime))
@@ -188,7 +208,7 @@ def readHourAlerts(date, hour, designation, allAlerts, session):
 
         # Load in each link, parse into tree format for intrepretation
         for link in download_links:
-            print(f'downloading: {URL}{link}...')
+            #print(f'downloading: {URL}{link}...')
 
             # Grab provinical code from the link string
             prov = link[2:4]
@@ -208,7 +228,7 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
 
     # Loop through each hour in the range
     while(currentHour <= endHour):
-        print(f'Working on --- Date: {currentHour.year}{currentHour.month:02d}{currentHour.day:02d} Hour: {currentHour.hour:02d}')
+        #print(f'Working on --- Date: {currentHour.year}{currentHour.month:02d}{currentHour.day:02d} Hour: {currentHour.hour:02d}')
 
         # Format the date to match ECCC's directory structure
         datetimeString = f"{currentHour.year}{currentHour.month:02d}{currentHour.day:02d}"
@@ -228,9 +248,10 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
     parseAlerts(finalAlerts, activeAlerts, allAlerts, session)
 
     # Once all alerts have been read, check if any of the "active" alerts have actually passed their expiry time
-    for alert in activeAlerts:
+    for alert in activeAlerts[:]:
         if(alert.expiryTime < endHour +timedelta(hours=1)):
             alert.endTime = alert.expiryTime
+            alert.endUri = "No link - Expired without explicit message" # End URI will just be pinned as the start URI, since there was no explicit end message
             finalAlerts.append(activeAlerts.pop(activeAlerts.index(alert)))
 
 def writeAlertsToCSV(alerts, filename):
@@ -241,8 +262,9 @@ def writeAlertsToCSV(alerts, filename):
 
 def main():    
 
-    currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
-    endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    # Take input from Github Actions
+    currentHour, endHour = parse_args()
+
     allAlerts = []
     finalAlerts = []
     activeAlerts = []
@@ -254,12 +276,12 @@ def main():
     finalAlerts.sort(key=lambda x: x.startTime)
     activeAlerts.sort(key=lambda x: x.startTime)
 
-    print("\n\nFinal Alerts:")
-    for alert in finalAlerts:
-        print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}, Province: {alert.province}")    
-    print("\n\nActive Alerts:")
-    for alert in activeAlerts:
-        print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
+    #print("\n\nFinal Alerts:")
+    #for alert in finalAlerts:
+    #    print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}, Province: {alert.province}")    
+    #print("\n\nActive Alerts:")
+    #for alert in activeAlerts:
+    #    print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
     # Save finished alerts to CSV
     writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
