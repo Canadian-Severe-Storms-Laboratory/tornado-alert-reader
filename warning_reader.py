@@ -263,9 +263,9 @@ def writeAlertsToCSV(alerts, filename):
 def main():    
 
     # Take input from Github Actions
-    #currentHour, endHour = parse_args()
-    currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
-    endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    currentHour, endHour = parse_args()
+    #currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    #endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
 
     allAlerts = []
     finalAlerts = []
