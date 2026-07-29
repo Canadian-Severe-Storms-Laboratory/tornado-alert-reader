@@ -2,7 +2,7 @@ name: Daily tornado alert fetch
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # runs at 12:00 UTC daily -- gives the prior day's
+    - cron: '0 18 * * *'   # runs at 12:00 UTC daily -- gives the prior day's
                             # datamart retention window time to be fully populated
   workflow_dispatch:       # enables manual runs, with optional override inputs
     inputs:
