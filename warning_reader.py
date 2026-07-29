@@ -8,6 +8,8 @@ import csv
 import json
 import argparse
 import urllib.parse
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 GITHUB_OWNER = "JThompson-007"
 GITHUB_REPO = "alertreader"
@@ -47,6 +49,18 @@ class Alert:
     endTime: datetime
     expiryTime: datetime
     jsonLink: str
+
+
+
+def build_session():
+    session = req.Session()
+    retries = Retry(
+        total=3,                     # retry up to 3 times per request
+        backoff_factor=1,            # waits 1s, then 2s, then 4s between attempts
+        status_forcelist=[500, 502, 503, 504],  # retry on these server-error responses
+    )
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+    return session
 
 # Parse arguments from github actions. --- NOTE: Claude generated code
 def parse_args():
@@ -199,7 +213,10 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
 def readHourAlerts(date, hour, designation, allAlerts, session):
     # Scrape the HTML page for the hour
     URL = f'https://dd.weather.gc.ca/{date}/WXO-DD/alerts/cap/{date}/{designation}/{hour}/'
-    response = session.get(URL, timeout=10)
+    try:
+        response = session.get(URL, timeout=20)   # 10 -> 20
+    except req.exceptions.RequestException as e:
+        return
 
     # Continue only if the link exists (sometimes no alerts exists for a given hour)
     if(response.status_code != 404):
@@ -214,8 +231,10 @@ def readHourAlerts(date, hour, designation, allAlerts, session):
             prov = link[2:4]
 
             # Read the actual XML content
-            alertContent = session.get(f'{URL}{link}', timeout=10).content
-
+            try:
+                alertContent = session.get(f'{URL}{link}', timeout=20).content
+            except req.exceptions.RequestException as e:
+                continue
             # Insert into an XML tree and pass that to the parser
             alert = ET.fromstring(alertContent)
             treeToAlert(alert, prov, f'{URL}{link}', allAlerts)
@@ -224,7 +243,7 @@ def readHourAlerts(date, hour, designation, allAlerts, session):
 def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts):
     
     # Set up session to interact with MSC datamart
-    session = req.Session()
+    session = build_session()
 
     # Loop through each hour in the range
     while(currentHour <= endHour):
