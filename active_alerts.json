@@ -1,5 +1,21 @@
 [
   {
+    "location": "South Indian Lake and Amisk Prov. Park",
+    "startUri": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/CAP_Alerts/2026/07/29/start-SouthIndianLakeandAmiskProv.Park-221827.cap",
+    "startTime": "2026-07-29T22:18:27",
+    "expiryTime": "2026-07-30T00:36:08",
+    "province": "MB",
+    "jsonLink": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/Polygons/2026/07/29/SouthIndianLakeandAmiskProv.Park-221827.geojson"
+  },
+  {
+    "location": "Nelson House",
+    "startUri": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/CAP_Alerts/2026/07/29/start-NelsonHouse-221827.cap",
+    "startTime": "2026-07-29T22:18:27",
+    "expiryTime": "2026-07-30T00:36:08",
+    "province": "MB",
+    "jsonLink": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/Polygons/2026/07/29/NelsonHouse-221827.geojson"
+  },
+  {
     "location": "Thompson Thicket Portage and Pikwitonei",
     "startUri": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/CAP_Alerts/2026/07/29/start-ThompsonThicketPortageandPikwitonei-230808.cap",
     "startTime": "2026-07-29T23:08:08",

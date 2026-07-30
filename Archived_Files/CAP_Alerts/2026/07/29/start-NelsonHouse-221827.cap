@@ -5,14 +5,14 @@
     <sent>2026-07-29T22:19:53-00:00</sent>
     <status>Actual</status>
     <msgType>Update</msgType>
-    <source>Env. Can. - Can. Met. Ctr. â€“ MontrÃ©al</source>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
     <scope>Public</scope>
     <code>profile:CAP-CP:0.4</code>
     <code>layer:SOREM:1.0</code>
     <code>layer:EC-MSC-SMC:1.0</code>
     <code>layer:EC-MSC-SMC:1.1</code>
     <code>layer:SOREM:2.0</code>
-    <note>Service Notice â€“ July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service â€“ juillet 2026: Le service du PAC dâ€™Environnement et Changement climatique Canada (ECCC) subit pÃ©riodiquement des changements Ã  mesure que le systÃ¨me dâ€™alerte Ã©volue. Pour le printemps 2026, il y aura des changements incluant... 1) Le dÃ©ploiement par ECCC visant Ã  introduire des polygones de forme libre pour reprÃ©senter la zone rÃ©elle de menace dâ€™un alÃ©a mÃ©tÃ©orologique, qui Ã©tait initialement prÃ©vu pour juin 2026, est retardÃ©. Nous communiquerons la nouvelle date lorsquâ€™elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre reprÃ©sentant la zone rÃ©elle de menace dâ€™un alÃ©a mÃ©tÃ©orologique demeurent sous embargo mÃ©diatique jusquâ€™au lancement, 2) les alertes marines seront dÃ©sormais Ã©mises pour des subdivisions de zones plus petites dans certaines rÃ©gions des eaux de lâ€™Atlantique et du Pacifique et 3) dâ€™autres amÃ©liorations et corrections mineures. Pour plus dâ€™informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
     <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.1990806467.2026,2026-07-29T22:07:00-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.1865349864.2026,2026-07-29T22:08:13-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3410969169.2026,2026-07-29T22:18:27-00:00</references>
     <info>
         <language>en-CA</language>
@@ -228,22 +228,22 @@ Tornado Warning, 5:18 p.m. CDT Wednesday 29 July
         <senderName>Environnement Canada</senderName>
         <headline>alerte rouge - tornade - en vigueur</headline>
         <description>
-Un orage violent pouvant produire une tornade se trouvait Ã  l'est de Leaf Rapids et se dÃ©plaÃ§ait vers l'est Ã  30 km/h.
+Un orage violent pouvant produire une tornade se trouvait à l'est de Leaf Rapids et se déplaçait vers l'est à 30 km/h.
 
 Dangers :
 - Une tornade.
-- Des rafales Ã  90 km/h.
-- De la grÃªle de la taille d'une piÃ¨ce de 25 cents.
+- Des rafales à 90 km/h.
+- De la grêle de la taille d'une pièce de 25 cents.
 - De la forte pluie.
 
 ###
 
-Il sâ€™agit dâ€™une situation trÃ¨s dangereuse et potentiellement mortelle.
+Il s’agit d’une situation très dangereuse et potentiellement mortelle.
 
-Une alerte de tornade est Ã©mise lorsquâ€™un orage violent produit ou est susceptible de produire une tornade.
+Une alerte de tornade est émise lorsqu’un orage violent produit ou est susceptible de produire une tornade.
 </description>
         <instruction>
-Mettez-vous immÃ©diatement Ã  lâ€™abri dans un sous-sol, une piÃ¨ce intÃ©rieure ou un abri solide Ã  lâ€™approche de temps menaÃ§ant. Si aucun abri nâ€™est disponible, couchez-vous dans un endroit bas et protÃ©gez votre tÃªte des dÃ©bris volants. Si vous Ãªtes sur lâ€™eau Ã  lâ€™approche de temps menaÃ§ant, gagnez le rivage et mettez-vous Ã  lâ€™abri, si possible, ou Ã©loignez-vous de la trajectoire de la tornade. Sinon, portez votre gilet de sauvetage, allongez-vous sur le ventre et protÃ©gez votre tÃªte.
+Mettez-vous immédiatement à l’abri dans un sous-sol, une pièce intérieure ou un abri solide à l’approche de temps menaçant. Si aucun abri n’est disponible, couchez-vous dans un endroit bas et protégez votre tête des débris volants. Si vous êtes sur l’eau à l’approche de temps menaçant, gagnez le rivage et mettez-vous à l’abri, si possible, ou éloignez-vous de la trajectoire de la tornade. Sinon, portez votre gilet de sauvetage, allongez-vous sur le ventre et protégez votre tête.
 </instruction>
         <web>https://meteo.gc.ca/</web>
         <parameter>
@@ -284,7 +284,7 @@ Mettez-vous immÃ©diatement Ã  lâ€™abri dans un sous-sol, une piÃ¨ce intÃ©rieure 
         </parameter>
         <parameter>
             <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
-            <value>Ã€ 17h18 heure avancÃ©e du Centre le mercredi, Environnement Canada a Ã©mis une alerte de tornade pour le nord-ouest et le centre-nord  du Manitoba. Une attention et des prÃ©cautions additionnelles devraient Ãªtre exercÃ©es prÃ¨s et autour des localitÃ©s suivantes: South Indian Lake, Amisk Provincial Park, Thompson, Thicket Portage, Pikwitonei, Nelson House et Leaf Rapids. Les mÃ©tÃ©orologues dâ€™Environnement Canada surveillent l'Ã©volution d'un orage violent produisant possiblement une tornade. Des vents destructeurs et de la grosse grÃªle sont aussi possibles. Mettez-vous immÃ©diatement Ã  l'abri si un phÃ©nomÃ¨ne mÃ©tÃ©orologique menaÃ§ant s'approche. Veuillez consulter les mÃ©dias locaux pour plus d'informations.</value>
+            <value>À 17h18 heure avancée du Centre le mercredi, Environnement Canada a émis une alerte de tornade pour le nord-ouest et le centre-nord  du Manitoba. Une attention et des précautions additionnelles devraient être exercées près et autour des localités suivantes: South Indian Lake, Amisk Provincial Park, Thompson, Thicket Portage, Pikwitonei, Nelson House et Leaf Rapids. Les météorologues d’Environnement Canada surveillent l'évolution d'un orage violent produisant possiblement une tornade. Des vents destructeurs et de la grosse grêle sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
         </parameter>
         <parameter>
             <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
@@ -297,7 +297,7 @@ Mettez-vous immÃ©diatement Ã  lâ€™abri dans un sous-sol, une piÃ¨ce intÃ©rieure 
         <parameter>
             <valueName>layer:SOREM:2.0:WirelessText</valueName>
             <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
-RÃ©fugiez-vous sans tarder au sous-sol ou dans une piÃ¨ce sans fenÃªtre en cas de temps menaÃ§ant. Ã€ l'extÃ©rieur, protÃ©gez-vous des dÃ©bris projetÃ©s.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
 Alerte de tornade, 17h18 HAC le mercredi 29 juillet
 </value>
         </parameter>
@@ -319,11 +319,11 @@ Alerte de tornade, 17h18 HAC le mercredi 29 juillet
         </parameter>
         <parameter>
             <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
-            <value>extrÃªme</value>
+            <value>extrême</value>
         </parameter>
         <parameter>
             <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
-            <value>trÃ¨s Ã©levÃ©e</value>
+            <value>très élevée</value>
         </parameter>
         <parameter>
             <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
