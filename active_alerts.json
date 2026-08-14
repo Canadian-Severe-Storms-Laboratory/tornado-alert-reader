@@ -1,18 +1,1 @@
-[
-  {
-    "location": "new active threat area",
-    "startUri": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/CAP_Alerts/2026/08/12/start-newactivethreatarea-230741.cap",
-    "startTime": "2026-08-12T23:07:41",
-    "expiryTime": "2026-08-13T00:26:58",
-    "province": "ON",
-    "jsonLink": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/Polygons/2026/08/12/newactivethreatarea-230741.geojson"
-  },
-  {
-    "location": "continued active threat area",
-    "startUri": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/CAP_Alerts/2026/08/12/start-continuedactivethreatarea-231358.cap",
-    "startTime": "2026-08-12T23:13:58",
-    "expiryTime": "2026-08-13T00:26:58",
-    "province": "ON",
-    "jsonLink": "https://github.com/JThompson-007/alertreader/blob/main/Archived_Files/Polygons/2026/08/12/continuedactivethreatarea-231358.geojson"
-  }
-]
+[]
