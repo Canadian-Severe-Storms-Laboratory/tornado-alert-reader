@@ -1,5 +1,7 @@
+import os
 from pathlib import Path
 import re
+import gspread
 import requests as req
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -10,10 +12,13 @@ import argparse
 import urllib.parse
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from google.oauth2.service_account import Credentials
 
 GITHUB_OWNER = "JThompson-007"
 GITHUB_REPO = "alertreader"
 GITHUB_BRANCH = "main"
+GOOGLE_SHEET_ID = "13z2EkWi7V-iIV3Z4ZNgc-NIXaJLt3shdMPkSCzqmkok"
+
 
 class XMLWarning:
     def __init__(self, xml, prov, uri, msgType, id, responseType, references, startTime, expiryTime, sentTime):
@@ -344,12 +349,40 @@ def writeAlertsToCSV(alerts, filename):
         for alert in alerts:
             csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.stormGeometry, alert.stormMotion, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri, alert.jsonLink])
 
+def get_google_sheet(sheetName):
+    creds_json = os.environ["GOOGLE_SHEETS_CREDENTIALS"]  # set via GitHub Actions secret
+    GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
+    creds_dict = json.loads(creds_json)
+    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+    creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
+    client = gspread.authorize(creds)
+    return client.open_by_key(GOOGLE_SHEET_ID).worksheet(sheetName)
+
+def writeAlertsToGoogleSheet(alerts, sheet):
+    rows = []
+    for alert in alerts:
+        rows.append([
+            "",
+            alert.startTime.strftime("%y/%m/%d"),
+            alert.location,
+            alert.stormGeometry,
+            alert.stormMotion,
+            alert.province,
+            alert.startTime.strftime("%H:%M"),
+            alert.startUri,
+            alert.endTime.strftime("%H:%M"),
+            alert.endUri,
+            alert.jsonLink
+        ])
+    sheet.append_rows(rows)
+
+
 def main():    
 
     # Take input from Github Actions
-    # currentHour, endHour = parse_args()
-    currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
-    endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    currentHour, endHour = parse_args()
+    #currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    #endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
 
     allAlerts = []
     finalAlerts = []
@@ -371,6 +404,11 @@ def main():
 
     # Save finished alerts to CSV
     writeAlertsToCSV(finalAlerts, "polygonAlerts.csv")
+
+    try:
+        writeAlertsToGoogleSheet(finalAlerts, get_google_sheet("Warning"))
+    except Exception as e:
+        return
 
     # Save active alerts to a live JSON file that will be read next execution
     writeAlertsToJSON(activeAlerts, "active_alerts.json")
