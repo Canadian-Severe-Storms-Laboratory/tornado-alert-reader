@@ -16,30 +16,44 @@ GITHUB_REPO = "alertreader"
 GITHUB_BRANCH = "main"
 
 class XMLWarning:
-    def __init__(self, xml, prov, uri, msgType, startTime, expiryTime):
+    def __init__(self, xml, prov, uri, msgType, id, responseType, references, startTime, expiryTime, sentTime):
         self.xml = xml
         self.prov = prov
         self.msgType = msgType
+        self.id = id
+        self.responseType = responseType
+        self.references = references
         self.uri = uri
         self.startTime = startTime
         self.expiryTime = expiryTime
+        self.sentTime = sentTime
+        self.isMinor = False
+
     xml: ET
     prov: str
     msgType: str
+    id: str
+    responseType: str
+    references: str
     uri: str
     startTime: datetime    
     expiryTime: datetime
+    sentTime: datetime
+    isMinor: bool
 
 class Alert:
 
-    def __init__(self, location, startUri, startTime, expiryTime, province, jsonLink):
+    def __init__(self, location, startUri, startTime, expiryTime, province, jsonLink, stormGeometry, stormMotion, id):
         self.location = location
         self.startUri = startUri
         self.startTime = startTime
         self.endTime = None
         self.expiryTime = expiryTime
+        self.stormGeometry = stormGeometry
+        self.stormMotion = stormMotion
         self.province = province
         self.jsonLink = jsonLink
+        self.id = id
 
     location: str
     province: str
@@ -49,6 +63,9 @@ class Alert:
     endTime: datetime
     expiryTime: datetime
     jsonLink: str
+    stormGeometry: str
+    stormMotion: str
+    id: str
 
 
 
@@ -85,7 +102,7 @@ def parse_args():
 # Reads in active alerts from the standarized JSON file produced by previous 24h run
 def readActiveAlerts(activeAlerts, filename):
     try:
-        with open(filename, mode="r") as f:
+        with open(filename, mode="r", encoding="utf-8") as f:
             alertsDict = json.load(f)
 
             for alert in alertsDict:
@@ -95,11 +112,14 @@ def readActiveAlerts(activeAlerts, filename):
                     startTime=datetime.fromisoformat(alert["startTime"]),
                     expiryTime=datetime.fromisoformat(alert["expiryTime"]),
                     province=alert["province"],
-                    jsonLink=alert["jsonLink"]
+                    jsonLink=alert["jsonLink"],
+                    stormGeometry=alert["stormGeometry"],
+                    stormMotion=alert["stormMotion"],
+                    id=alert["id"]
                 ))
 
         # Open file in write mode to clear it; ensures records are removed even if new records aren't written at the end of the period
-        with open(filename, mode="w") as f:
+        with open(filename, mode="w", encoding="utf-8") as f:
             pass
     except (FileNotFoundError, json.JSONDecodeError):
         return
@@ -114,10 +134,13 @@ def writeAlertsToJSON(activeAlerts, filename):
             "startTime": alert.startTime.isoformat(),
             "expiryTime": alert.expiryTime.isoformat(),
             "province": alert.province,
-            "jsonLink": alert.jsonLink}
+            "jsonLink": alert.jsonLink,
+            "stormGeometry": alert.stormGeometry,
+            "stormMotion": alert.stormMotion,
+            "id": alert.id}
             )
     
-    with open(filename, mode="w") as f:
+    with open(filename, mode="w", encoding="utf-8") as f:
         json.dump(alertList, f, indent=2)    
 
 
@@ -132,40 +155,50 @@ def generateRepoLink(relativePath) -> str:
     encoded_path = urllib.parse.quote(relativePath)
     return f"https://github.com/{GITHUB_OWNER}/{GITHUB_REPO}/blob/{GITHUB_BRANCH}/{encoded_path}"
 
-def generateGEOJSON(polygonText, currentLocation, startTime) -> str:
-
+def generateGEOJSON(polygonList, currentLocation, prov, startTime) -> str:
     # Generate filename based on location and start time
-    jsonPath = f"Archived_Files/Polygons/{startTime.strftime('%Y/%m/%d')}/" + f"{currentLocation}-{startTime.strftime('%H%M%S')}.geojson".replace(" ", "").replace(":", "")
-    #print(f"generating geojson for: {currentLocation}")
+    jsonPath = f"Archived_Files/Polygons/{startTime.strftime('%Y/%m/%d')}/" + f"{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.geojson".replace(" ", "").replace(":", "")
     # Convert the text list of (lat, lon) coordinates to a list of float (lon, lat) to fit GEOJSON format
-    points = []
-    for coordPair in polygonText.split():
-        latString, lonString = coordPair.split(",")
-        lat = float(latString)
-        lon = float(lonString)
-        points.append((lon, lat))
+    polygons = []
+    for polygonText in polygonList:
+        points = []
+        for coordPair in polygonText.split():
+            latString, lonString = coordPair.split(",")
+            lat = float(latString)
+            lon = float(lonString)
+            points.append((lon, lat))
+        polygons.append([points])
+
     Path(jsonPath).parent.mkdir(parents=True, exist_ok=True)
 
     # Create the polygon object and write to the file
-    polygon = geojson.Polygon([points])
-    with open(jsonPath, mode="w") as f:
-        geojson.dump(polygon, f)
+    multiPolygon = geojson.MultiPolygon(polygons)
+    with open(jsonPath, mode="w", encoding="utf-8") as f:
+        geojson.dump(multiPolygon, f)
 
     return jsonPath
 
-def downloadCAP(URL, session, startTime, currentLocation, startend) -> str:
-    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime('%Y/%m/%d')}/" + f"{startend}-{currentLocation}-{startTime.strftime('%H%M%S')}.cap".replace(" ", "").replace(":", "")
+def downloadCAP(URL, session, startTime, currentLocation, prov, startend) -> str:
+    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime('%Y/%m/%d')}/" + f"{startend}-{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.cap".replace(" ", "").replace(":", "")
     # create directory, if needed
     Path(capPath).parent.mkdir(parents=True, exist_ok=True)
 
-    with open(capPath, "w") as f:
+    with open(capPath, "w", encoding="utf-8") as f:
         f.write(session.get(URL, timeout=10).text)
     return capPath
 
-# Takes an alert (entire XML) and stores each info block as its own objecct along with the start/expiry times for easy sorting, and the province from the URI
+# Takes an alert (entire XML) and stores each info block as its own object along with the start/expiry times for easy sorting, and the province from the URI
 def treeToAlert(alert, prov, URI, allAlerts):
     # Standard namespace for CAP 1.2 XML files
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
+
+    id = alert.find("cap:identifier", ns).text
+    msgType = alert.find("cap:msgType", ns).text
+    references = None
+    sentTime = datetime.strptime(alert.find("cap:sent", ns).text[:19], "%Y-%m-%dT%H:%M:%S")
+
+    if(alert.find("cap:references", ns) != None):
+        references = alert.find("cap:references", ns).text
 
     # search for the "info" tags, and only continue read the English version to avoid duplicates
     for elm in alert.findall("cap:info", ns):
@@ -174,48 +207,70 @@ def treeToAlert(alert, prov, URI, allAlerts):
              # Only read further if the alert is tornado-related
              if(elm.find("cap:event", ns).text == "tornado"):
                 #print("Tornado warning found!")
-                allAlerts.append(XMLWarning(elm, prov, URI, elm.find("cap:responseType", ns).text, datetime.strptime(elm.find("cap:effective", ns).text[:19], "%Y-%m-%dT%H:%M:%S"), datetime.strptime(elm.find("cap:expires", ns).text[:19], "%Y-%m-%dT%H:%M:%S")))
+                allAlerts.append(XMLWarning(elm, prov, URI, msgType, id, elm.find("cap:responseType", ns).text, references, datetime.strptime(elm.find("cap:effective", ns).text[:19], "%Y-%m-%dT%H:%M:%S"), datetime.strptime(elm.find("cap:expires", ns).text[:19], "%Y-%m-%dT%H:%M:%S"), sentTime))
 
+def findPolygons(alert, ns) -> list[str]:
+    polygonList = []
+    for area in alert.xml.findall("cap:area", ns):
+        if(area.find("cap:areaDesc", ns).text == "new active threat area" or area.find("cap:areaDesc", ns).text == "continued active threat area"):
+            for polygon in area.findall("cap:polygon", ns):
+                polygonList.append(polygon.text)
+    return polygonList
 
 def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
     # Standard namespace for CAP 1.2 XML files
     ns = {"cap": "urn:oasis:names:tc:emergency:cap:1.2"}
-
     for alert in allAlerts:
+        locations, stormGeometry, stormMotion = None, None, None
 
-        # Read each individual 
-        for area in alert.xml.findall("cap:area", ns):
-            currentLocation = area.find("cap:areaDesc", ns).text
-            #print(f"At: {alert.startTime} tracking for this area: {currentLocation}")
-            index = searchAlertList(activeAlerts, currentLocation)
-            # Check for cases where the alert is cancelled --- could be actually getting cancelled (i.e., the alert is on the active list)
-            # Could also be a case where the alert is "cancelled" but is not on the active list (a so-called "second cancellation")
-            if(index != -1):
-                if(alert.startTime == alert.expiryTime or alert.msgType == "AllClear"):
-                    # Download the end link under the start time so it gets saved in the same folder even if the start and end times are different dates
-                    capPath = generateRepoLink(downloadCAP(alert.uri, session, activeAlerts[index].startTime, currentLocation, "end"))
-                    activeAlerts[index].endTime = alert.startTime
-                    activeAlerts[index].endUri = capPath
-                    #print(f"finishing alert for: {currentLocation} --- link: {alert.uri}")
-                    finalAlerts.append(activeAlerts.pop(index))
-                # Not a new warning, but not ending. Update the expiry time
-                else:
-                    activeAlerts[index].expiryTime = alert.expiryTime
-                    #print(f"updating for: {currentLocation}")
-            else:
-                if(alert.startTime != alert.expiryTime and alert.msgType != "AllClear"):
-                    
-                    # Handle great lakes specific tag, which is always Ontario
-                    if(alert.prov == "GL"):
-                        alert.prov = "ON"
+        # Get attributes about the warning (locations, geometry, motion)
+        for parameter in alert.xml.findall("cap:parameter", ns):
+            match(parameter.find("cap:valueName", ns).text):
+                case "profile:CAP-CP:0.4:MinorChange":
+                    if(parameter.find("cap:value", ns).text == "text"):
 
-                    #print(f"creating a new alert for: {currentLocation} --- link: {alert.uri}")
+                        # flag all info blocks within the same message as minor textual changes as well
+                        for otherAlert in allAlerts:
+                            if(alert.id == otherAlert.id):
+                                otherAlert.isMinor = True
 
-                    # Create GeoJson Polygon for warned area 
-                    jsonpath = generateRepoLink(generateGEOJSON(area.find("cap:polygon", ns).text, currentLocation, alert.startTime))
-                    capPath = generateRepoLink(downloadCAP(alert.uri, session, alert.startTime, currentLocation, "start"))
-                    activeAlerts.append(Alert(currentLocation, capPath, alert.startTime, alert.expiryTime, alert.prov, jsonpath))
-                 
+                case "layer:EC-MSC-SMC:1.1:Storm_Position_Description":
+                    locations = parameter.find("cap:value", ns).text
+                case "layer:EC-MSC-SMC:1.1:Storm_Geometry_Type":
+                    stormGeometry = parameter.find("cap:value", ns).text
+                case "layer:EC-MSC-SMC:1.1:Motion_Description":
+                    stormMotion = parameter.find("cap:value", ns).text
+
+        # Skip updates that are just minor textual updates
+        if(alert.isMinor):
+            print(f"flagging: {alert.id} for minor textual changes")
+            continue
+        
+        # New string of warnings, not an update to existing warnings.
+        if(alert.msgType == "Alert"):
+
+            polygonList = findPolygons(alert, ns)
+            jsonpath = generateRepoLink(generateGEOJSON(polygonList, locations, alert.prov, alert.startTime))
+            activeAlerts.append(Alert(locations, alert.uri, alert.startTime, alert.expiryTime, alert.prov, jsonpath, stormGeometry, stormMotion, id=alert.id))
+
+        # An existing chain of warning(s) already exists. This warning will cancel the previous one and start a new one
+        elif(alert.msgType == "Update"):
+
+            # Find previous warning in the chain
+            for activeAlert in activeAlerts:
+                if(activeAlert.id in alert.references):
+                    # Add the old warning to the final list, and remove it from the active list
+                    activeAlert.endTime = alert.startTime
+                    activeAlert.startUri = generateRepoLink(downloadCAP(activeAlert.startUri, session, activeAlert.startTime, activeAlert.location, activeAlert.province, "start"))
+                    # NOTE: The end link of this warning is the SAME as the start link for the new warning. They will be saved seperately for clarity since it is a relatively small cost
+                    activeAlert.endUri = generateRepoLink(downloadCAP(alert.uri, session, activeAlert.startTime, activeAlert.location, activeAlert.province, "end"))
+                    finalAlerts.append(activeAlerts.pop(activeAlerts.index(activeAlert)))
+
+            # If the new warning is not an "AllClear" or a cancellation, then add it to the active list as a new warning
+            if(alert.startTime != alert.expiryTime and alert.responseType != "AllClear"):
+                polygonList = findPolygons(alert, ns)
+                jsonpath = generateRepoLink(generateGEOJSON(polygonList, locations, alert.prov, alert.startTime))
+                activeAlerts.append(Alert(locations, alert.uri, alert.startTime, alert.expiryTime, alert.prov, jsonpath, stormGeometry, stormMotion, alert.id))
 
 def readHourAlerts(date, hour, designation, allAlerts, session):
     # Scrape the HTML page for the hour
@@ -236,6 +291,8 @@ def readHourAlerts(date, hour, designation, allAlerts, session):
 
             # Grab provinical code from the link string
             prov = link[2:4]
+            if(prov == "GL"):
+                prov = "ON" # Great Lakes warnings are always Ontario
 
             # Read the actual XML content
             try:
@@ -269,7 +326,7 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
     # Now all of the tornado warning info blocks are stored in the allAlerts list. Sort this list by time, then step through and apply some 
     # logic to parse out individual warning threads for area descriptions
 
-    allAlerts.sort(key = lambda x: x.startTime)
+    allAlerts.sort(key = lambda x: x.sentTime)
 
     parseAlerts(finalAlerts, activeAlerts, allAlerts, session)
 
@@ -282,17 +339,17 @@ def readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlert
 
 def writeAlertsToCSV(alerts, filename):
     #print("here! (CSV)")
-    with open(filename, mode='a', newline='') as alertFile:
+    with open(filename, mode='a', newline='', encoding="utf-8") as alertFile:
         csvWriter = csv.writer(alertFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for alert in alerts:
-            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri, alert.jsonLink])
+            csvWriter.writerow([alert.startTime.strftime("%y/%m/%d"), alert.location, alert.stormGeometry, alert.stormMotion, alert.province, alert.startTime.strftime("%H:%M"), alert.startUri, alert.endTime.strftime("%H:%M"), alert.endUri, alert.jsonLink])
 
 def main():    
 
     # Take input from Github Actions
     currentHour, endHour = parse_args()
-    # currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
-    # endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    #currentHour = datetime.strptime(f"{input('Input the starting date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
+    #endHour = datetime.strptime(f"{input('Input the ending date to read alerts from (YYYY/MM/DD/HH): ').strip()}", "%Y/%m/%d/%H")
 
     allAlerts = []
     finalAlerts = []
@@ -313,7 +370,7 @@ def main():
         #print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
     # Save finished alerts to CSV
-    writeAlertsToCSV(finalAlerts, "finalAlerts.csv")
+    writeAlertsToCSV(finalAlerts, "polygonAlerts.csv")
 
     # Save active alerts to a live JSON file that will be read next execution
     writeAlertsToJSON(activeAlerts, "active_alerts.json")
