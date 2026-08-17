@@ -351,7 +351,7 @@ def writeAlertsToCSV(alerts, filename):
 
 def get_google_sheet(sheetName):
     creds_json = os.environ["GOOGLE_SHEETS_CREDENTIALS"]  # set via GitHub Actions secret
-    GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
+    #GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
     creds_dict = json.loads(creds_json)
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
