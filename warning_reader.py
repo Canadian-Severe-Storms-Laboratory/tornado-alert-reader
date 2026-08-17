@@ -405,10 +405,10 @@ def main():
     # Save finished alerts to CSV
     writeAlertsToCSV(finalAlerts, "polygonAlerts.csv")
 
-    try:
-        writeAlertsToGoogleSheet(finalAlerts, get_google_sheet("Warning"))
-    except Exception as e:
-        return
+    #try:
+    #    writeAlertsToGoogleSheet(finalAlerts, get_google_sheet("Warning"))
+    #except Exception as e:
+    #    return
 
     # Save active alerts to a live JSON file that will be read next execution
     writeAlertsToJSON(activeAlerts, "active_alerts.json")
