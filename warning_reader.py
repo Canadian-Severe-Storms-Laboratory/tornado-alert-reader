@@ -397,10 +397,10 @@ def main():
 
     #print("\n\nFinal Alerts:")
     #for alert in finalAlerts:
-        #print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}, Province: {alert.province}")    
+    #    print(f"Location: {alert.location}, Start Time: {alert.startTime}, End Time: {alert.endTime}, Province: {alert.province}")    
     #print("\n\nActive Alerts:")
     #for alert in activeAlerts:
-        #print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
+    #    print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
     # Save finished alerts to CSV
     writeAlertsToCSV(finalAlerts, "polygonAlerts.csv")
