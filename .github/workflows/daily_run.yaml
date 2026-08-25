@@ -34,18 +34,18 @@ jobs:
       # -------------------------
       # WARNING READER
       # -------------------------
-      #- name: Run warning tracker
-      #  env:
-      #    GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-      #    GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-      #  run: |
-      #    if [ -n "${{ github.event.inputs.start }}" ]; then
-      #      python Warnings/warning_reader.py \
-      #        --start "${{ github.event.inputs.start }}" \
-      #        --end "${{ github.event.inputs.end }}"
-      #    else
-      #      python Warnings/warning_reader.py
-      #    fi
+      - name: Run warning tracker
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        run: |
+          if [ -n "${{ github.event.inputs.start }}" ]; then
+           python Warnings/warning_reader.py \
+              --start "${{ github.event.inputs.start }}" \
+              --end "${{ github.event.inputs.end }}"
+          else
+            python Warnings/warning_reader.py
+          fi
 
       # -------------------------
       # WATCH READER
@@ -85,6 +85,7 @@ jobs:
             Watches/finalWatches.csv \
             Watches/active_watches.json \
             Watches/Archived_Files/
+            Logs/fetch_log.txt
 
           git diff --staged --quiet || git commit -m "Daily warning and watch update: $(date -u +%Y-%m-%d)"
 
