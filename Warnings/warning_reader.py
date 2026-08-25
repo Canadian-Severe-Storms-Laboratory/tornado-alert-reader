@@ -14,7 +14,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from google.oauth2.service_account import Credentials
 
-GITHUB_OWNER = "JThompson-007"
+GITHUB_OWNER = "Canadian-Severe-Storms-Laboratory"
 GITHUB_REPO = "tornado-alert-reader"
 GITHUB_BRANCH = "main"
 
