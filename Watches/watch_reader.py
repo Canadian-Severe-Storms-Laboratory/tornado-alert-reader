@@ -157,7 +157,10 @@ def writeAlertsToJSON(activeAlerts, filename):
             )
     
     with open(filename, mode="w") as f:
-        json.dump(alertList, f, indent=2)    
+        if alertList == []:
+            f.write("[]")
+        else:
+            json.dump(alertList, f, indent=2)    
 
 
 def searchAlertList(alertList, location) -> int:
