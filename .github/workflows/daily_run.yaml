@@ -53,6 +53,7 @@ jobs:
       - name: Run watch tracker
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
         run: |
           if [ -n "${{ github.event.inputs.start }}" ]; then
             python Watches/watch_reader.py \
