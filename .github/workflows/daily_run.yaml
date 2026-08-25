@@ -34,33 +34,33 @@ jobs:
       # -------------------------
       # WARNING READER
       # -------------------------
-      - name: Run warning tracker
-        env:
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        run: |
-          if [ -n "${{ github.event.inputs.start }}" ]; then
-            python Warnings/warning_reader.py \
-              --start "${{ github.event.inputs.start }}" \
-              --end "${{ github.event.inputs.end }}"
-          else
-            python Warnings/warning_reader.py
-          fi
+      #- name: Run warning tracker
+      #  env:
+      #    GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+      #    GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+      #  run: |
+      #    if [ -n "${{ github.event.inputs.start }}" ]; then
+      #      python Warnings/warning_reader.py \
+      #        --start "${{ github.event.inputs.start }}" \
+      #        --end "${{ github.event.inputs.end }}"
+      #    else
+      #      python Warnings/warning_reader.py
+      #    fi
 
       # -------------------------
       # WATCH READER
       # -------------------------
-      #- name: Run watch tracker
-      #  env:
-      #    GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-      #  run: |
-      #    if [ -n "${{ github.event.inputs.start }}" ]; then
-      #      python Watches/watch_reader.py \
-      #        --start "${{ github.event.inputs.start }}" \
-      #        --end "${{ github.event.inputs.end }}"
-      #    else
-      #      python Watches/watch_reader.py
-      #    fi
+      - name: Run watch tracker
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: |
+          if [ -n "${{ github.event.inputs.start }}" ]; then
+            python Watches/watch_reader.py \
+              --start "${{ github.event.inputs.start }}" \
+              --end "${{ github.event.inputs.end }}"
+          else
+            python Watches/watch_reader.py
+          fi
 
       # -------------------------
       # LOG SUCCESSFUL RUN
