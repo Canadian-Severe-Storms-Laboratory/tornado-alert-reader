@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.2921200729.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-29T02:20:29-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.2127139955.2026,2026-07-28T18:45:12-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0526095423.2026,2026-07-29T00:41:05-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3038808526.2026,2026-07-29T01:15:28-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Minor</severity>
+        <certainty>Unknown</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-29T02:20:29-00:00</effective>
+        <expires>2026-07-29T02:20:29-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - changed</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260729021929053/WW_16_76_CWWG/TRV/162231853432649467202607280501_WW_16_76_CWWG-2-n1488549671/system/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21867 M:112857 C:130718</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Northern Alberta</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_16_76_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Transitioned_Out_CAP_Reference</valueName>
+            <value>cap-pac@canada.ca,urn:oid:2.49.0.1.124.1285871985.2026,2026-07-29T02:20:29-00:00;076130,076141,076142,076151,076152,076153,076154,076160</value>
+        </parameter>
+        <area>
+            <areaDesc>M.D. of Lesser Slave River near Chisholm and Cross Lake</areaDesc>
+            <polygon>54.8505,-113.661 54.7618,-113.6661 54.7609,-113.6824 54.7616,-113.6996 54.7266,-113.6952 54.6741,-113.6999 54.6345,-113.697 54.5869,-113.6983 54.5827,-114.006 54.589,-114.2991 54.5902,-114.364 54.6016,-114.3413 54.6448,-114.3267 54.6713,-114.3534 54.6879,-114.3422 54.706,-114.313 54.7483,-114.3092 54.7856,-114.3098 54.8351,-114.2715 54.8502,-114.2501 54.85,-114.307 54.85,-114.3322 54.8901,-114.3356 54.9376,-114.3323 54.9361,-113.6656 54.8505,-113.661</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076130</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4817033</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Westlock Co. near Larkspur Fawcett and Jarvie</areaDesc>
+            <polygon>54.3338,-113.5997 54.3266,-113.6005 54.3267,-114.2768 54.3717,-114.2801 54.412,-114.2782 54.4118,-114.3042 54.4999,-114.3125 54.5,-114.3269 54.5,-114.3499 54.5143,-114.3702 54.5308,-114.3507 54.5612,-114.3472 54.5689,-114.3568 54.5765,-114.3662 54.5902,-114.364 54.5908,-114.2981 54.5926,-114.0285 54.5869,-113.6983 54.5107,-113.6718 54.3628,-113.6845 54.3639,-113.6472 54.363,-113.6118 54.3402,-113.6117 54.3402,-113.6003 54.3338,-113.5997</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076141</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813033</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Westlock Co. near Westlock and Clyde</areaDesc>
+            <polygon>54.2974,-113.2967 54.2684,-113.3005 54.2669,-113.3361 54.2683,-113.3747 54.255,-113.3735 54.2392,-113.3756 54.1628,-113.3669 54.094,-113.3754 54.0939,-113.3504 54.0784,-113.3465 54.065,-113.3505 54.065,-113.3463 54.0426,-113.344 54.022,-113.3478 54.0177,-113.4645 54.0196,-113.5162 54.0216,-113.5702 54.007,-113.5703 54.0047,-113.6164 54.0072,-113.6695 53.9993,-113.6653 53.9926,-113.6696 53.9898,-113.721 53.9923,-113.7801 53.977,-113.7761 53.9639,-113.7798 53.9637,-113.8048 53.9199,-113.8046 53.9177,-113.8362 53.92,-113.868 53.9054,-113.868 53.9052,-113.9779 53.9122,-113.9905 53.9266,-113.9909 53.9267,-114.0513 53.9976,-114.0557 54.0649,-114.0515 54.063,-114.0979 54.0648,-114.1517 54.1216,-114.1546 54.1813,-114.1518 54.18,-114.1635 54.1812,-114.1769 54.2091,-114.1806 54.2395,-114.1769 54.2369,-114.2252 54.2394,-114.2768 54.2846,-114.2856 54.3267,-114.2768 54.3266,-113.6005 54.3296,-113.4412 54.3266,-113.2993 54.2974,-113.2967</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076142</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813032</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Athabasca Co. near Athabasca and Island Lake</areaDesc>
+            <polygon>54.7617,-113.0292 54.6743,-113.0294 54.6741,-113.6999 54.7196,-113.7072 54.7616,-113.6996 54.7629,-113.6818 54.7618,-113.6661 54.8508,-113.6701 54.9361,-113.6656 54.9377,-113.5024 54.9362,-113.3603 55.0117,-113.3626 55.0243,-113.3615 55.0276,-113.1864 55.0249,-113.0287 54.7617,-113.0292</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076151</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813049</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813051</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813061</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Athabasca Co. near Rochester Colinton and Meanook</areaDesc>
+            <polygon>54.6743,-113.0294 54.4556,-113.0294 54.4551,-113.1043 54.4418,-113.1046 54.4411,-113.1288 54.4415,-113.1544 54.4275,-113.1534 54.4133,-113.1544 54.4128,-113.187 54.4134,-113.2232 54.3985,-113.2225 54.3848,-113.2232 54.3842,-113.2354 54.3848,-113.2501 54.3562,-113.248 54.3266,-113.2506 54.3257,-113.2738 54.3266,-113.2993 54.3234,-113.4414 54.3266,-113.6005 54.3338,-113.6012 54.3402,-113.6003 54.3402,-113.6117 54.363,-113.6118 54.362,-113.6478 54.3628,-113.6845 54.5088,-113.6985 54.5869,-113.6983 54.6342,-113.7025 54.6741,-113.6999 54.6743,-113.0294</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076152</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Athabasca Co. near Grassland and Atmore</areaDesc>
+            <polygon>54.9977,-112.9032 55.0003,-112.7858 55.0239,-112.826 55.0237,-112.7432 55.0239,-112.6682 55.0239,-112.4447 54.8916,-112.4414 54.7635,-112.4457 54.7618,-112.4457 54.7617,-113.0292 55.0249,-113.0287 55.026,-112.9635 55.0257,-112.9038 54.9977,-112.9032</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076153</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Athabasca Co. near Boyle and Caslan</areaDesc>
+            <polygon>54.7617,-113.0292 54.7618,-112.4457 54.7635,-112.4457 54.7652,-112.4302 54.7653,-112.4244 54.674,-112.4203 54.5874,-112.4253 54.5865,-112.4613 54.5874,-112.5009 54.5828,-112.5006 54.5789,-112.5009 54.5653,-112.5134 54.5653,-112.5756 54.5301,-112.5742 54.5,-112.5749 54.4968,-112.684 54.5001,-112.8033 54.4779,-112.8033 54.4562,-112.8033 54.4541,-112.9224 54.4556,-113.0294 54.6743,-113.0294 54.7617,-113.0292</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076154</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813046</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813053</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Thorhild Co. near Newbrook and Long Lake Prov. Park</areaDesc>
+            <polygon>54.4556,-113.0294 54.4584,-112.9161 54.4562,-112.8033 54.4779,-112.8033 54.5001,-112.8033 54.5027,-112.6869 54.5,-112.5749 54.4233,-112.5699 54.413,-112.5763 54.413,-112.5999 54.3261,-112.5977 54.3253,-112.6424 54.326,-112.6893 54.2978,-112.6878 54.269,-112.6903 54.2686,-112.691 54.2673,-112.7258 54.2678,-112.7624 54.252,-112.7614 54.2386,-112.7621 54.2392,-113.3756 54.2547,-113.3761 54.2683,-113.3747 54.27,-113.3357 54.2684,-113.3005 54.2969,-113.3015 54.3266,-113.2993 54.3277,-113.2736 54.3266,-113.2506 54.3553,-113.2519 54.3848,-113.2501 54.3855,-113.2354 54.3848,-113.2232 54.3983,-113.2247 54.4134,-113.2232 54.4139,-113.1876 54.4133,-113.1544 54.4276,-113.1551 54.4415,-113.1544 54.4423,-113.1282 54.4418,-113.1046 54.4551,-113.1043 54.4556,-113.0294</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076160</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813036</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Minor</severity>
+        <certainty>Unknown</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-29T02:20:29-00:00</effective>
+        <expires>2026-07-29T02:20:29-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - changée</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260729021929053/WW_16_76_CWWG/TRV/162231853432649467202607280501_WW_16_76_CWWG-2-n1488549671/system/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21867 M:112857 C:130718</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>nord de l'Alberta</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_16_76_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>transitioned_out</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Transitioned_Out_CAP_Reference</valueName>
+            <value>cap-pac@canada.ca,urn:oid:2.49.0.1.124.1285871985.2026,2026-07-29T02:20:29-00:00;076130,076141,076142,076151,076152,076153,076154,076160</value>
+        </parameter>
+        <area>
+            <areaDesc>d.m. de Lesser Slave River près de Chisholm et du lac Cross</areaDesc>
+            <polygon>54.8505,-113.661 54.7618,-113.6661 54.7609,-113.6824 54.7616,-113.6996 54.7266,-113.6952 54.6741,-113.6999 54.6345,-113.697 54.5869,-113.6983 54.5827,-114.006 54.589,-114.2991 54.5902,-114.364 54.6016,-114.3413 54.6448,-114.3267 54.6713,-114.3534 54.6879,-114.3422 54.706,-114.313 54.7483,-114.3092 54.7856,-114.3098 54.8351,-114.2715 54.8502,-114.2501 54.85,-114.307 54.85,-114.3322 54.8901,-114.3356 54.9376,-114.3323 54.9361,-113.6656 54.8505,-113.661</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076130</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4817033</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Westlock près de Larkspur Fawcett et Jarvie</areaDesc>
+            <polygon>54.3338,-113.5997 54.3266,-113.6005 54.3267,-114.2768 54.3717,-114.2801 54.412,-114.2782 54.4118,-114.3042 54.4999,-114.3125 54.5,-114.3269 54.5,-114.3499 54.5143,-114.3702 54.5308,-114.3507 54.5612,-114.3472 54.5689,-114.3568 54.5765,-114.3662 54.5902,-114.364 54.5908,-114.2981 54.5926,-114.0285 54.5869,-113.6983 54.5107,-113.6718 54.3628,-113.6845 54.3639,-113.6472 54.363,-113.6118 54.3402,-113.6117 54.3402,-113.6003 54.3338,-113.5997</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076141</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813033</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Westlock près Westlock et Clyde</areaDesc>
+            <polygon>54.2974,-113.2967 54.2684,-113.3005 54.2669,-113.3361 54.2683,-113.3747 54.255,-113.3735 54.2392,-113.3756 54.1628,-113.3669 54.094,-113.3754 54.0939,-113.3504 54.0784,-113.3465 54.065,-113.3505 54.065,-113.3463 54.0426,-113.344 54.022,-113.3478 54.0177,-113.4645 54.0196,-113.5162 54.0216,-113.5702 54.007,-113.5703 54.0047,-113.6164 54.0072,-113.6695 53.9993,-113.6653 53.9926,-113.6696 53.9898,-113.721 53.9923,-113.7801 53.977,-113.7761 53.9639,-113.7798 53.9637,-113.8048 53.9199,-113.8046 53.9177,-113.8362 53.92,-113.868 53.9054,-113.868 53.9052,-113.9779 53.9122,-113.9905 53.9266,-113.9909 53.9267,-114.0513 53.9976,-114.0557 54.0649,-114.0515 54.063,-114.0979 54.0648,-114.1517 54.1216,-114.1546 54.1813,-114.1518 54.18,-114.1635 54.1812,-114.1769 54.2091,-114.1806 54.2395,-114.1769 54.2369,-114.2252 54.2394,-114.2768 54.2846,-114.2856 54.3267,-114.2768 54.3266,-113.6005 54.3296,-113.4412 54.3266,-113.2993 54.2974,-113.2967</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076142</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813032</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté d'Athabasca près d'Athabasca et Island Lake</areaDesc>
+            <polygon>54.7617,-113.0292 54.6743,-113.0294 54.6741,-113.6999 54.7196,-113.7072 54.7616,-113.6996 54.7629,-113.6818 54.7618,-113.6661 54.8508,-113.6701 54.9361,-113.6656 54.9377,-113.5024 54.9362,-113.3603 55.0117,-113.3626 55.0243,-113.3615 55.0276,-113.1864 55.0249,-113.0287 54.7617,-113.0292</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076151</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813049</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813051</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813057</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813061</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté d'Athabasca près de Rochester Colinton et Meanook</areaDesc>
+            <polygon>54.6743,-113.0294 54.4556,-113.0294 54.4551,-113.1043 54.4418,-113.1046 54.4411,-113.1288 54.4415,-113.1544 54.4275,-113.1534 54.4133,-113.1544 54.4128,-113.187 54.4134,-113.2232 54.3985,-113.2225 54.3848,-113.2232 54.3842,-113.2354 54.3848,-113.2501 54.3562,-113.248 54.3266,-113.2506 54.3257,-113.2738 54.3266,-113.2993 54.3234,-113.4414 54.3266,-113.6005 54.3338,-113.6012 54.3402,-113.6003 54.3402,-113.6117 54.363,-113.6118 54.362,-113.6478 54.3628,-113.6845 54.5088,-113.6985 54.5869,-113.6983 54.6342,-113.7025 54.6741,-113.6999 54.6743,-113.0294</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076152</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté d'Athabasca près de Grassland et Atmore</areaDesc>
+            <polygon>54.9977,-112.9032 55.0003,-112.7858 55.0239,-112.826 55.0237,-112.7432 55.0239,-112.6682 55.0239,-112.4447 54.8916,-112.4414 54.7635,-112.4457 54.7618,-112.4457 54.7617,-113.0292 55.0249,-113.0287 55.026,-112.9635 55.0257,-112.9038 54.9977,-112.9032</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076153</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté d'Athabasca près de Boyle et Caslan</areaDesc>
+            <polygon>54.7617,-113.0292 54.7618,-112.4457 54.7635,-112.4457 54.7652,-112.4302 54.7653,-112.4244 54.674,-112.4203 54.5874,-112.4253 54.5865,-112.4613 54.5874,-112.5009 54.5828,-112.5006 54.5789,-112.5009 54.5653,-112.5134 54.5653,-112.5756 54.5301,-112.5742 54.5,-112.5749 54.4968,-112.684 54.5001,-112.8033 54.4779,-112.8033 54.4562,-112.8033 54.4541,-112.9224 54.4556,-113.0294 54.6743,-113.0294 54.7617,-113.0292</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076154</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813044</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813045</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813046</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813053</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Thorhild près de Newbrook et du Long Lake Prov. Park</areaDesc>
+            <polygon>54.4556,-113.0294 54.4584,-112.9161 54.4562,-112.8033 54.4779,-112.8033 54.5001,-112.8033 54.5027,-112.6869 54.5,-112.5749 54.4233,-112.5699 54.413,-112.5763 54.413,-112.5999 54.3261,-112.5977 54.3253,-112.6424 54.326,-112.6893 54.2978,-112.6878 54.269,-112.6903 54.2686,-112.691 54.2673,-112.7258 54.2678,-112.7624 54.252,-112.7614 54.2386,-112.7621 54.2392,-113.3756 54.2547,-113.3761 54.2683,-113.3747 54.27,-113.3357 54.2684,-113.3005 54.2969,-113.3015 54.3266,-113.2993 54.3277,-113.2736 54.3266,-113.2506 54.3553,-113.2519 54.3848,-113.2501 54.3855,-113.2354 54.3848,-113.2232 54.3983,-113.2247 54.4134,-113.2232 54.4139,-113.1876 54.4133,-113.1544 54.4276,-113.1551 54.4415,-113.1544 54.4423,-113.1282 54.4418,-113.1046 54.4551,-113.1043 54.4556,-113.0294</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>076160</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4813036</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>oEthf7EmBgO4se5/C+/KoRC+Q0aj9JacWrnTEnzFlM4=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>kKvenZ4+an+CsydSac3EOPw+JhWlmU4AsHemZP6UZYbyzyCeSWeSASTV5OLj2iG0
++iVDZhuQn6O2elbw+6Hra0gOf4EEBUSAg4lhLpk1ZbODn/BCSz3Zfa+CiljjStrx
+kp3wJOXk7cSnBoCUxOjxL++hOB0aJlrjSYrZXo/RdpFP8Q3Am/9YOxGrC47x7SgQ
+Ks9FOyJEu3MsL4bHN4Mvh2SN0nAeOswHgsDyvkbSdUBKENPxcrRrjo1+M+8zlpWZ
+TE+E9ArW31IwQYtoBpjPjoDewKM9H0AEQQNe0Vnf1sRVJDs74zWqUcGXkm1o8q0Y
+2iWNCwDPpWjgc/2sSQciVw==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

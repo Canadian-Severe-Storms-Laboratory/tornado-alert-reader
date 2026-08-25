@@ -162,7 +162,7 @@ def generateRepoLink(relativePath) -> str:
 
 def generateGEOJSON(polygonList, currentLocation, prov, startTime) -> str:
     # Generate filename based on location and start time
-    jsonPath = f"Archived_Files/Polygons/{startTime.strftime('%Y/%m/%d')}/" + f"{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.geojson".replace(" ", "").replace(":", "")
+    jsonPath = f"Warnings/Archived_Files/Polygons/{startTime.strftime('%Y/%m/%d')}/" + f"{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.geojson".replace(" ", "").replace(":", "")
     # Convert the text list of (lat, lon) coordinates to a list of float (lon, lat) to fit GEOJSON format
     polygons = []
     for polygonText in polygonList:
@@ -184,7 +184,7 @@ def generateGEOJSON(polygonList, currentLocation, prov, startTime) -> str:
     return jsonPath
 
 def downloadCAP(URL, session, startTime, currentLocation, prov, startend) -> str:
-    capPath = f"Archived_Files/CAP_Alerts/{startTime.strftime('%Y/%m/%d')}/" + f"{startend}-{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.cap".replace(" ", "").replace(":", "")
+    capPath = f"Warnings/Archived_Files/CAP_Alerts/{startTime.strftime('%Y/%m/%d')}/" + f"{startend}-{currentLocation}-{prov}-{startTime.strftime('%H%M%S')}.cap".replace(" ", "").replace(":", "")
     # create directory, if needed
     Path(capPath).parent.mkdir(parents=True, exist_ok=True)
 
@@ -248,7 +248,7 @@ def parseAlerts(finalAlerts, activeAlerts, allAlerts, session):
 
         # Skip updates that are just minor textual updates
         if(alert.isMinor):
-            print(f"flagging: {alert.id} for minor textual changes")
+            # print(f"flagging: {alert.id} for minor textual changes")
             continue
         
         # New string of warnings, not an update to existing warnings.
@@ -351,7 +351,6 @@ def writeAlertsToCSV(alerts, filename):
 
 def get_google_sheet(sheetName):
     creds_json = os.environ["GOOGLE_SHEETS_CREDENTIALS"]  # set via GitHub Actions secret
-    #GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
     creds_dict = json.loads(creds_json)
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
@@ -387,7 +386,7 @@ def main():
     allAlerts = []
     finalAlerts = []
     activeAlerts = []
-    readActiveAlerts(activeAlerts, "active_alerts.json")
+    readActiveAlerts(activeAlerts, "Warnings/active_warnings.json")
 
     readAlertsForRange(currentHour, endHour, finalAlerts, activeAlerts, allAlerts)
 
@@ -403,7 +402,7 @@ def main():
     #    print(f"Location: {alert.location}, Start Time: {alert.startTime}, Expiry Time: {alert.expiryTime}, Province: {alert.province}")
 
     # Save finished alerts to CSV
-    writeAlertsToCSV(finalAlerts, "polygonAlerts.csv")
+    writeAlertsToCSV(finalAlerts, "Warnings/finalWarnings.csv")
 
     try:
         writeAlertsToGoogleSheet(finalAlerts, get_google_sheet("Warning"))
@@ -411,7 +410,7 @@ def main():
         return
 
     # Save active alerts to a live JSON file that will be read next execution
-    writeAlertsToJSON(activeAlerts, "active_alerts.json")
+    writeAlertsToJSON(activeAlerts, "Warnings/active_warnings.json")
 
 if __name__ == "__main__":
     main()

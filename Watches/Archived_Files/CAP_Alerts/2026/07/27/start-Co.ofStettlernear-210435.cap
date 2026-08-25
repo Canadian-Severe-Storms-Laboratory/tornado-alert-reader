@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.2565357091.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-27T21:04:35-00:00</sent>
+    <status>Actual</status>
+    <msgType>Alert</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references/>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-27T21:04:35-00:00</effective>
+        <onset>2026-07-27T21:02:00-00:00</onset>
+        <expires>2026-07-28T06:02:35-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - in effect</headline>
+        <description>
+Conditions are favourable for the development of severe thunderstorms which may produce tornadoes. Strong winds, large hail and heavy rain are also possible.
+
+The greatest risk for tornadoes will be through 7 PM local time.
+
+Any storm with the potential to produce tornadoes will be accompanied by hail up to the size of baseballs.
+
+###
+
+Significant damage or destruction to infrastructure, homes and the natural environment is possible.
+
+Tornado watches are issued when conditions are favourable for the development of severe thunderstorms capable of producing tornadoes.
+
+Please continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to ABstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #ABStorm.
+</description>
+        <instruction>
+In the event of a tornado, or if a tornado warning is issued for your area: go indoors to a room on the lowest floor, away from outside walls and windows, such as a basement, bathroom, stairwell or interior closet. Leave mobile homes, vehicles, tents, trailers and other temporary or free-standing shelter, and move to a strong building if you can. As a last resort, lie in a low spot and protect your head from flying debris. Be prepared for severe weather.  If you hear a roaring sound or see a funnel cloud, swirling debris near the ground, flying debris, or any threatening weather approaching, take cover immediately. When out on the water, be prepared for severe weather. If threatening weather approaches make for shore and take shelter immediately. It is particularly dangerous to be on a small craft on the open water when lightning is occurring.
+</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260727210327524/WW_15_75_CWWG/TRV/210327524432649467202607270501_WW_15_75_CWWG/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21748 M:112274 C:129959</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Southern Alberta</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_15_75_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>072131,072132,072133,072134,072135,072150,072160,074111,074112,074113,074131</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-28T04:02:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>yellow</value>
+        </parameter>
+        <area>
+            <areaDesc>Co. of Stettler near Stettler Nevis and Rochon Sands</areaDesc>
+            <polygon>52.4924,-112.5759 52.1427,-112.5756 52.1427,-112.9924 52.1427,-113.0276 52.1374,-113.0576 52.1813,-113.064 52.2108,-113.1045 52.2467,-113.1081 52.2611,-113.094 52.2997,-113.1086 52.3174,-113.0914 52.3176,-113.0757 52.3365,-113.077 52.3587,-113.0785 52.3907,-113.0766 52.3912,-113.0495 52.4275,-113.0481 52.4462,-112.998 52.476,-112.9718 52.4909,-112.9485 52.4925,-112.9269 52.4939,-112.8973 52.494,-112.8937 52.4925,-112.8444 52.4934,-112.7848 52.4924,-112.7396 52.4924,-112.5759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072131</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807026</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807027</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807028</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Stettler near Big Valley</areaDesc>
+            <polygon>51.8854,-112.5759 51.8812,-112.5759 51.8801,-112.6381 51.8815,-112.6969 51.9105,-112.6973 51.9093,-112.7681 51.9107,-112.8388 51.9253,-112.839 51.9239,-112.9149 51.9242,-112.9358 51.925,-112.9819 51.9275,-113.0139 51.9685,-112.9483 51.9694,-112.9469 51.9702,-112.9454 51.994,-112.9458 52.0515,-113.0027 52.0948,-113.0455 52.126,-113.0543 52.1374,-113.0576 52.1427,-113.0276 52.1427,-112.9924 52.1427,-112.5756 51.8854,-112.5759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072132</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807021</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Stettler near Donalda</areaDesc>
+            <polygon>52.6681,-112.4229 52.6679,-112.3982 52.6676,-112.3687 52.6481,-112.3547 52.6272,-112.3579 52.5291,-112.274 52.5215,-112.2569 52.5075,-112.2596 52.4993,-112.2583 52.492,-112.2591 52.4924,-112.5759 52.4924,-112.7396 52.4914,-112.7862 52.4925,-112.8444 52.5802,-112.832 52.5814,-112.785 52.5799,-112.741 52.5798,-112.7397 52.58,-112.7377 52.5807,-112.7083 52.5799,-112.6788 52.6381,-112.6784 52.6392,-112.6338 52.6379,-112.5947 52.6537,-112.596 52.6678,-112.5957 52.6691,-112.5098 52.6681,-112.4229</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072133</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807029</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Stettler near Botha and Gadsby</areaDesc>
+            <polygon>52.1427,-112.243 52.1427,-112.5756 52.4924,-112.5759 52.492,-112.2591 52.4046,-112.2548 52.3176,-112.2596 52.3177,-112.2427 52.2319,-112.2378 52.1427,-112.243</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072134</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807022</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807024</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Stettler near Byemoor and Endiang</areaDesc>
+            <polygon>52.0142,-112.0071 51.9685,-111.9814 51.8888,-111.9797 51.8815,-111.9902 51.8804,-112.0695 51.8818,-112.1546 51.8527,-112.1546 51.8524,-112.1775 51.8527,-112.2013 51.8516,-112.234 51.8528,-112.2714 51.8673,-112.2717 51.8665,-112.3175 51.8674,-112.3662 51.8818,-112.3664 51.8807,-112.4508 51.8813,-112.5364 51.8808,-112.5543 51.8812,-112.5759 51.8854,-112.5759 52.1427,-112.5756 52.1427,-112.243 52.1429,-112.2311 52.1427,-112.2192 52.1141,-112.2171 52.0845,-112.2194 52.0856,-112.1487 52.0842,-112.0674 52.0142,-112.0071</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072135</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Paintearth near Halkirk and Big Knife Prov. Park</areaDesc>
+            <polygon>52.4859,-112.1209 52.4763,-112.0486 52.4854,-112.0075 52.4626,-111.9493 52.4452,-111.9813 52.4326,-111.9813 51.9685,-111.9814 52.0142,-112.0071 52.0842,-112.0674 52.0831,-112.1496 52.0845,-112.2194 52.1146,-112.2213 52.1427,-112.2192 52.1426,-112.2312 52.1427,-112.243 52.2319,-112.2489 52.3177,-112.2427 52.3176,-112.2596 52.4056,-112.2646 52.492,-112.2591 52.4998,-112.2607 52.5075,-112.2596 52.5215,-112.2569 52.4859,-112.1209</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072150</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807016</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Flagstaff Co. near Forestburg and Galahad</areaDesc>
+            <polygon>52.6675,-111.8759 52.457,-111.8755 52.4432,-111.8755 52.4293,-111.8799 52.4372,-111.9354 52.4326,-111.9813 52.4317,-111.9903 52.4447,-112.0058 52.4545,-111.9992 52.4413,-112.0376 52.4547,-112.1295 52.492,-112.2591 52.5072,-112.3046 52.5316,-112.338 52.6159,-112.4144 52.6533,-112.412 52.6681,-112.4229 52.6679,-112.3982 52.6676,-112.3687 52.6676,-111.9869 52.6675,-111.8759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072160</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807036</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807038</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Paintearth near Castor and Fleet</areaDesc>
+            <polygon>52.4088,-111.7403 52.3366,-111.615 52.3511,-111.5928 52.3398,-111.5756 52.3233,-111.5756 52.2301,-111.5756 51.9686,-111.5755 51.9655,-111.7665 51.9685,-111.9814 52.4326,-111.9813 52.4452,-111.9813 52.4626,-111.9493 52.457,-111.8755 52.4558,-111.8596 52.4265,-111.8092 52.4088,-111.7403</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074111</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807014</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Paintearth near Brownfield</areaDesc>
+            <polygon>52.4427,-111.2996 52.4048,-111.3001 52.4061,-111.2237 52.4047,-111.1556 52.3176,-111.1468 52.2886,-111.1475 52.2892,-111.0987 52.2885,-111.0526 52.2594,-111.0041 52.2448,-111.0029 52.2301,-111.0044 52.2287,-111.0716 52.23,-111.1472 52.2301,-111.5756 52.3233,-111.5756 52.3398,-111.5756 52.3511,-111.5928 52.3986,-111.5388 52.4137,-111.424 52.4722,-111.3295 52.4632,-111.2994 52.4427,-111.2996</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074112</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Co. of Paintearth near Coronation and Throne</areaDesc>
+            <polygon>52.1721,-111.1466 52.1715,-111.1688 52.1719,-111.1945 52.1573,-111.1933 52.1434,-111.1951 52.1432,-111.196 52.1424,-111.2193 52.143,-111.2429 52.0635,-111.2363 51.9833,-111.2422 51.9824,-111.2685 51.9836,-111.2901 51.9767,-111.2889 51.9687,-111.2906 51.9652,-111.4453 51.9686,-111.5755 52.2301,-111.5756 52.23,-111.1472 52.1998,-111.1449 52.1721,-111.1466</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074113</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807012</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>S.A. 4 near Veteran and Consort</areaDesc>
+            <polygon>52.2302,-110.868 52.2335,-110.7069 52.2306,-110.5615 52.2306,-110.5586 52.2298,-110.5586 51.9844,-110.5579 51.977,-110.562 51.9678,-110.5565 51.9678,-110.571 51.9678,-110.5709 51.9678,-110.5721 51.9678,-111.2776 51.9687,-111.2906 51.9773,-111.2916 51.9836,-111.2901 51.9842,-111.2672 51.9833,-111.2422 52.0682,-111.2477 52.143,-111.2429 52.1437,-111.2178 52.1434,-111.1951 52.1578,-111.1959 52.1719,-111.1945 52.1728,-111.1699 52.1721,-111.1466 52.2009,-111.1483 52.23,-111.1472 52.2316,-111.0726 52.2301,-111.0044 52.2317,-110.9377 52.2302,-110.868</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074131</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804020</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804021</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804022</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-27T21:04:35-00:00</effective>
+        <onset>2026-07-27T21:02:00-00:00</onset>
+        <expires>2026-07-28T06:02:35-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - en vigueur</headline>
+        <description>
+Les conditions sont propices à la formation d'orages violents qui pourraient produire des tornades. Des vents forts, de la grosse grêle et de la forte pluie sont aussi possibles.
+
+Le risque de tornade sera le plus élevé jusqu'à 19 h, heure locale.
+
+Tout orage susceptible de produire des tornades sera accompagné de grêle pouvant atteindre la taille d'une balle de baseball.
+
+###
+
+Les infrastructures, les habitations et l’environnement naturel risquent d’être gravement endommagés ou détruits.
+
+Une veille de tornade est émise lorsque les conditions sont propices à la formation d’orages violents pouvant produire des tornades.
+
+Veuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoAB@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #ABMeteo.
+</description>
+        <instruction>
+En cas de tornade, ou si une alerte de tornade est en vigueur dans votre région : rentrez à l’intérieur, gagnez une pièce située à l’étage le plus bas, loin des murs extérieurs et des fenêtres, comme un sous-sol, une salle de bain, une cage d’escalier ou un placard intérieur. Quittez les maisons mobiles, les véhicules, les tentes, les remorques et autres abris temporaires ou autonomes, et gagnez un bâtiment solide si possible. En dernier recours, allongez-vous dans un endroit bas et protégez votre tête des débris volants. Soyez prêts à faire face à du temps violent. Si vous entendez un grondement ou si vous voyez un nuage en entonnoir, des débris tourbillonnants près du sol, des débris volants ou tout autre phénomène météorologique menaçant, mettez-vous immédiatement à l’abri. Lorsque vous êtes sur l’eau, soyez prêts à composer avec des conditions météorologiques menaçantes. Si du temps menaçant approche, gagnez le rivage et mettez-vous immédiatement à l’abri. Il est particulièrement dangereux de se trouver au large dans une petite embarcation lorsqu’il y a des éclairs.
+</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260727210327524/WW_15_75_CWWG/TRV/210327524432649467202607270501_WW_15_75_CWWG/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21748 M:112274 C:129959</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>sud de l'Alberta</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_15_75_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>072131,072132,072133,072134,072135,072150,072160,074111,074112,074113,074131</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-28T04:02:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>modéré</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>jaune</value>
+        </parameter>
+        <area>
+            <areaDesc>cté de Stettler près de Stettler Nevis et Rochon Sands</areaDesc>
+            <polygon>52.4924,-112.5759 52.1427,-112.5756 52.1427,-112.9924 52.1427,-113.0276 52.1374,-113.0576 52.1813,-113.064 52.2108,-113.1045 52.2467,-113.1081 52.2611,-113.094 52.2997,-113.1086 52.3174,-113.0914 52.3176,-113.0757 52.3365,-113.077 52.3587,-113.0785 52.3907,-113.0766 52.3912,-113.0495 52.4275,-113.0481 52.4462,-112.998 52.476,-112.9718 52.4909,-112.9485 52.4925,-112.9269 52.4939,-112.8973 52.494,-112.8937 52.4925,-112.8444 52.4934,-112.7848 52.4924,-112.7396 52.4924,-112.5759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072131</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807026</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807027</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807028</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Stettler près de Big Valley</areaDesc>
+            <polygon>51.8854,-112.5759 51.8812,-112.5759 51.8801,-112.6381 51.8815,-112.6969 51.9105,-112.6973 51.9093,-112.7681 51.9107,-112.8388 51.9253,-112.839 51.9239,-112.9149 51.9242,-112.9358 51.925,-112.9819 51.9275,-113.0139 51.9685,-112.9483 51.9694,-112.9469 51.9702,-112.9454 51.994,-112.9458 52.0515,-113.0027 52.0948,-113.0455 52.126,-113.0543 52.1374,-113.0576 52.1427,-113.0276 52.1427,-112.9924 52.1427,-112.5756 51.8854,-112.5759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072132</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807021</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Stettler près de Donalda</areaDesc>
+            <polygon>52.6681,-112.4229 52.6679,-112.3982 52.6676,-112.3687 52.6481,-112.3547 52.6272,-112.3579 52.5291,-112.274 52.5215,-112.2569 52.5075,-112.2596 52.4993,-112.2583 52.492,-112.2591 52.4924,-112.5759 52.4924,-112.7396 52.4914,-112.7862 52.4925,-112.8444 52.5802,-112.832 52.5814,-112.785 52.5799,-112.741 52.5798,-112.7397 52.58,-112.7377 52.5807,-112.7083 52.5799,-112.6788 52.6381,-112.6784 52.6392,-112.6338 52.6379,-112.5947 52.6537,-112.596 52.6678,-112.5957 52.6691,-112.5098 52.6681,-112.4229</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072133</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807029</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Stettler près de Botha et Gadsby</areaDesc>
+            <polygon>52.1427,-112.243 52.1427,-112.5756 52.4924,-112.5759 52.492,-112.2591 52.4046,-112.2548 52.3176,-112.2596 52.3177,-112.2427 52.2319,-112.2378 52.1427,-112.243</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072134</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807022</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807024</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Stettler près de Byemoor et Endiang</areaDesc>
+            <polygon>52.0142,-112.0071 51.9685,-111.9814 51.8888,-111.9797 51.8815,-111.9902 51.8804,-112.0695 51.8818,-112.1546 51.8527,-112.1546 51.8524,-112.1775 51.8527,-112.2013 51.8516,-112.234 51.8528,-112.2714 51.8673,-112.2717 51.8665,-112.3175 51.8674,-112.3662 51.8818,-112.3664 51.8807,-112.4508 51.8813,-112.5364 51.8808,-112.5543 51.8812,-112.5759 51.8854,-112.5759 52.1427,-112.5756 52.1427,-112.243 52.1429,-112.2311 52.1427,-112.2192 52.1141,-112.2171 52.0845,-112.2194 52.0856,-112.1487 52.0842,-112.0674 52.0142,-112.0071</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072135</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807019</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Paintearth près de Halkirk et du Big Knife Prov. Park</areaDesc>
+            <polygon>52.4859,-112.1209 52.4763,-112.0486 52.4854,-112.0075 52.4626,-111.9493 52.4452,-111.9813 52.4326,-111.9813 51.9685,-111.9814 52.0142,-112.0071 52.0842,-112.0674 52.0831,-112.1496 52.0845,-112.2194 52.1146,-112.2213 52.1427,-112.2192 52.1426,-112.2312 52.1427,-112.243 52.2319,-112.2489 52.3177,-112.2427 52.3176,-112.2596 52.4056,-112.2646 52.492,-112.2591 52.4998,-112.2607 52.5075,-112.2596 52.5215,-112.2569 52.4859,-112.1209</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072150</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807016</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Flagstaff près de Forestburg et Galahad</areaDesc>
+            <polygon>52.6675,-111.8759 52.457,-111.8755 52.4432,-111.8755 52.4293,-111.8799 52.4372,-111.9354 52.4326,-111.9813 52.4317,-111.9903 52.4447,-112.0058 52.4545,-111.9992 52.4413,-112.0376 52.4547,-112.1295 52.492,-112.2591 52.5072,-112.3046 52.5316,-112.338 52.6159,-112.4144 52.6533,-112.412 52.6681,-112.4229 52.6679,-112.3982 52.6676,-112.3687 52.6676,-111.9869 52.6675,-111.8759</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>072160</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807036</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807038</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Paintearth près de Castor</areaDesc>
+            <polygon>52.4088,-111.7403 52.3366,-111.615 52.3511,-111.5928 52.3398,-111.5756 52.3233,-111.5756 52.2301,-111.5756 51.9686,-111.5755 51.9655,-111.7665 51.9685,-111.9814 52.4326,-111.9813 52.4452,-111.9813 52.4626,-111.9493 52.457,-111.8755 52.4558,-111.8596 52.4265,-111.8092 52.4088,-111.7403</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074111</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807014</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Paintearth près de Brownfield</areaDesc>
+            <polygon>52.4427,-111.2996 52.4048,-111.3001 52.4061,-111.2237 52.4047,-111.1556 52.3176,-111.1468 52.2886,-111.1475 52.2892,-111.0987 52.2885,-111.0526 52.2594,-111.0041 52.2448,-111.0029 52.2301,-111.0044 52.2287,-111.0716 52.23,-111.1472 52.2301,-111.5756 52.3233,-111.5756 52.3398,-111.5756 52.3511,-111.5928 52.3986,-111.5388 52.4137,-111.424 52.4722,-111.3295 52.4632,-111.2994 52.4427,-111.2996</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074112</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>cté de Paintearth près de Coronation et Throne</areaDesc>
+            <polygon>52.1721,-111.1466 52.1715,-111.1688 52.1719,-111.1945 52.1573,-111.1933 52.1434,-111.1951 52.1432,-111.196 52.1424,-111.2193 52.143,-111.2429 52.0635,-111.2363 51.9833,-111.2422 51.9824,-111.2685 51.9836,-111.2901 51.9767,-111.2889 51.9687,-111.2906 51.9652,-111.4453 51.9686,-111.5755 52.2301,-111.5756 52.23,-111.1472 52.1998,-111.1449 52.1721,-111.1466</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074113</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4807012</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>zone spéciale 4 près de Veteran et Consort</areaDesc>
+            <polygon>52.2302,-110.868 52.2335,-110.7069 52.2306,-110.5615 52.2306,-110.5586 52.2298,-110.5586 51.9844,-110.5579 51.977,-110.562 51.9678,-110.5565 51.9678,-110.571 51.9678,-110.5709 51.9678,-110.5721 51.9678,-111.2776 51.9687,-111.2906 51.9773,-111.2916 51.9836,-111.2901 51.9842,-111.2672 51.9833,-111.2422 52.0682,-111.2477 52.143,-111.2429 52.1437,-111.2178 52.1434,-111.1951 52.1578,-111.1959 52.1719,-111.1945 52.1728,-111.1699 52.1721,-111.1466 52.2009,-111.1483 52.23,-111.1472 52.2316,-111.0726 52.2301,-111.0044 52.2317,-110.9377 52.2302,-110.868</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>074131</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804020</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804021</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4804022</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>Yhi8j6QDyQ3o2nVrrCeynMqf4sJEX3e+Ew+xQUSDeB8=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>EtcBvmfFI1Gg8cXAdhClP5XZ9cGHRxMG13YHZZ2d8QO0ks7sk9jluWLGWLv0aqWK
+/BWkpwSz03hQw2Iy3cW/eq7pZ1C5HCX5SR7jr6NSgHK+L1GkRLR8a29iaMjrF9h6
+3FPGWOofexNS58+07VelVg9h+5A1k56veimi573nmqBK/4qSderx0+zp+bghZIDL
+WQxlhGRoYcEPyyGQDx+9A0eaqFbCQQlFuw11fYx54ABO9Yo+fCKsYtf42KADdW4L
+rhOJ1LjCJUJRrbsXVnaR0mBRXQrYSNjSL0klMN624GyhhrZr4HdxqzOP8a7W0eVn
+CExz13JuvHyDntHC0Vx1Rw==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>

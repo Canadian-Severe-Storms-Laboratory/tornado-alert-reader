@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.1392242183.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-07-25T05:05:20-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.3307493299.2026,2026-07-24T17:42:53-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0305609634.2026,2026-07-24T22:59:01-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0892671167.2026,2026-07-25T01:46:10-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2172822425.2026,2026-07-25T03:32:00-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3748816078.2026,2026-07-25T03:48:07-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.4277311701.2026,2026-07-25T04:27:41-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-25T05:05:20-00:00</effective>
+        <onset>2026-07-25T05:02:00-00:00</onset>
+        <expires>2026-07-25T08:01:20-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - in effect</headline>
+        <description>
+Conditions are favourable for the development of severe thunderstorms which may produce tornadoes. Strong winds, large hail and heavy rain are also possible.
+
+What:
+Risk of tornadoes.
+Wind gusts up to 110 km/h.
+Toonie to golf ball sized hail.
+Heavy rainfall with local amounts up to 50 mm.
+
+When:
+Ending near midnight.
+
+###
+
+Significant damage or destruction to infrastructure, homes and the natural environment is possible.
+
+Tornado watches are issued when conditions are favourable for the development of severe thunderstorms capable of producing tornadoes.
+
+Please continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to ONstorm@ec.gc.ca or post reports on social media using #ONStorm.
+
+For more information: https://www.ontario.ca/page/be-prepared-emergency.
+</description>
+        <instruction>
+In the event of a tornado, or if a tornado warning is issued for your area: go indoors to a room on the lowest floor, away from outside walls and windows, such as a basement, bathroom, stairwell or interior closet. Leave mobile homes, vehicles, tents, trailers and other temporary or free-standing shelter, and move to a strong building if you can. As a last resort, lie in a low spot and protect your head from flying debris. Be prepared for severe weather.  If you hear a roaring sound or see a funnel cloud, swirling debris near the ground, flying debris, or any threatening weather approaching, take cover immediately. When out on the water, be prepared for severe weather. If threatening weather approaches make for shore and take shelter immediately. It is particularly dangerous to be on a small craft on the open water when lightning is occurring.
+
+Emergency Management Ontario recommends that you take cover immediately if threatening weather approaches.
+</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260725050306721/WW_12_72_CWTO/TRV/1636388631691370589202607240503_WW_12_72_CWTO/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21621 M:111627 C:129111</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Northern Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_12_72_CWTO</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-25T06:00:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>yellow</value>
+        </parameter>
+        <area>
+            <areaDesc>Fort Frances - Emo - Rainy River</areaDesc>
+            <polygon>48.5398,-93.4902 48.5279,-93.5435 48.5207,-93.6093 48.5253,-93.6319 48.5158,-93.6438 48.5137,-93.6956 48.5146,-93.7934 48.5292,-93.822 48.5688,-93.8064 48.627,-93.8411 48.6284,-93.9277 48.6484,-94.2275 48.656,-94.2575 48.6826,-94.2547 48.6965,-94.264 48.6989,-94.2762 48.7047,-94.2842 48.7082,-94.3046 48.701,-94.3393 48.7031,-94.3619 48.7099,-94.384 48.7083,-94.4184 48.6933,-94.4393 48.6913,-94.451 48.6952,-94.4704 48.7002,-94.5381 48.7135,-94.5508 48.7165,-94.5883 48.7359,-94.6197 48.7409,-94.645 48.7544,-94.6529 48.7759,-94.6926 48.8242,-94.7042 48.8244,-94.7016 49.0996,-93.4874 49.0813,-93.0991 48.8278,-93.2232 48.6272,-93.3443 48.6097,-93.3504 48.6038,-93.3692 48.601,-93.4214 48.592,-93.4337 48.5887,-93.464 48.5616,-93.4511 48.5466,-93.4591 48.5398,-93.4902</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047510</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559016</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559024</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559026</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559040</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559068</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559069</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559090</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559092</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Seine River Village - Mine Centre</areaDesc>
+            <polygon>48.6272,-93.3443 48.8278,-93.2232 49.0813,-93.0991 49.0644,-92.7424 48.9922,-91.2145 48.324,-92.4487 48.3464,-92.4697 48.3708,-92.48 48.4108,-92.4591 48.418,-92.4791 48.4472,-92.5116 48.4396,-92.5691 48.4352,-92.6564 48.4441,-92.6931 48.4616,-92.7143 48.4967,-92.6996 48.5042,-92.6322 48.5413,-92.6392 48.5427,-92.6538 48.5372,-92.729 48.6075,-92.9543 48.6262,-92.9539 48.6217,-92.9796 48.6211,-93.177 48.6402,-93.2107 48.6388,-93.255 48.6272,-93.3443</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047520</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559065</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559066</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559090</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-25T05:05:20-00:00</effective>
+        <onset>2026-07-25T05:02:00-00:00</onset>
+        <expires>2026-07-25T08:01:20-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - en vigueur</headline>
+        <description>
+Les conditions sont propices à la formation d'orages violents qui pourraient produire des tornades. Des vents forts, de la grosse grêle et de la forte pluie sont aussi possibles.
+
+Quoi :
+Risque de tornades.
+Vents soufflant en rafales jusqu'à 110 km/h
+De la grêle allant de la taille d'une pièce de deux dollars à celle d'une balle de golf.
+Pluie forte déversant jusqu'à 50 mm par endroits.
+
+Quand :
+Cessant vers minuit.
+
+###
+
+Les infrastructures, les habitations et l’environnement naturel risquent d’être gravement endommagés ou détruits.
+
+Une veille de tornade est émise lorsque les conditions sont propices à la formation d’orages violents pouvant produire des tornades.
+
+Veuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoON@ec.gc.ca ou publiez un message sur les réseaux sociaux en utilisant #ONMeteo.
+
+Pour obtenir plus de renseignements : https://www.ontario.ca/fr/page/se-preparer-une-situation-durgence.
+</description>
+        <instruction>
+En cas de tornade, ou si une alerte de tornade est en vigueur dans votre région : rentrez à l’intérieur, gagnez une pièce située à l’étage le plus bas, loin des murs extérieurs et des fenêtres, comme un sous-sol, une salle de bain, une cage d’escalier ou un placard intérieur. Quittez les maisons mobiles, les véhicules, les tentes, les remorques et autres abris temporaires ou autonomes, et gagnez un bâtiment solide si possible. En dernier recours, allongez-vous dans un endroit bas et protégez votre tête des débris volants. Soyez prêts à faire face à du temps violent. Si vous entendez un grondement ou si vous voyez un nuage en entonnoir, des débris tourbillonnants près du sol, des débris volants ou tout autre phénomène météorologique menaçant, mettez-vous immédiatement à l’abri. Lorsque vous êtes sur l’eau, soyez prêts à composer avec des conditions météorologiques menaçantes. Si du temps menaçant approche, gagnez le rivage et mettez-vous immédiatement à l’abri. Il est particulièrement dangereux de se trouver au large dans une petite embarcation lorsqu’il y a des éclairs.
+
+Gestion des situations d'urgence Ontario vous recommande de trouver un abri immédiatement si un phénomène météorologique menaçant est imminent.
+</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260725050306721/WW_12_72_CWTO/TRV/1636388631691370589202607240503_WW_12_72_CWTO/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21621 M:111627 C:129111</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>nord de l'Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_12_72_CWTO</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-07-25T06:00:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>modéré</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>jaune</value>
+        </parameter>
+        <area>
+            <areaDesc>Fort Frances - Emo - Rainy River</areaDesc>
+            <polygon>48.5398,-93.4902 48.5279,-93.5435 48.5207,-93.6093 48.5253,-93.6319 48.5158,-93.6438 48.5137,-93.6956 48.5146,-93.7934 48.5292,-93.822 48.5688,-93.8064 48.627,-93.8411 48.6284,-93.9277 48.6484,-94.2275 48.656,-94.2575 48.6826,-94.2547 48.6965,-94.264 48.6989,-94.2762 48.7047,-94.2842 48.7082,-94.3046 48.701,-94.3393 48.7031,-94.3619 48.7099,-94.384 48.7083,-94.4184 48.6933,-94.4393 48.6913,-94.451 48.6952,-94.4704 48.7002,-94.5381 48.7135,-94.5508 48.7165,-94.5883 48.7359,-94.6197 48.7409,-94.645 48.7544,-94.6529 48.7759,-94.6926 48.8242,-94.7042 48.8244,-94.7016 49.0996,-93.4874 49.0813,-93.0991 48.8278,-93.2232 48.6272,-93.3443 48.6097,-93.3504 48.6038,-93.3692 48.601,-93.4214 48.592,-93.4337 48.5887,-93.464 48.5616,-93.4511 48.5466,-93.4591 48.5398,-93.4902</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047510</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559016</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559024</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559026</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559040</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559062</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559068</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559069</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559090</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559092</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Seine River Village - Mine Centre</areaDesc>
+            <polygon>48.6272,-93.3443 48.8278,-93.2232 49.0813,-93.0991 49.0644,-92.7424 48.9922,-91.2145 48.324,-92.4487 48.3464,-92.4697 48.3708,-92.48 48.4108,-92.4591 48.418,-92.4791 48.4472,-92.5116 48.4396,-92.5691 48.4352,-92.6564 48.4441,-92.6931 48.4616,-92.7143 48.4967,-92.6996 48.5042,-92.6322 48.5413,-92.6392 48.5427,-92.6538 48.5372,-92.729 48.6075,-92.9543 48.6262,-92.9539 48.6217,-92.9796 48.6211,-93.177 48.6402,-93.2107 48.6388,-93.255 48.6272,-93.3443</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047520</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559065</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559066</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559090</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-25T05:05:20-00:00</effective>
+        <expires>2026-07-25T06:05:20-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - ended</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260725050306721/WW_12_72_CWTO/TRV/1636388631691370589202607240503_WW_12_72_CWTO/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21621 M:111627 C:129111</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Northern Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_12_72_CWTO</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>Sioux Narrows - Nestor Falls - Morson</areaDesc>
+            <polygon>49.3554,-95.025 49.3532,-95.0582 49.3704,-95.1286 49.3847,-95.1539 49.4435,-95.1592 49.4999,-95.1534 49.5976,-95.1533 49.5976,-95.1212 49.539,-95.0598 49.5398,-94.9353 49.5853,-94.8395 49.6147,-94.814 49.6174,-94.7798 49.6455,-94.7554 49.6509,-94.5883 49.633,-94.5058 49.6182,-94.4516 49.609,-94.3651 49.6208,-94.3392 49.6218,-93.4874 49.0996,-93.4874 48.8244,-94.7016 48.8242,-94.7042 48.8318,-94.702 48.8354,-94.6975 48.84,-94.6855 48.8534,-94.693 48.8569,-94.692 48.869,-94.6923 48.8723,-94.6843 48.8841,-94.6834 49.0987,-94.7496 49.1205,-94.7727 49.1486,-94.7819 49.1978,-94.7979 49.2143,-94.7973 49.2943,-94.8255 49.3213,-94.8162 49.3333,-94.8782 49.3501,-94.9091 49.3701,-94.9573 49.3687,-94.987 49.3564,-95.0141 49.3554,-95.025</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047320</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559051</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559052</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560065</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560082</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560083</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560090</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-07-25T05:05:20-00:00</effective>
+        <expires>2026-07-25T06:05:20-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - terminée</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260725050306721/WW_12_72_CWTO/TRV/1636388631691370589202607240503_WW_12_72_CWTO/actual/en_proper_complete_c-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:21621 M:111627 C:129111</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>nord de l'Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_12_72_CWTO</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>Sioux Narrows - Nestor Falls - Morson</areaDesc>
+            <polygon>49.3554,-95.025 49.3532,-95.0582 49.3704,-95.1286 49.3847,-95.1539 49.4435,-95.1592 49.4999,-95.1534 49.5976,-95.1533 49.5976,-95.1212 49.539,-95.0598 49.5398,-94.9353 49.5853,-94.8395 49.6147,-94.814 49.6174,-94.7798 49.6455,-94.7554 49.6509,-94.5883 49.633,-94.5058 49.6182,-94.4516 49.609,-94.3651 49.6208,-94.3392 49.6218,-93.4874 49.0996,-93.4874 48.8244,-94.7016 48.8242,-94.7042 48.8318,-94.702 48.8354,-94.6975 48.84,-94.6855 48.8534,-94.693 48.8569,-94.692 48.869,-94.6923 48.8723,-94.6843 48.8841,-94.6834 49.0987,-94.7496 49.1205,-94.7727 49.1486,-94.7819 49.1978,-94.7979 49.2143,-94.7973 49.2943,-94.8255 49.3213,-94.8162 49.3333,-94.8782 49.3501,-94.9091 49.3701,-94.9573 49.3687,-94.987 49.3564,-95.0141 49.3554,-95.025</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>047320</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559051</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559052</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3559053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560060</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560065</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560082</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560083</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3560090</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>Met6uQR06yT0LewI9YcCmcRRunvYg4GwS1D9H/pfYLY=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>tDh7ukFHhZ0XFT5nJV32mIxuqNUhQOPtG2dSPfNTkbOLfDu/hW/T4Q8x6mPnDeUc
+Lhy8hD2IEeFCKsGep1lM2GVs4ZyeF7wx4L4U1Ix/sy6Dbg5fuozgA3jODO/M2EMq
+Sn+jEXrmUk8OVe4oV92ViarOEcgaz+4saIFiEBus3C8gp2qc2FOYdhLYXdz4pZr2
+JmXd5liEfAP835b0sUMuqjLH70badbylQFp5DNNTj7/rY6/JSrRBHp+BVzsC8Ila
+yE0J36aj0gw/A24b24bYze3H2GnEKFStDx0xKUcYOMwONaULt4pgQ8r8R8bMZBLl
+xVVLJDPzZP1jVacXMbL3Og==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>
