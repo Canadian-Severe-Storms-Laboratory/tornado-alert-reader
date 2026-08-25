@@ -18,7 +18,6 @@ from google.oauth2.service_account import Credentials
 GITHUB_OWNER = "JThompson-007"
 GITHUB_REPO = "tornado-alert-reader"
 GITHUB_BRANCH = "main"
-GOOGLE_SHEET_ID = "13z2EkWi7V-iIV3Z4ZNgc-NIXaJLt3shdMPkSCzqmkok"
 
 class XMLWarning:
     def __init__(self, xml, prov, uri, msgType, startTime, expiryTime):
@@ -157,7 +156,7 @@ def writeAlertsToJSON(activeAlerts, filename):
             )
     
     with open(filename, mode="w") as f:
-        if alertList == []:
+        if not alertList:
             f.write("[]")
         else:
             json.dump(alertList, f, indent=2)    
@@ -388,11 +387,12 @@ def writeAlertsToCSV(alerts, filename):
 
 def get_google_sheet(sheetName):
     creds_json = os.environ["GOOGLE_SHEETS_CREDENTIALS"]  # set via GitHub Actions secret
+    GOOGLE_SHEETS_ID = os.environ["GOOGLE_SHEETS_ID"]  # set via GitHub Actions secret
     creds_dict = json.loads(creds_json)
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
     client = gspread.authorize(creds)
-    return client.open_by_key(GOOGLE_SHEET_ID).worksheet(sheetName)
+    return client.open_by_key(GOOGLE_SHEETS_ID).worksheet(sheetName)
 
 def writeAlertsToGoogleSheet(alerts, sheet):
     rows = []

@@ -37,7 +37,7 @@ jobs:
       - name: Run warning tracker
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
         run: |
           if [ -n "${{ github.event.inputs.start }}" ]; then
            python Warnings/warning_reader.py \
