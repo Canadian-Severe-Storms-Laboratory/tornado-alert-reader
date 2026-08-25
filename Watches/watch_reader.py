@@ -16,7 +16,7 @@ from google.oauth2.service_account import Credentials
 
 
 GITHUB_OWNER = "JThompson-007"
-GITHUB_REPO = "watchreader"
+GITHUB_REPO = "tornado-alert-reader"
 GITHUB_BRANCH = "main"
 GOOGLE_SHEET_ID = "13z2EkWi7V-iIV3Z4ZNgc-NIXaJLt3shdMPkSCzqmkok"
 
