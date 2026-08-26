@@ -408,7 +408,9 @@ def writeAlertsToGoogleSheet(alerts, sheet):
             alert.endUri,
             alert.jsonLink
         ])
-    sheet.append_rows(rows)
+    # Only write if rows aren't empty to prevent gspread from throwing an error
+    if rows:
+        sheet.append_rows(rows)
 
 def main():    
 
@@ -446,7 +448,7 @@ def main():
     try:
         writeAlertsToGoogleSheet(finalMergedAlerts, get_google_sheet("Watch"))
     except Exception as e:
-        return
+        print(f"Error occurred while writing to Google Sheet: {e}")
 
 if __name__ == "__main__":
     main()
