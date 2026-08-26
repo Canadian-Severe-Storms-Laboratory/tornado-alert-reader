@@ -15,6 +15,13 @@ on:
         description: 'End hour (YYYY/MM/DD/HH) -- leave blank for yesterday'
         required: false
 
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+  deployments: write
+  actions: write
+
 jobs:
   fetch-and-track:
     runs-on: ubuntu-latest
