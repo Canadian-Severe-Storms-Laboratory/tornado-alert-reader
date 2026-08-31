@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "location": "near Elkhorn",
+    "startUri": "https://dd.weather.gc.ca/20260830/WXO-DD/alerts/cap/20260830/LAND/23/T_MBCN00_C_LAND_202608302358_0668585330.cap",
+    "startTime": "2026-08-30T23:58:07",
+    "expiryTime": "2026-08-31T00:56:07",
+    "province": "MB",
+    "jsonLink": "https://github.com/Canadian-Severe-Storms-Laboratory/tornado-alert-reader/blob/main/Warnings/Archived_Files/Polygons/2026/08/30/nearElkhorn-MB-235807.geojson",
+    "stormGeometry": "ISOLATED_CELL",
+    "stormMotion": "northeast at 35 km/h",
+    "id": "urn:oid:2.49.0.1.124.0668585330.2026"
+  }
+]
