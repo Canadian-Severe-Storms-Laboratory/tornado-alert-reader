@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.4131061696.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-08-31T00:21:54-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.3386603366.2026,2026-08-30T23:41:25-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2008227352.2026,2026-08-30T23:44:42-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2706975638.2026,2026-08-30T23:49:08-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3450048969.2026,2026-08-30T23:51:59-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3587970172.2026,2026-08-30T23:56:06-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0668585330.2026,2026-08-30T23:58:07-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3764644296.2026,2026-08-30T23:59:57-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.2463526946.2026,2026-08-31T00:09:02-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-08-31T00:21:54-00:00</effective>
+        <onset>2026-08-31T00:21:00-00:00</onset>
+        <expires>2026-08-31T01:20:54-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - in effect</headline>
+        <description>
+At 7:21 p.m. CDT, a tornado is located near Reeder. The tornado is moving northeast at 35 km/h. Destructive winds, damaging hail and flooding rainfall are possible.
+
+Locations and nearby areas that could be impacted include: Reeder, Miniota, Birdtail Sioux, Beulah, Arrow River
+
+
+###
+
+This is a very dangerous and potentially life-threatening situation.
+
+Tornado warnings are issued when a thunderstorm is producing or is likely to produce a tornado.
+
+Tornadoes can be wrapped in rain and may not be visible.
+
+Tornadoes at night cannot be seen and may strike suddenly. Sometimes they are preceded by strengthening winds, large hail, or an approaching whistling or roaring sound.
+</description>
+        <instruction>
+Take cover immediately in a basement, interior room, or a sturdy shelter when threatening weather approaches. If no shelter is available, lie in a low spot and protect your head from flying debris. If you are out on the water when threatening weather approaches, return to shore and seek shelter, if possible, or move directly away from the path of the tornado. Otherwise, wear your lifejacket, lie face down and protect your head.
+</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260831002154906/MB_00_01_LAND/TRW/2341042131049035484202608300501_MB_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23309 M:119880 C:138817</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 7:21 p.m. Central Daylight Time Sunday, Environment Canada has issued a tornado warning for Parkland Manitoba. Extra care and attention should be exercised in and around the following localities: Ellice-Archie, Birdtail Sioux and Birdtail Creek 57 Reserve. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds and large hail are also possible. Take cover immediately if threatening weather approaches. Please consult local media for more information.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada: TORNADO in this mobile coverage area.
+Take immediate cover in a basement or interior room if weather threat approaches. Shelter from flying debris if outside.
+Tornado Warning, 7:21 p.m. CDT Sunday 30 August
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-08-31T00:51:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extreme</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>very high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>red</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>37.440655 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>57.979176</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>50.158215,-101.209251</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260831002100000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>northeast at 35 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>near Reeder</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:List_of_Reference_Points</valueName>
+            <value>Reeder, Miniota, Birdtail Sioux, Beulah, Arrow River</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Ellice-Archie incl. St-Lazare McAuley and Manson</areaDesc>
+            <polygon>50.5823,-101.4028 50.5822,-101.3995 50.5943,-101.3965 50.5994,-101.3098 50.5942,-101.2295 50.5947,-101.2143 50.5937,-101.1999 50.4498,-101.1893 50.2995,-101.1997 50.2962,-101.196 50.2881,-101.1937 50.2859,-101.1994 50.2697,-101.1925 50.2404,-101.1995 50.2427,-101.1854 50.2404,-101.1723 50.1594,-101.1671 50.0636,-101.172 50.0611,-101.3148 50.0638,-101.4473 50.1505,-101.4499 50.2405,-101.4471 50.2405,-101.4767 50.2805,-101.4796 50.3288,-101.477 50.4096,-101.4819 50.4756,-101.4772 50.4791,-101.477 50.4853,-101.477 50.4965,-101.477 50.5417,-101.4792 50.5932,-101.477 50.5941,-101.4769 50.5967,-101.4462 50.5945,-101.4152 50.5886,-101.406 50.5823,-101.4028</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>055230</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615049</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615051</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Prairie View Mun. incl. Birdtail Sioux Res.</areaDesc>
+            <polygon>50.5943,-100.7846 50.4487,-100.7679 50.3288,-100.7845 50.2962,-100.7739 50.2405,-100.7836 50.2452,-100.7664 50.2406,-100.7598 50.1549,-100.755 50.0636,-100.7595 50.0594,-100.9834 50.0636,-101.172 50.1593,-101.1788 50.2404,-101.1723 50.2384,-101.1849 50.2404,-101.1995 50.2643,-101.2014 50.285,-101.1997 50.2847,-101.2023 50.2926,-101.2072 50.2995,-101.1997 50.448,-101.2162 50.5937,-101.1999 50.603,-101.0778 50.5943,-100.9502 50.5972,-100.8675 50.5943,-100.7846</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>055242</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615057</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>50.10731347124732,-101.32141301005815 50.110432,-101.328247 50.178349,-101.346207 50.234501,-101.283859 50.355476,-101.091187 50.139111,-100.880997 50.125038848266804,-100.94342151947299 50.26952,-101.083931 50.148388,-101.276009 50.10731347124732,-101.32141301005815</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>continued active threat area</areaDesc>
+            <polygon>50.081879,-101.13488 50.070503,-101.240746 50.10731347124732,-101.32141301005815 50.148388,-101.276009 50.26952,-101.083931 50.125038848266804,-100.94342151947299 50.081879,-101.13488</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>continued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-08-31T00:21:54-00:00</effective>
+        <onset>2026-08-31T00:21:00-00:00</onset>
+        <expires>2026-08-31T01:20:54-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - en vigueur</headline>
+        <description>
+À 19h21 HAC, une tornade se trouve près de Reeder. La tornade se déplace vers le nord-est à 35 km/h. Des vents destructeurs, de la grêle destructrice et de la pluie causant des inondations sont possibles.
+
+Les régions et lieux à proximité possiblement touchés comprennent: Reeder, Miniota, Birdtail Sioux, Beulah, Arrow River
+
+###
+
+Il s’agit d’une situation très dangereuse et potentiellement mortelle.
+
+Une alerte de tornade est émise lorsqu’un orage violent produit ou est susceptible de produire une tornade.
+
+Les tornades peuvent être enveloppées de pluie et ne pas être visibles.
+
+La nuit, les tornades ne sont pas visibles et peuvent frapper soudainement. Elles sont parfois précédées d’un renforcement des vents, de grosse grêle ou d’un sifflement ou d’un grondement à leur approche.
+</description>
+        <instruction>
+Mettez-vous immédiatement à l’abri dans un sous-sol, une pièce intérieure ou un abri solide à l’approche de temps menaçant. Si aucun abri n’est disponible, couchez-vous dans un endroit bas et protégez votre tête des débris volants. Si vous êtes sur l’eau à l’approche de temps menaçant, gagnez le rivage et mettez-vous à l’abri, si possible, ou éloignez-vous de la trajectoire de la tornade. Sinon, portez votre gilet de sauvetage, allongez-vous sur le ventre et protégez votre tête.
+</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260831002154906/MB_00_01_LAND/TRW/2341042131049035484202608300501_MB_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23309 M:119880 C:138817</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 19h21 heure avancée du Centre le dimanche, Environnement Canada a émis une alerte de tornade pour Parkland au le Manitoba. Une attention et des précautions additionnelles devraient être exercées près et autour des localités suivantes: Ellice-Archie, Birdtail Sioux et la réserve indienne Birdtail Creek 57. Les météorologues d’Environnement Canada surveillent l'évolution d'un orage violent produisant possiblement une tornade. Des vents destructeurs et de la grosse grêle sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
+Alerte de tornade, 19h21 HAC le dimanche 30 août
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-08-31T00:51:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extrême</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>très élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>rouge</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>37.440655 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>57.979176</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>50.158215,-101.209251</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260831002100000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>vers le nord-est à 35 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>près de Reeder</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:List_of_Reference_Points</valueName>
+            <value>Reeder, Miniota, Birdtail Sioux, Beulah, Arrow River</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. d'Ellice-Archie incluant St-Lazare McAuley et Manson</areaDesc>
+            <polygon>50.5823,-101.4028 50.5822,-101.3995 50.5943,-101.3965 50.5994,-101.3098 50.5942,-101.2295 50.5947,-101.2143 50.5937,-101.1999 50.4498,-101.1893 50.2995,-101.1997 50.2962,-101.196 50.2881,-101.1937 50.2859,-101.1994 50.2697,-101.1925 50.2404,-101.1995 50.2427,-101.1854 50.2404,-101.1723 50.1594,-101.1671 50.0636,-101.172 50.0611,-101.3148 50.0638,-101.4473 50.1505,-101.4499 50.2405,-101.4471 50.2405,-101.4767 50.2805,-101.4796 50.3288,-101.477 50.4096,-101.4819 50.4756,-101.4772 50.4791,-101.477 50.4853,-101.477 50.4965,-101.477 50.5417,-101.4792 50.5932,-101.477 50.5941,-101.4769 50.5967,-101.4462 50.5945,-101.4152 50.5886,-101.406 50.5823,-101.4028</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>055230</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615049</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615051</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>mun. de Prairie View incl. la rés. ind. Birdtail Sioux</areaDesc>
+            <polygon>50.5943,-100.7846 50.4487,-100.7679 50.3288,-100.7845 50.2962,-100.7739 50.2405,-100.7836 50.2452,-100.7664 50.2406,-100.7598 50.1549,-100.755 50.0636,-100.7595 50.0594,-100.9834 50.0636,-101.172 50.1593,-101.1788 50.2404,-101.1723 50.2384,-101.1849 50.2404,-101.1995 50.2643,-101.2014 50.285,-101.1997 50.2847,-101.2023 50.2926,-101.2072 50.2995,-101.1997 50.448,-101.2162 50.5937,-101.1999 50.603,-101.0778 50.5943,-100.9502 50.5972,-100.8675 50.5943,-100.7846</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>055242</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615055</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615057</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>50.10731347124732,-101.32141301005815 50.110432,-101.328247 50.178349,-101.346207 50.234501,-101.283859 50.355476,-101.091187 50.139111,-100.880997 50.125038848266804,-100.94342151947299 50.26952,-101.083931 50.148388,-101.276009 50.10731347124732,-101.32141301005815</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615042</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>continued active threat area</areaDesc>
+            <polygon>50.081879,-101.13488 50.070503,-101.240746 50.10731347124732,-101.32141301005815 50.148388,-101.276009 50.26952,-101.083931 50.125038848266804,-100.94342151947299 50.081879,-101.13488</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>continued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4615046</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-08-31T00:21:54-00:00</effective>
+        <expires>2026-08-31T01:21:54-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - ended</headline>
+        <description>
+Tornadoes associated with this alert are no longer expected in the area.
+
+###
+</description>
+        <instruction/>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260831002154906/MB_00_01_LAND/TRW/2341042131049035484202608300501_MB_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23309 M:119880 C:138817</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Wallace-Woodworth incl. Virden Elkhorn and Kenton</areaDesc>
+            <polygon>50.0638,-101.4473 50.0675,-101.3114 50.0636,-101.172 50.0681,-100.9713 50.0636,-100.7595 50.0666,-100.6174 50.0632,-100.4852 49.9777,-100.4757 49.8864,-100.4854 49.8878,-100.4738 49.8864,-100.4618 49.8382,-100.4591 49.7981,-100.4628 49.7963,-100.484 49.7978,-100.5077 49.7973,-100.5069 49.7962,-100.5066 49.7966,-100.5095 49.7976,-100.5105 49.7982,-100.5133 49.7918,-100.5155 49.7926,-100.5193 49.7901,-100.5228 49.789,-100.5274 49.7902,-100.5317 49.794,-100.5313 49.798,-100.5301 49.7958,-100.7126 49.7982,-100.872 49.7945,-101.1621 49.7984,-101.4176 49.8429,-101.4205 49.8866,-101.4175 49.8866,-101.4471 49.9704,-101.4517 50.0638,-101.4473</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>051110</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606030</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606040</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>ended threat area</areaDesc>
+            <polygon>49.995888,-101.126999 49.984428,-101.232651 50.024281,-101.320068 50.092186,-101.338135 50.10731347124732,-101.32141301005815 50.070503,-101.240746 50.081879,-101.13488 50.125038848266804,-100.94342151947299 50.053326,-100.87368 49.995888,-101.126999</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>ended</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606028</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-08-31T00:21:54-00:00</effective>
+        <expires>2026-08-31T01:21:54-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - terminée</headline>
+        <description>
+Les tornades associées à cette alerte ne sont plus attendues dans la région.
+
+###
+</description>
+        <instruction/>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260831002154906/MB_00_01_LAND/TRW/2341042131049035484202608300501_MB_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23309 M:119880 C:138817</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Manitoba</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>MB_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. de Wallace-Woodworth incluant Virden Elkhorn et Kenton</areaDesc>
+            <polygon>50.0638,-101.4473 50.0675,-101.3114 50.0636,-101.172 50.0681,-100.9713 50.0636,-100.7595 50.0666,-100.6174 50.0632,-100.4852 49.9777,-100.4757 49.8864,-100.4854 49.8878,-100.4738 49.8864,-100.4618 49.8382,-100.4591 49.7981,-100.4628 49.7963,-100.484 49.7978,-100.5077 49.7973,-100.5069 49.7962,-100.5066 49.7966,-100.5095 49.7976,-100.5105 49.7982,-100.5133 49.7918,-100.5155 49.7926,-100.5193 49.7901,-100.5228 49.789,-100.5274 49.7902,-100.5317 49.794,-100.5313 49.798,-100.5301 49.7958,-100.7126 49.7982,-100.872 49.7945,-101.1621 49.7984,-101.4176 49.8429,-101.4205 49.8866,-101.4175 49.8866,-101.4471 49.9704,-101.4517 50.0638,-101.4473</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>051110</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606030</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606040</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>ended threat area</areaDesc>
+            <polygon>49.995888,-101.126999 49.984428,-101.232651 50.024281,-101.320068 50.092186,-101.338135 50.10731347124732,-101.32141301005815 50.070503,-101.240746 50.081879,-101.13488 50.125038848266804,-100.94342151947299 50.053326,-100.87368 49.995888,-101.126999</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>ended</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4606028</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>ShUMI67EtWrLv7Wi1D7zGQZbHo2y2/r1xLBJhSKJb3k=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>sEpspRzioJ9oWjsns3Nt5FWDrb621gVFfUs/wZcBLSOFnhulaBhZcXvKs1mJThhu
+biUFrn7gu+eoY8VQ38HY9NZ1jgDradODdXLUQaBPbHqBsccVpbA18DNgArNgamsq
+0Dx1qidRZySQoRyCyGe0m+ab1MVKfMarDrGoCa7167V4Kfaex7vxICqJNg1J68AG
+5ZzZiXi3eaRKxa5XjGobM3eAe6EbJVFDi/ehU1rLRXIx8UcgmNX/EwppoYHPIp6w
+XuqnyA51RAGQmZccKI+1vMaYn+6o+xd3bAKgAvYUF6k3akO8oT76rd4Qj6bxaOI6
+oFSSdfln9l7o4yXLXQETFw==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>
