@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.1666864007.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-09-02T21:37:53-00:00</sent>
+    <status>Actual</status>
+    <msgType>Alert</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references/>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-09-02T21:37:53-00:00</effective>
+        <onset>2026-09-02T21:37:00-00:00</onset>
+        <expires>2026-09-02T22:35:53-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>red warning - tornado - in effect</headline>
+        <description>
+At 5:36 p.m. EDT, an area of severe thunderstorms capable of producing a tornado, is located over Plattsville. This severe thunderstorm is moving quickly to the east at 95 km/h. Destructive winds, damaging hail and flooding rainfall are possible.
+
+Locations and nearby areas that could be impacted include: Plattsville, Ayr, Branchton, St. George, Sheffield, Harrisburg, Rockton, Lynden, Copetown
+
+
+###
+
+This is a very dangerous and potentially life-threatening situation.
+
+Tornado warnings are issued when a thunderstorm is producing or is likely to produce a tornado.
+</description>
+        <instruction>Take cover immediately if threatening weather approaches. Please consult local media for more information.</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260902213753698/ON_00_01_LAND/TRW/2137171231850321405202609020503_ON_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23433 M:120467 C:139444</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>red warning - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 5:37 p.m. Eastern Daylight Time Wednesday, Environment Canada has issued a tornado warning for Southwestern and the Golden Horseshoe area Ontario. Extra care and attention should be exercised in and around the following localities: the City of Hamilton, Kitchener, Cambridge, Region of Waterloo, Oxford and Brant. Environment Canada meteorologists are tracking a severe thunderstorm that is possibly producing a tornado. Damaging winds and large hail are also possible. Take cover immediately if threatening weather approaches. Please consult local media for more information.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>ON_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada: TORNADO in this mobile coverage area.
+Take immediate cover in a basement or interior room if weather threat approaches. Shelter from flying debris if outside.
+Tornado Warning, 5:37 p.m. EDT Wednesday 2 September
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>041710,041720,046100</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-02T22:06:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extreme</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>very high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>red</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>97.28211 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>103.071945</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>43.298668,-80.599449</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260902213600000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>quickly to the east at 95 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>over Plattsville</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:List_of_Reference_Points</valueName>
+            <value>Plattsville, Ayr, Branchton, St. George, Sheffield, Harrisburg, Rockton, Lynden, Copetown</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.1666864007.2026-en-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>Woodstock - Tillsonburg - Oxford County</areaDesc>
+            <polygon>43.3111,-80.4826 43.2669,-80.471 43.2669,-80.471 43.2668,-80.471 43.2286,-80.4407 43.1793,-80.4363 43.1575,-80.5131 43.1514,-80.6087 43.065,-80.5573 42.9825,-80.5419 42.9338,-80.5071 42.8843,-80.5056 42.8662,-80.5992 42.8545,-80.7055 42.8486,-80.6931 42.8282,-80.7115 42.832,-80.7243 42.8365,-80.728 42.8238,-80.7446 42.8349,-80.7563 42.8465,-80.762 42.836,-80.814 42.8296,-80.8773 42.8704,-80.8941 42.9126,-80.8989 42.9125,-80.8992 42.9627,-80.9227 43.0239,-80.9269 42.998,-80.9556 42.9949,-80.973 43.0022,-80.9926 43.0547,-81.019 43.0498,-81.0347 43.1344,-81.0918 43.235,-81.1208 43.3001,-80.9344 43.3305,-80.8394 43.3534,-80.7357 43.3337,-80.7331 43.3107,-80.7347 43.3347,-80.6143 43.3477,-80.504 43.3111,-80.4826</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>041710</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3532</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Brantford - County of Brant</areaDesc>
+            <polygon>43.0464,-80.019 42.9762,-80.0732 42.993,-80.1362 43.0168,-80.1878 43.023,-80.2193 43.0355,-80.241 43.0054,-80.3746 42.9825,-80.5419 43.0622,-80.5898 43.1514,-80.6087 43.1721,-80.5304 43.1793,-80.4363 43.2198,-80.459 43.2668,-80.4713 43.2669,-80.471 43.2917,-80.344 43.3062,-80.2385 43.2607,-80.2084 43.2106,-80.2005 43.1798,-80.0958 43.1302,-79.9792 43.0464,-80.019</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>041720</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3528035</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3528037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>City of Hamilton</areaDesc>
+            <polygon>43.2844,-79.8785 43.2803,-79.874 43.3022,-79.8228 43.3007,-79.79 43.3008,-79.7889 43.3015,-79.7816 43.3019,-79.7773 43.3044,-79.7506 43.2659,-79.7344 43.2456,-79.6136 43.2066,-79.6202 43.1439,-79.6585 43.1468,-79.6838 43.1557,-79.7098 43.1047,-79.7246 43.0507,-79.7541 43.0818,-79.8715 43.1302,-79.9792 43.1719,-80.1103 43.2106,-80.2005 43.264,-80.2329 43.3062,-80.2385 43.3189,-80.2454 43.3341,-80.2487 43.3407,-80.2177 43.3443,-80.1877 43.3676,-80.1982 43.3976,-80.2045 43.41,-80.1438 43.418,-80.0785 43.4274,-80.0835 43.4351,-80.0838 43.4529,-80.063 43.4708,-80.034 43.4453,-79.9925 43.4178,-79.9601 43.3835,-79.9085 43.3544,-79.8707 43.3417,-79.8521 43.323,-79.8765 43.3285,-79.8849 43.3168,-79.8954 43.3083,-79.9125 43.2993,-79.8947 43.2907,-79.8854 43.2844,-79.8785</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>046100</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3525</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Kitchener - Cambridge - Region of Waterloo</areaDesc>
+            <polygon>43.692,-80.5511 43.565,-80.3734 43.5682,-80.3645 43.5311,-80.3704 43.4688,-80.2988 43.3866,-80.2678 43.3976,-80.2045 43.3699,-80.1936 43.3443,-80.1877 43.3378,-80.2181 43.3341,-80.2487 43.3196,-80.2415 43.3075,-80.2386 43.3062,-80.2385 43.277,-80.369 43.2668,-80.471 43.2668,-80.4713 43.3036,-80.4911 43.3477,-80.504 43.3213,-80.6127 43.3107,-80.7347 43.3328,-80.7382 43.3534,-80.7357 43.3812,-80.74 43.4074,-80.7373 43.4359,-80.768 43.4682,-80.7961 43.4828,-80.8353 43.4982,-80.8687 43.586,-80.8128 43.6483,-80.7543 43.5883,-80.6062 43.6577,-80.598 43.692,-80.5511</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>046430</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3530</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>43.254841,-80.613495 43.274799,-80.651894 43.308826,-80.659737 43.336823,-80.63221 43.342529,-80.585396 43.336342,-79.969101 43.121826,-80.050003 43.254841,-80.613495</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3525005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3530004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3532045</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-09-02T21:37:53-00:00</effective>
+        <onset>2026-09-02T21:37:00-00:00</onset>
+        <expires>2026-09-02T22:35:53-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte rouge - tornade - en vigueur</headline>
+        <description>
+À 17h36 HAE, une zone d'orages violents pouvant produire une tornade se trouve à proximité de Plattsville. Cet orage violent se déplace rapidement vers l’est à 95 km/h. Des vents destructeurs, de la grêle destructrice et de la pluie causant des inondations sont possibles.
+
+Les régions et lieux à proximité possiblement touchés comprennent: Plattsville, Ayr, Branchton, St. George, Sheffield, Harrisburg, Rockton, Lynden, Copetown
+
+###
+
+Il s’agit d’une situation très dangereuse et potentiellement mortelle.
+
+Une alerte de tornade est émise lorsqu’un orage violent produit ou est susceptible de produire une tornade.
+</description>
+        <instruction>Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260902213753698/ON_00_01_LAND/TRW/2137171231850321405202609020503_ON_00_01_LAND/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23433 M:120467 C:139444</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte rouge - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Ontario</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 17h37 heure avancée de l'Est le mercredi, Environnement Canada a émis une alerte de tornade pour le sud-ouest et la région du Golden Horseshoe en l'Ontario. Une attention et des précautions additionnelles devraient être exercées près et autour des localités suivantes: la ville de Hamilton, Kitchener, Cambridge, la région de Waterloo, Oxford et Brant. Les météorologues d’Environnement Canada surveillent l'évolution d'un orage violent produisant possiblement une tornade. Des vents destructeurs et de la grosse grêle sont aussi possibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche. Veuillez consulter les médias locaux pour plus d'informations.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>ON_00_01_LAND</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada : TORNADE dans votre zone actuelle de couverture cellulaire.
+Réfugiez-vous sans tarder au sous-sol ou dans une pièce sans fenêtre en cas de temps menaçant. À l'extérieur, protégez-vous des débris projetés.
+Alerte de tornade, 17h37 HAE le mercredi 2 septembre
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Newly_Active_Areas</valueName>
+            <value>041710,041720,046100</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-02T22:06:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>1</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>extrême</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>très élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>rouge</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>97.28211 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>103.071945</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>43.298668,-80.599449</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260902213600000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>rapidement vers l’est à 95 km/h</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>à proximité de Plattsville</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:List_of_Reference_Points</valueName>
+            <value>Plattsville, Ayr, Branchton, St. George, Sheffield, Harrisburg, Rockton, Lynden, Copetown</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.1666864007.2026-fr-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>Woodstock - Tillsonburg - comté d'Oxford</areaDesc>
+            <polygon>43.3111,-80.4826 43.2669,-80.471 43.2669,-80.471 43.2668,-80.471 43.2286,-80.4407 43.1793,-80.4363 43.1575,-80.5131 43.1514,-80.6087 43.065,-80.5573 42.9825,-80.5419 42.9338,-80.5071 42.8843,-80.5056 42.8662,-80.5992 42.8545,-80.7055 42.8486,-80.6931 42.8282,-80.7115 42.832,-80.7243 42.8365,-80.728 42.8238,-80.7446 42.8349,-80.7563 42.8465,-80.762 42.836,-80.814 42.8296,-80.8773 42.8704,-80.8941 42.9126,-80.8989 42.9125,-80.8992 42.9627,-80.9227 43.0239,-80.9269 42.998,-80.9556 42.9949,-80.973 43.0022,-80.9926 43.0547,-81.019 43.0498,-81.0347 43.1344,-81.0918 43.235,-81.1208 43.3001,-80.9344 43.3305,-80.8394 43.3534,-80.7357 43.3337,-80.7331 43.3107,-80.7347 43.3347,-80.6143 43.3477,-80.504 43.3111,-80.4826</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>041710</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3532</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Brantford - comté de Brant</areaDesc>
+            <polygon>43.0464,-80.019 42.9762,-80.0732 42.993,-80.1362 43.0168,-80.1878 43.023,-80.2193 43.0355,-80.241 43.0054,-80.3746 42.9825,-80.5419 43.0622,-80.5898 43.1514,-80.6087 43.1721,-80.5304 43.1793,-80.4363 43.2198,-80.459 43.2668,-80.4713 43.2669,-80.471 43.2917,-80.344 43.3062,-80.2385 43.2607,-80.2084 43.2106,-80.2005 43.1798,-80.0958 43.1302,-79.9792 43.0464,-80.019</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>041720</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3528035</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3528037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>ville de Hamilton</areaDesc>
+            <polygon>43.2844,-79.8785 43.2803,-79.874 43.3022,-79.8228 43.3007,-79.79 43.3008,-79.7889 43.3015,-79.7816 43.3019,-79.7773 43.3044,-79.7506 43.2659,-79.7344 43.2456,-79.6136 43.2066,-79.6202 43.1439,-79.6585 43.1468,-79.6838 43.1557,-79.7098 43.1047,-79.7246 43.0507,-79.7541 43.0818,-79.8715 43.1302,-79.9792 43.1719,-80.1103 43.2106,-80.2005 43.264,-80.2329 43.3062,-80.2385 43.3189,-80.2454 43.3341,-80.2487 43.3407,-80.2177 43.3443,-80.1877 43.3676,-80.1982 43.3976,-80.2045 43.41,-80.1438 43.418,-80.0785 43.4274,-80.0835 43.4351,-80.0838 43.4529,-80.063 43.4708,-80.034 43.4453,-79.9925 43.4178,-79.9601 43.3835,-79.9085 43.3544,-79.8707 43.3417,-79.8521 43.323,-79.8765 43.3285,-79.8849 43.3168,-79.8954 43.3083,-79.9125 43.2993,-79.8947 43.2907,-79.8854 43.2844,-79.8785</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>046100</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3525</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>Kitchener - Cambridge - région de Waterloo</areaDesc>
+            <polygon>43.692,-80.5511 43.565,-80.3734 43.5682,-80.3645 43.5311,-80.3704 43.4688,-80.2988 43.3866,-80.2678 43.3976,-80.2045 43.3699,-80.1936 43.3443,-80.1877 43.3378,-80.2181 43.3341,-80.2487 43.3196,-80.2415 43.3075,-80.2386 43.3062,-80.2385 43.277,-80.369 43.2668,-80.471 43.2668,-80.4713 43.3036,-80.4911 43.3477,-80.504 43.3213,-80.6127 43.3107,-80.7347 43.3328,-80.7382 43.3534,-80.7357 43.3812,-80.74 43.4074,-80.7373 43.4359,-80.768 43.4682,-80.7961 43.4828,-80.8353 43.4982,-80.8687 43.586,-80.8128 43.6483,-80.7543 43.5883,-80.6062 43.6577,-80.598 43.692,-80.5511</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>046430</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3530</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>43.254841,-80.613495 43.274799,-80.651894 43.308826,-80.659737 43.336823,-80.63221 43.342529,-80.585396 43.336342,-79.969101 43.121826,-80.050003 43.254841,-80.613495</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3529005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3525005</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3530004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3532045</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>TdoI1UoH8GUz5pCfYs2xA1CPqQVTp0tVGK+FW6O20TU=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>r4ExYvKiDY7M5m28y2bSRAcE44VeW5t2UAV7OihJOTD0F19PZXtwVbtTT9NhonnV
+wtIK9VAHjm74UEOYB+m7yXQVWKmgxWtE1iuswWa/Fhwvhk5FCrhsmUQ2Nv+77vgZ
+TE/hDW6hxOtKM/+kcXFYEj3BCpuL0KmHaX38jHqGmG8AXVdU39ut9z3e2t+RBvDK
+xuGUsAUotQ68WHu9ZHi/cLRZsp2L/sVM79P5nkvUCRBWdugIdfgxM4N3EsWePmuc
+PmbHXKQSy16Xjyl6vUON8PjBg7b08l9v0Rz0V/SNdErqr3ujIoVCMHUScY+xmQuj
+Y6M30Hpg6oxmXGnb/kFMNQ==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>
