@@ -410,7 +410,7 @@ def writeAlertsToGoogleSheet(alerts, sheet):
         ])
     # Only write if rows aren't empty to prevent gspread from throwing an error
     if rows:
-        sheet.append_rows(rows)
+        sheet.append_rows(rows, value_input_option="USER_ENTERED", insert_data_option="INSERT_ROWS")
 
 def main():    
 
