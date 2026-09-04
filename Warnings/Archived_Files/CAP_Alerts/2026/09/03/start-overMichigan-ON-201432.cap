@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.0345793188.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-09-03T20:14:32-00:00</sent>
+    <status>Actual</status>
+    <msgType>Alert</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references/>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-09-03T20:14:32-00:00</effective>
+        <onset>2026-09-03T20:14:00-00:00</onset>
+        <expires>2026-09-03T21:12:32-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>tornado warning in effect</headline>
+        <description>
+At 4:13 p.m. EDT a severe thunderstorm capable of producing a tornado is located over Michigan and is moving to the east at 30 knots. Destructive winds and damaging hail are possible.
+
+
+###
+
+This is a very dangerous and potentially life-threatening situation.
+
+Tornado warnings are issued when a thunderstorm is producing or is likely to produce a tornado.
+</description>
+        <instruction>Tornadoes are often wrapped in rain and may not be visible. Take cover immediately if threatening weather approaches.</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260903201432934/GL_00_01_WATR/TRW/201411088859888213202609030503_GL_00_01_WATR/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23512 M:120897 C:139910</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>tornado warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Great Lakes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>At 4:14 p.m. Eastern Daylight Time Thursday, Environment Canada has issued a marine tornado warning for Lower Great Lakes. Extra care and attention should be exercised in the following marine areas: Lake St. Clair. Environment Canada meteorologists are tracking severe thunderstorms that are possibly producing tornadoes. Damaging winds, large hail and locally intense rainfall are possible. Tornadoes are often wrapped in rain and may not be visible. Take cover immediately if threatening weather approaches.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>GL_00_01_WATR</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environment Canada has issued a marine tornado warning for this mobile coverage area.
+Take cover immediately if threatening weather approaches.
+Tornado Warning, 4:14 p.m. EDT Thursday 3 September
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-03T20:43:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>31.998946852796003 knots</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>93.38762</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>42.400139,-83.048904</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260903201300000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>to the east at 30 knots</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>over Michigan</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.0345793188.2026-en-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>Lake St. Clair</areaDesc>
+            <polygon>42.5527,-82.5993 42.5558,-82.5959 42.574,-82.5753 42.5798,-82.5688 42.5947,-82.5519 42.6139,-82.5225 42.6123,-82.5199 42.6113,-82.5182 42.6108,-82.5175 42.6095,-82.5154 42.5628,-82.5505 42.5505,-82.5386 42.5262,-82.515 42.5358,-82.4634 42.5188,-82.3954 42.3937,-82.3695 42.2795,-82.4137 42.2849,-82.5491 42.2679,-82.7164 42.3254,-82.9097 42.3377,-82.9189 42.3422,-82.9211 42.3485,-82.9249 42.3512,-82.9263 42.3586,-82.9303 42.3828,-82.8374 42.5447,-82.6736 42.5632,-82.6314 42.5592,-82.6191 42.5555,-82.6079 42.5527,-82.5993</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>002310</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3536020</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3538004</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>42.48319,-82.718468 42.487732,-82.679535 42.309052,-82.686943 42.3329855698808,-82.8764804310356 42.334423883304694,-82.88189528307737 42.33632318632583,-82.9029120603297 42.3383912155262,-82.91928943085559 42.34163623642485,-82.92082520947284 42.34388508975316,-82.92212194413862 42.351236957396594,-82.92636118228162 42.351237,-82.926361 42.373417,-82.828188 42.419838,-82.781657 42.443793,-82.757586 42.48319,-82.718468</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3538004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537048</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Shelter</responseType>
+        <responseType>Monitor</responseType>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOR</value>
+        </eventCode>
+        <effective>2026-09-03T20:14:32-00:00</effective>
+        <onset>2026-09-03T20:14:00-00:00</onset>
+        <expires>2026-09-03T21:12:32-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>alerte de tornade en vigueur</headline>
+        <description>
+À 16h13 HAE un orage violent pouvant produire une tornade se trouve à proximité du Michigan et se déplace vers l’est à 30 noeuds. Des vents destructeurs et de la grêle destructrice sont possibles.
+
+###
+
+Il s’agit d’une situation très dangereuse et potentiellement mortelle.
+
+Une alerte de tornade est émise lorsqu’un orage violent produit ou est susceptible de produire une tornade.
+</description>
+        <instruction>Les tornades sont souvent dissimulées par de la pluie et peuvent ne pas être visibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche.</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>warning</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260903201432934/GL_00_01_WATR/TRW/201411088859888213202609030503_GL_00_01_WATR/actual/en_proper_complete_c-fr_proper_complete_c/NinJoWEL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23512 M:120897 C:139910</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>alerte de tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Grands Lacs</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Text</valueName>
+            <value>À 16h14 heure avancée de l'Est le jeudi, Environnement Canada a émis une alerte de tornade maritime pour le bassin inférieur les Grands Lacs. Une attention et des précautions additionnelles devraient être exercées près des régions marines suivantes: le lac Sainte-Claire. Les météorologues d’Environnement Canada surveillent des orages violents produisant possiblement des tornades. Des vents destructeurs, de la grosse grêle et de la pluie intense par endroits sont aussi possibles. Les tornades sont souvent dissimulées par de la pluie et peuvent ne pas être visibles. Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche.</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>GL_00_01_WATR</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>Yes</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessText</valueName>
+            <value>Environnement Canada a émis une alerte de tornade maritime pour cette zone de couverture mobile.
+Mettez-vous immédiatement à l'abri si un phénomène météorologique menaçant s'approche.
+Alerte de tornade, 16h14 HAE le jeudi 3 septembre
+</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-03T20:43:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Speed</valueName>
+            <value>31.998946852796003 noeuds</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Direction</valueName>
+            <value>93.38762</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Geometry_Type</valueName>
+            <value>ISOLATED_CELL</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Point</valueName>
+            <value>42.400139,-83.048904</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Time</valueName>
+            <value>20260903201300000</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Motion_Description</valueName>
+            <value>vers l’est à 30 noeuds</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Storm_Position_Description</valueName>
+            <value>à proximité du Michigan</value>
+        </parameter>
+        <resource>
+            <resourceDesc>Broadcast Audio</resourceDesc>
+            <mimeType>audio/mpeg</mimeType>
+            <uri>https://naadstts.s3.ca-central-1.amazonaws.com/2.49.0.1.124.0345793188.2026-fr-CA.mp3</uri>
+        </resource>
+        <area>
+            <areaDesc>lac Sainte-Claire</areaDesc>
+            <polygon>42.5527,-82.5993 42.5558,-82.5959 42.574,-82.5753 42.5798,-82.5688 42.5947,-82.5519 42.6139,-82.5225 42.6123,-82.5199 42.6113,-82.5182 42.6108,-82.5175 42.6095,-82.5154 42.5628,-82.5505 42.5505,-82.5386 42.5262,-82.515 42.5358,-82.4634 42.5188,-82.3954 42.3937,-82.3695 42.2795,-82.4137 42.2849,-82.5491 42.2679,-82.7164 42.3254,-82.9097 42.3377,-82.9189 42.3422,-82.9211 42.3485,-82.9249 42.3512,-82.9263 42.3586,-82.9303 42.3828,-82.8374 42.5447,-82.6736 42.5632,-82.6314 42.5592,-82.6191 42.5555,-82.6079 42.5527,-82.5993</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>002310</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3536020</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3538004</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>new active threat area</areaDesc>
+            <polygon>42.48319,-82.718468 42.487732,-82.679535 42.309052,-82.686943 42.3329855698808,-82.8764804310356 42.334423883304694,-82.88189528307737 42.33632318632583,-82.9029120603297 42.3383912155262,-82.91928943085559 42.34163623642485,-82.92082520947284 42.34388508975316,-82.92212194413862 42.351236957396594,-82.92636118228162 42.351237,-82.926361 42.373417,-82.828188 42.419838,-82.781657 42.443793,-82.757586 42.48319,-82.718468</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:DLC:1.1</valueName>
+                <value>issued</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3538004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>3537048</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>FZoju2lg35azmsp2+RDLNfLNzZYzBaMXcCbreCMmODE=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>ZMZad+9vVHSswFSH0CPrmRqid2Jt2wVuU96xjAKM2WjcaBB+I+W+yXnF45wUwYDs
+mqe3WcBL5F/Wa/pUmLyrCge1yRgBBYjjo2CBpG1EGSP60T6+AlIX2GJ2KmSzuIsi
+fYSLpTWjbl4I7JGfmJsZ+1zgKa6ezbIH7EV12t9ppDDlCWDDs9Vk+75gUs8OpOax
+9FYo/ALzq504EpjQZU88acTdm//oEQqwLVduvYcetBJo/tJpb5GfmKnRoUU+y8QC
+tF3peZmz+h8wMLaLEmm9gng8PoxXJsQ5cq83fYwIu949gZROrnTuwTMGhFy5nUsQ
+PZzCArRRJzrdjQEGh4MWqg==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>
