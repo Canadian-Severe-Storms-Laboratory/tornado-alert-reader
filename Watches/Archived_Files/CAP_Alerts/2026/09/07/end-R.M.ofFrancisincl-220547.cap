@@ -1,0 +1,1923 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>urn:oid:2.49.0.1.124.1360932126.2026</identifier>
+    <sender>cap-pac@canada.ca</sender>
+    <sent>2026-09-08T00:30:56-00:00</sent>
+    <status>Actual</status>
+    <msgType>Update</msgType>
+    <source>Env. Can. - Can. Met. Ctr. – Montréal</source>
+    <scope>Public</scope>
+    <code>profile:CAP-CP:0.4</code>
+    <code>layer:SOREM:1.0</code>
+    <code>layer:EC-MSC-SMC:1.0</code>
+    <code>layer:EC-MSC-SMC:1.1</code>
+    <code>layer:SOREM:2.0</code>
+    <note>Service Notice – July 2026: The Environment and Climate Change Canada (ECCC) CAP Service undergoes changes from time to time as the business of alerting evolves. For Spring 2026, changes are expected to include... 1) ECCC's deployment to introduce free-form polygons to represent the true threat area of a weather hazard, which was originally scheduled for June 2026, is delayed. We will communicate the new date when it is available. Monitor https://dd.weather.gc.ca/doc/genots/ for notifications on the new launch date. Information about free-form polygons representing the true threat area of a weather hazard remains under media embargo until launch, 2) marine alerts will now be issued for smaller zone splits in certain areas of Atlantic and Pacific waters and 3) other minor improvements and corrections. For more information on these changes: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/ | Notification de service – juillet 2026: Le service du PAC d’Environnement et Changement climatique Canada (ECCC) subit périodiquement des changements à mesure que le système d’alerte évolue. Pour le printemps 2026, il y aura des changements incluant... 1) Le déploiement par ECCC visant à introduire des polygones de forme libre pour représenter la zone réelle de menace d’un aléa météorologique, qui était initialement prévu pour juin 2026, est retardé. Nous communiquerons la nouvelle date lorsqu’elle sera disponible. Surveiller https://dd.weather.gc.ca/doc/genots/ pour les notifications concernant la nouvelle date de lancement. Les informations concernant les polygones de forme libre représentant la zone réelle de menace d’un aléa météorologique demeurent sous embargo médiatique jusqu’au lancement, 2) les alertes marines seront désormais émises pour des subdivisions de zones plus petites dans certaines régions des eaux de l’Atlantique et du Pacifique et 3) d’autres améliorations et corrections mineures. Pour plus d’informations sur ces changements: https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/</note>
+    <references>cap-pac@canada.ca,urn:oid:2.49.0.1.124.0390253198.2026,2026-09-07T22:05:47-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.0474739784.2026,2026-09-07T22:07:10-00:00 cap-pac@canada.ca,urn:oid:2.49.0.1.124.3933717035.2026,2026-09-08T00:29:39-00:00</references>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-09-08T00:29:39-00:00</effective>
+        <onset>2026-09-08T00:29:00-00:00</onset>
+        <expires>2026-09-08T07:27:39-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - in effect</headline>
+        <description>
+Conditions are favourable for the development of severe thunderstorms which may produce a tornado.
+
+A line of showers has developed in southeast Saskatchewan this afternoon and is moving to the east. It is along this line where a tornado may form.
+
+###
+
+Significant damage or destruction to infrastructure, homes and the natural environment is possible.
+
+Tornado watches are issued when conditions are favourable for the development of severe thunderstorms capable of producing tornadoes.
+
+Please continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to SKstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #SKStorm.
+</description>
+        <instruction>
+In the event of a tornado, or if a tornado warning is issued for your area: go indoors to a room on the lowest floor, away from outside walls and windows, such as a basement, bathroom, stairwell or interior closet. Leave mobile homes, vehicles, tents, trailers and other temporary or free-standing shelter, and move to a strong building if you can. As a last resort, lie in a low spot and protect your head from flying debris. Be prepared for severe weather.  If you hear a roaring sound or see a funnel cloud, swirling debris near the ground, flying debris, or any threatening weather approaching, take cover immediately. When out on the water, be prepared for severe weather. If threatening weather approaches make for shore and take shelter immediately. It is particularly dangerous to be on a small craft on the open water when lightning is occurring.
+</instruction>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260908002939400/WW_13_73_CWWG/TRV/2204062372097865681202609070501_WW_13_73_CWWG/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23663 M:121801 C:140879</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>text</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Southern Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_13_73_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-08T05:28:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>high</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>yellow</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Silverwood south of Whitewood</areaDesc>
+            <polygon>50.3095,-102.0058 50.187,-101.9959 50.0604,-102.0051 50.0472,-102.0055 50.0414,-102.2149 50.047,-102.4154 50.2023,-102.4288 50.3098,-102.4182 50.316,-102.2127 50.3095,-102.0058</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063231</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705822</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Wawken including Wawota Kennedy and Kenosee Lake</areaDesc>
+            <polygon>50.0472,-102.0055 49.9114,-101.9994 49.7843,-102.0059 49.7824,-102.0828 49.7845,-102.164 49.7846,-102.1647 49.7955,-102.1658 49.8061,-102.1636 49.8062,-102.2318 49.8013,-102.2318 49.8013,-102.2543 49.8064,-102.2542 49.8063,-102.334 49.7842,-102.3345 49.7825,-102.3731 49.7837,-102.4139 49.911,-102.4215 50.047,-102.4154 50.053,-102.2136 50.0472,-102.0055</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063232</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701076</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701077</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701078</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701079</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Martin including Wapella and Red Jacket</areaDesc>
+            <polygon>50.0637,-101.7217 50.0589,-101.8653 50.0604,-102.0051 50.1878,-102.0158 50.3095,-102.0058 50.3184,-102.0071 50.3258,-102.0058 50.3297,-101.8754 50.3279,-101.7537 50.2835,-101.7477 50.2405,-101.7539 50.2415,-101.7369 50.2404,-101.722 50.155,-101.7101 50.0637,-101.7217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063241</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705009</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705821</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Moosomin including Moosomin Welwyn and Fleming</areaDesc>
+            <polygon>50.3288,-101.477 50.2814,-101.4745 50.2405,-101.4767 50.2405,-101.4471 50.1506,-101.4448 50.0638,-101.4473 50.0601,-101.5822 50.0637,-101.7217 50.1542,-101.732 50.2404,-101.722 50.2394,-101.7371 50.2405,-101.7539 50.2842,-101.7592 50.3279,-101.7537 50.3324,-101.6047 50.3288,-101.477</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063242</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705006</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Walpole including Kelso</areaDesc>
+            <polygon>50.0637,-101.7217 49.8866,-101.7217 49.8873,-101.7048 49.8866,-101.6902 49.8846,-101.69 49.8027,-101.684 49.7098,-101.6901 49.7041,-101.8436 49.7054,-102.0059 49.7448,-102.0102 49.7843,-102.0059 49.9109,-102.0135 50.0472,-102.0055 50.0604,-102.0051 50.068,-101.866 50.0637,-101.7217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063243</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701091</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701098</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Maryfield including Maryfield and Fairlight</areaDesc>
+            <polygon>49.7066,-101.5545 49.7098,-101.6901 49.8018,-101.6986 49.8866,-101.6902 49.8858,-101.705 49.8866,-101.7217 50.0637,-101.7217 50.0685,-101.5819 50.0638,-101.4473 49.9704,-101.4427 49.8866,-101.4471 49.8866,-101.4175 49.8429,-101.415 49.7984,-101.4176 49.7554,-101.416 49.7098,-101.4177 49.7066,-101.5545</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063244</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701094</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701096</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701098</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Willowdale including Whitewood and Ochapowace Res.</areaDesc>
+            <polygon>50.5149,-102.2502 50.5166,-102.2151 50.5549,-102.1312 50.5664,-102.0761 50.5586,-102.0095 50.5581,-102.0055 50.5465,-102.0053 50.5321,-102.0054 50.4237,-101.9977 50.3258,-102.0058 50.3182,-102.0049 50.3095,-102.0058 50.302,-102.2133 50.3098,-102.4182 50.3787,-102.4259 50.4407,-102.418 50.4406,-102.4997 50.4908,-102.5054 50.5216,-102.5024 50.5472,-102.4999 50.5547,-102.4244 50.5545,-102.4214 50.5542,-102.4165 50.5503,-102.3585 50.5149,-102.2502</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063251</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705033</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705806</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705814</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705818</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Rocanville including Rocanville</areaDesc>
+            <polygon>50.5565,-101.9833 50.5287,-101.9397 50.5395,-101.9009 50.5452,-101.8525 50.5344,-101.8042 50.4862,-101.7779 50.5241,-101.7147 50.5305,-101.6805 50.5276,-101.6142 50.5004,-101.5712 50.4965,-101.477 50.4853,-101.477 50.4791,-101.477 50.4756,-101.477 50.407,-101.4727 50.3288,-101.477 50.3256,-101.6041 50.3279,-101.7537 50.3242,-101.8747 50.3258,-102.0058 50.3266,-102.0059 50.4251,-102.0151 50.5321,-102.0054 50.5465,-102.0053 50.5581,-102.0055 50.5579,-102.0022 50.5565,-101.9833</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063252</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705038</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Moose Creek including Alameda</areaDesc>
+            <polygon>49.2602,-102.0063 49.2567,-102.2019 49.2608,-102.41 49.3881,-102.4182 49.5226,-102.4095 49.5275,-102.2121 49.5222,-102.0059 49.3875,-101.9974 49.2634,-102.0063 49.2602,-102.0063</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063331</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701036</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701037</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Enniskillen including Oxbow and Northgate</areaDesc>
+            <polygon>48.9987,-102.0059 48.9982,-102.2102 48.9986,-102.4096 49.1218,-102.415 49.2608,-102.41 49.2643,-102.2038 49.2602,-102.0063 49.1238,-102.0008 48.9987,-102.0059</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063332</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701014</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Moose Mountain including Carlyle and Manor</areaDesc>
+            <polygon>49.8013,-102.2543 49.8013,-102.2318 49.8062,-102.2318 49.8061,-102.1636 49.7953,-102.1628 49.7846,-102.1647 49.7868,-102.0836 49.7843,-102.0059 49.7439,-102.0015 49.7054,-102.0059 49.6146,-102.0006 49.5289,-102.0059 49.5256,-102.0055 49.5222,-102.0059 49.5189,-102.2155 49.5226,-102.4095 49.5226,-102.4126 49.6567,-102.4212 49.7837,-102.4139 49.7855,-102.373 49.7842,-102.3345 49.8063,-102.334 49.8064,-102.2542 49.8013,-102.2543</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063341</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701054</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701808</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Antler including Redvers Antler and Wauchope</areaDesc>
+            <polygon>49.5326,-101.3997 49.5224,-101.3997 49.5224,-101.4076 49.5222,-101.6449 49.5221,-101.663 49.522,-101.6771 49.5188,-102.0057 49.5188,-102.0061 49.5187,-102.0148 49.5221,-102.0147 49.5225,-102.0147 49.6144,-102.0123 49.7054,-102.0059 49.7126,-101.8438 49.7098,-101.6901 49.7127,-101.5556 49.7098,-101.4177 49.621,-101.3995 49.5421,-101.3997 49.5418,-101.3997 49.5326,-101.3997</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063342</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701049</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Storthoaks including Storthoaks and Fertile</areaDesc>
+            <polygon>49.5323,-101.3762 49.2558,-101.3787 49.2558,-101.391 49.2558,-101.4049 49.2558,-101.6454 49.2558,-101.6631 49.2558,-101.6641 49.2558,-101.6798 49.2659,-101.6797 49.522,-101.6771 49.5414,-101.6769 49.5417,-101.6769 49.5418,-101.547 49.5416,-101.4192 49.5416,-101.4183 49.5418,-101.4076 49.5418,-101.3997 49.5419,-101.3921 49.5421,-101.3761 49.5417,-101.3761 49.5323,-101.3762</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063351</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701043</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Reciprocity including Alida</areaDesc>
+            <polygon>49.5322,-101.664 49.4019,-101.6552 49.2654,-101.6636 49.2603,-101.8325 49.2634,-102.0063 49.3933,-102.0147 49.5222,-102.0059 49.5257,-102.0065 49.5289,-102.0059 49.5295,-101.9997 49.535,-101.8338 49.5322,-101.664</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063352</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701041</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Mount Pleasant including Carnduff</areaDesc>
+            <polygon>48.9989,-101.6276 48.9983,-101.7977 48.9987,-102.0059 49.1239,-102.0117 49.2602,-102.0063 49.2634,-102.0063 49.2705,-101.8289 49.2654,-101.6636 49.2186,-101.6614 49.1781,-101.6638 49.1778,-101.664 49.1781,-101.6465 49.1777,-101.6305 49.095,-101.6231 49.0088,-101.6304 49.0042,-101.6279 48.9989,-101.6276</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063353</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701008</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Argyle including Gainsborough and Carievale</areaDesc>
+            <polygon>48.9989,-101.6276 49.0041,-101.63 49.0088,-101.6304 49.0949,-101.6356 49.1777,-101.6305 49.1772,-101.6468 49.1778,-101.664 49.2192,-101.666 49.2654,-101.6636 49.2684,-101.5311 49.2662,-101.3921 49.2197,-101.3874 49.1777,-101.3922 49.1777,-101.362 49.0808,-101.3577 48.9994,-101.3619 48.9992,-101.3619 48.9989,-101.4943 48.9989,-101.6276</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063354</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701004</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>Monitor</responseType>
+        <urgency>Expected</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-09-08T00:29:39-00:00</effective>
+        <onset>2026-09-08T00:29:00-00:00</onset>
+        <expires>2026-09-08T07:27:39-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - en vigueur</headline>
+        <description>
+Les conditions sont propices à la formation d'orages violents qui pourraient produire une tornade.
+
+Une ligne d'averses de pluie s'est formée sur le sud-est de la Saskatchewan cet après-midi et se déplace vers l'est. Une tornade pourrait se former le long de cette ligne.
+
+###
+
+Les infrastructures, les habitations et l’environnement naturel risquent d’être gravement endommagés ou détruits.
+
+Une veille de tornade est émise lorsque les conditions sont propices à la formation d’orages violents pouvant produire des tornades.
+
+Veuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoSK@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #SKMeteo.
+</description>
+        <instruction>
+En cas de tornade, ou si une alerte de tornade est en vigueur dans votre région : rentrez à l’intérieur, gagnez une pièce située à l’étage le plus bas, loin des murs extérieurs et des fenêtres, comme un sous-sol, une salle de bain, une cage d’escalier ou un placard intérieur. Quittez les maisons mobiles, les véhicules, les tentes, les remorques et autres abris temporaires ou autonomes, et gagnez un bâtiment solide si possible. En dernier recours, allongez-vous dans un endroit bas et protégez votre tête des débris volants. Soyez prêts à faire face à du temps violent. Si vous entendez un grondement ou si vous voyez un nuage en entonnoir, des débris tourbillonnants près du sol, des débris volants ou tout autre phénomène météorologique menaçant, mettez-vous immédiatement à l’abri. Lorsque vous êtes sur l’eau, soyez prêts à composer avec des conditions météorologiques menaçantes. Si du temps menaçant approche, gagnez le rivage et mettez-vous immédiatement à l’abri. Il est particulièrement dangereux de se trouver au large dans une petite embarcation lorsqu’il y a des éclairs.
+</instruction>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260908002939400/WW_13_73_CWWG/TRV/2204062372097865681202609070501_WW_13_73_CWWG/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23663 M:121801 C:140879</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>text</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>sud de la Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_13_73_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>active</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Event_End_Time</valueName>
+            <value>2026-09-08T05:28:00.000Z</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Risk_Tiered_Ranking</valueName>
+            <value>8</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Impact</valueName>
+            <value>modéré</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:MSC_Confidence</valueName>
+            <value>élevée</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Colour</valueName>
+            <value>jaune</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. de Silverwood au sud de Whitewood</areaDesc>
+            <polygon>50.3095,-102.0058 50.187,-101.9959 50.0604,-102.0051 50.0472,-102.0055 50.0414,-102.2149 50.047,-102.4154 50.2023,-102.4288 50.3098,-102.4182 50.316,-102.2127 50.3095,-102.0058</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063231</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705822</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Wawken incluant Wawota Kennedy et Kenosee Lake</areaDesc>
+            <polygon>50.0472,-102.0055 49.9114,-101.9994 49.7843,-102.0059 49.7824,-102.0828 49.7845,-102.164 49.7846,-102.1647 49.7955,-102.1658 49.8061,-102.1636 49.8062,-102.2318 49.8013,-102.2318 49.8013,-102.2543 49.8064,-102.2542 49.8063,-102.334 49.7842,-102.3345 49.7825,-102.3731 49.7837,-102.4139 49.911,-102.4215 50.047,-102.4154 50.053,-102.2136 50.0472,-102.0055</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063232</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701076</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701077</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701078</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701079</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Martin incluant Wapella et Red Jacket</areaDesc>
+            <polygon>50.0637,-101.7217 50.0589,-101.8653 50.0604,-102.0051 50.1878,-102.0158 50.3095,-102.0058 50.3184,-102.0071 50.3258,-102.0058 50.3297,-101.8754 50.3279,-101.7537 50.2835,-101.7477 50.2405,-101.7539 50.2415,-101.7369 50.2404,-101.722 50.155,-101.7101 50.0637,-101.7217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063241</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705009</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705821</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Moosomin incluant Moosomin Welwyn et Fleming</areaDesc>
+            <polygon>50.3288,-101.477 50.2814,-101.4745 50.2405,-101.4767 50.2405,-101.4471 50.1506,-101.4448 50.0638,-101.4473 50.0601,-101.5822 50.0637,-101.7217 50.1542,-101.732 50.2404,-101.722 50.2394,-101.7371 50.2405,-101.7539 50.2842,-101.7592 50.3279,-101.7537 50.3324,-101.6047 50.3288,-101.477</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063242</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705006</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Walpole incluant Kelso</areaDesc>
+            <polygon>50.0637,-101.7217 49.8866,-101.7217 49.8873,-101.7048 49.8866,-101.6902 49.8846,-101.69 49.8027,-101.684 49.7098,-101.6901 49.7041,-101.8436 49.7054,-102.0059 49.7448,-102.0102 49.7843,-102.0059 49.9109,-102.0135 50.0472,-102.0055 50.0604,-102.0051 50.068,-101.866 50.0637,-101.7217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063243</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701091</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701098</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Maryfield incluant Maryfield et Fairlight</areaDesc>
+            <polygon>49.7066,-101.5545 49.7098,-101.6901 49.8018,-101.6986 49.8866,-101.6902 49.8858,-101.705 49.8866,-101.7217 50.0637,-101.7217 50.0685,-101.5819 50.0638,-101.4473 49.9704,-101.4427 49.8866,-101.4471 49.8866,-101.4175 49.8429,-101.415 49.7984,-101.4176 49.7554,-101.416 49.7098,-101.4177 49.7066,-101.5545</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063244</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701094</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701096</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701098</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Willowdale incluant Whitewood et la rés. ind. Ochapowace</areaDesc>
+            <polygon>50.5149,-102.2502 50.5166,-102.2151 50.5549,-102.1312 50.5664,-102.0761 50.5586,-102.0095 50.5581,-102.0055 50.5465,-102.0053 50.5321,-102.0054 50.4237,-101.9977 50.3258,-102.0058 50.3182,-102.0049 50.3095,-102.0058 50.302,-102.2133 50.3098,-102.4182 50.3787,-102.4259 50.4407,-102.418 50.4406,-102.4997 50.4908,-102.5054 50.5216,-102.5024 50.5472,-102.4999 50.5547,-102.4244 50.5545,-102.4214 50.5542,-102.4165 50.5503,-102.3585 50.5149,-102.2502</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063251</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705033</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705034</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705806</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705814</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705818</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Rocanville incluant Rocanville</areaDesc>
+            <polygon>50.5565,-101.9833 50.5287,-101.9397 50.5395,-101.9009 50.5452,-101.8525 50.5344,-101.8042 50.4862,-101.7779 50.5241,-101.7147 50.5305,-101.6805 50.5276,-101.6142 50.5004,-101.5712 50.4965,-101.477 50.4853,-101.477 50.4791,-101.477 50.4756,-101.477 50.407,-101.4727 50.3288,-101.477 50.3256,-101.6041 50.3279,-101.7537 50.3242,-101.8747 50.3258,-102.0058 50.3266,-102.0059 50.4251,-102.0151 50.5321,-102.0054 50.5465,-102.0053 50.5581,-102.0055 50.5579,-102.0022 50.5565,-101.9833</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063252</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705038</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Moose Creek incluant Alameda</areaDesc>
+            <polygon>49.2602,-102.0063 49.2567,-102.2019 49.2608,-102.41 49.3881,-102.4182 49.5226,-102.4095 49.5275,-102.2121 49.5222,-102.0059 49.3875,-101.9974 49.2634,-102.0063 49.2602,-102.0063</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063331</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701036</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701037</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Enniskillen incluant Oxbow et Northgate</areaDesc>
+            <polygon>48.9987,-102.0059 48.9982,-102.2102 48.9986,-102.4096 49.1218,-102.415 49.2608,-102.41 49.2643,-102.2038 49.2602,-102.0063 49.1238,-102.0008 48.9987,-102.0059</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063332</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701011</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701012</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701014</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Moose Mountain incluant Carlyle et Manor</areaDesc>
+            <polygon>49.8013,-102.2543 49.8013,-102.2318 49.8062,-102.2318 49.8061,-102.1636 49.7953,-102.1628 49.7846,-102.1647 49.7868,-102.0836 49.7843,-102.0059 49.7439,-102.0015 49.7054,-102.0059 49.6146,-102.0006 49.5289,-102.0059 49.5256,-102.0055 49.5222,-102.0059 49.5189,-102.2155 49.5226,-102.4095 49.5226,-102.4126 49.6567,-102.4212 49.7837,-102.4139 49.7855,-102.373 49.7842,-102.3345 49.8063,-102.334 49.8064,-102.2542 49.8013,-102.2543</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063341</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701053</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701054</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701056</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701808</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Antler incluant Redvers Antler et Wauchope</areaDesc>
+            <polygon>49.5326,-101.3997 49.5224,-101.3997 49.5224,-101.4076 49.5222,-101.6449 49.5221,-101.663 49.522,-101.6771 49.5188,-102.0057 49.5188,-102.0061 49.5187,-102.0148 49.5221,-102.0147 49.5225,-102.0147 49.6144,-102.0123 49.7054,-102.0059 49.7126,-101.8438 49.7098,-101.6901 49.7127,-101.5556 49.7098,-101.4177 49.621,-101.3995 49.5421,-101.3997 49.5418,-101.3997 49.5326,-101.3997</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063342</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701047</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701048</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701049</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Storthoaks incluant Storthoaks et Fertile</areaDesc>
+            <polygon>49.5323,-101.3762 49.2558,-101.3787 49.2558,-101.391 49.2558,-101.4049 49.2558,-101.6454 49.2558,-101.6631 49.2558,-101.6641 49.2558,-101.6798 49.2659,-101.6797 49.522,-101.6771 49.5414,-101.6769 49.5417,-101.6769 49.5418,-101.547 49.5416,-101.4192 49.5416,-101.4183 49.5418,-101.4076 49.5418,-101.3997 49.5419,-101.3921 49.5421,-101.3761 49.5417,-101.3761 49.5323,-101.3762</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063351</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701043</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701044</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Reciprocity incluant Alida</areaDesc>
+            <polygon>49.5322,-101.664 49.4019,-101.6552 49.2654,-101.6636 49.2603,-101.8325 49.2634,-102.0063 49.3933,-102.0147 49.5222,-102.0059 49.5257,-102.0065 49.5289,-102.0059 49.5295,-101.9997 49.535,-101.8338 49.5322,-101.664</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063352</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701041</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Mount Pleasant incluant Carnduff</areaDesc>
+            <polygon>48.9989,-101.6276 48.9983,-101.7977 48.9987,-102.0059 49.1239,-102.0117 49.2602,-102.0063 49.2634,-102.0063 49.2705,-101.8289 49.2654,-101.6636 49.2186,-101.6614 49.1781,-101.6638 49.1778,-101.664 49.1781,-101.6465 49.1777,-101.6305 49.095,-101.6231 49.0088,-101.6304 49.0042,-101.6279 48.9989,-101.6276</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063353</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701008</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Argyle incluant Gainsborough et Carievale</areaDesc>
+            <polygon>48.9989,-101.6276 49.0041,-101.63 49.0088,-101.6304 49.0949,-101.6356 49.1777,-101.6305 49.1772,-101.6468 49.1778,-101.664 49.2192,-101.666 49.2654,-101.6636 49.2684,-101.5311 49.2662,-101.3921 49.2197,-101.3874 49.1777,-101.3922 49.1777,-101.362 49.0808,-101.3577 48.9994,-101.3619 48.9992,-101.3619 48.9989,-101.4943 48.9989,-101.6276</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063354</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701004</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en-CA</language>
+        <category>Met</category>
+        <event>tornado</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>general public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-09-08T00:29:39-00:00</effective>
+        <expires>2026-09-08T01:29:39-00:00</expires>
+        <senderName>Environment Canada</senderName>
+        <headline>yellow watch - tornado - ended</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://weather.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260908002939400/WW_13_73_CWWG/TRV/2204062372097865681202609070501_WW_13_73_CWWG/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23663 M:121801 C:140879</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>none</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>yellow watch - tornado</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>Southern Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_13_73_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>R.M. of Francis including Vibank Sedley and Odessa</areaDesc>
+            <polygon>50.3967,-103.7924 50.3999,-103.7171 50.3967,-103.6552 50.3039,-103.645 50.2222,-103.6548 50.2227,-103.6495 50.2219,-103.6435 50.1361,-103.6297 50.0473,-103.6438 50.0414,-103.8326 50.0471,-104.0528 50.1357,-104.0595 50.2219,-104.0531 50.222,-104.0673 50.3103,-104.0736 50.3968,-104.067 50.4009,-103.926 50.3967,-103.7924</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062342</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706009</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Montmartre including Assiniboine Res.</areaDesc>
+            <polygon>50.3968,-103.3806 50.3607,-103.3725 50.3095,-103.3803 50.3128,-103.3062 50.3093,-103.2432 50.2632,-103.2351 50.2224,-103.243 50.2224,-103.2335 50.1325,-103.2225 50.0475,-103.2339 50.0392,-103.4422 50.0473,-103.6438 50.1384,-103.6559 50.2219,-103.6435 50.2212,-103.6499 50.2222,-103.6548 50.3077,-103.6666 50.3967,-103.6552 50.4036,-103.5095 50.3968,-103.3813 50.3968,-103.3806</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062343</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706003</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706810</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Indian Head including Indian Head and Sintaluta</areaDesc>
+            <polygon>50.6797,-103.6549 50.6797,-103.6265 50.6854,-103.6063 50.6368,-103.5305 50.5819,-103.3855 50.5639,-103.3801 50.5448,-103.3765 50.4829,-103.3651 50.3968,-103.3806 50.3889,-103.5119 50.3967,-103.6552 50.3966,-103.6555 50.3934,-103.7214 50.3967,-103.7924 50.4954,-103.8007 50.5715,-103.7919 50.5708,-103.7992 50.5715,-103.8071 50.6192,-103.8113 50.659,-103.8081 50.6617,-103.7383 50.6592,-103.6757 50.6707,-103.6772 50.6797,-103.676 50.6797,-103.6549</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062362</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706038</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706050</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Fillmore including Fillmore Creelman and Osage</areaDesc>
+            <polygon>50.0475,-103.2339 49.9517,-103.227 49.8721,-103.2341 49.8722,-103.2254 49.8286,-103.222 49.7847,-103.2252 49.7811,-103.4331 49.7847,-103.6316 49.8286,-103.6376 49.8721,-103.6318 49.8719,-103.6379 49.8722,-103.6442 49.9627,-103.6521 50.0473,-103.6438 50.0564,-103.4428 50.0475,-103.2339</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062522</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702076</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702077</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702078</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702079</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Griffin including Griffin and Froude</areaDesc>
+            <polygon>49.5226,-103.2253 49.5181,-103.4132 49.5225,-103.6193 49.5225,-103.6322 49.657,-103.6393 49.7847,-103.6316 49.7893,-103.4334 49.7847,-103.2252 49.6499,-103.2173 49.5226,-103.2253</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062524</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702042</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Cymri including Midale Macoun and Halbrite</areaDesc>
+            <polygon>49.2604,-103.217 49.2553,-103.4048 49.2606,-103.6197 49.3883,-103.6278 49.5225,-103.6193 49.5265,-103.4087 49.5226,-103.2253 49.5226,-103.2167 49.3903,-103.2081 49.2604,-103.217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062541</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702038</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702041</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Benson including Benson</areaDesc>
+            <polygon>49.2606,-102.8131 49.2566,-103.0116 49.2604,-103.217 49.3918,-103.2247 49.5226,-103.2167 49.5263,-103.0138 49.5223,-102.819 49.5223,-102.8136 49.3825,-102.8061 49.2606,-102.8131</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062542</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701027</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Cambria including Torquay and Outram</areaDesc>
+            <polygon>49.2604,-103.217 49.2184,-103.2133 49.1741,-103.2168 49.1741,-103.2117 49.1737,-103.2075 49.0834,-103.2014 48.9993,-103.2077 48.9988,-103.414 48.9989,-103.6083 48.9992,-103.6083 49.0869,-103.6133 49.1733,-103.6084 49.1729,-103.6144 49.1732,-103.6201 49.1735,-103.6202 49.2206,-103.6242 49.2606,-103.6197 49.2645,-103.4096 49.2604,-103.217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062543</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702002</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Estevan including Estevan and Hitchcock</areaDesc>
+            <polygon>49.2606,-102.8131 49.1192,-102.8052 48.999,-102.8124 48.9984,-103.0129 48.9993,-103.2077 49.0853,-103.2144 49.1737,-103.2075 49.1737,-103.2117 49.1741,-103.2168 49.2175,-103.2207 49.2604,-103.217 49.2647,-103.0112 49.2606,-102.8131</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062544</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701022</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701024</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Wolseley including Wolseley and Summerberry</areaDesc>
+            <polygon>50.5482,-103.2388 50.5473,-103.1268 50.6169,-102.9931 50.6013,-102.9816 50.5916,-102.9817 50.5914,-102.9754 50.5862,-102.9754 50.5716,-102.9753 50.5719,-102.9716 50.5716,-102.9682 50.4473,-102.9577 50.3094,-102.9681 50.3036,-103.0964 50.3093,-103.2432 50.3053,-103.3124 50.3095,-103.3803 50.3558,-103.3883 50.3968,-103.3806 50.4786,-103.3949 50.5464,-103.3831 50.5639,-103.3801 50.5819,-103.3855 50.5498,-103.2465 50.5482,-103.2396 50.5482,-103.2388</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063211</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705024</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705027</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Elcapo including Broadview and Cowessess Res.</areaDesc>
+            <polygon>50.6176,-102.7736 50.6098,-102.7592 50.6242,-102.7188 50.5472,-102.4999 50.5223,-102.4965 50.4914,-102.4922 50.4406,-102.4997 50.4407,-102.418 50.3791,-102.4096 50.3098,-102.4182 50.2981,-102.6941 50.3038,-102.8298 50.3039,-102.8316 50.3094,-102.9681 50.4476,-102.9781 50.5716,-102.9682 50.5713,-102.9717 50.5716,-102.9753 50.5862,-102.9754 50.5914,-102.9754 50.5916,-102.9817 50.6013,-102.9816 50.6169,-102.9931 50.6599,-102.9136 50.6589,-102.8425 50.6588,-102.838 50.6583,-102.8034 50.6306,-102.7633 50.6176,-102.7736</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063212</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705029</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705803</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705804</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705805</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Chester including Windthorst Glenavon and Peebles</areaDesc>
+            <polygon>50.1326,-102.8144 50.047,-102.8253 50.0402,-103.0321 50.0475,-103.2339 50.1322,-103.2485 50.2224,-103.2335 50.2224,-103.243 50.2643,-103.2519 50.3093,-103.2432 50.3152,-103.0987 50.3094,-102.9681 50.3146,-102.8896 50.3094,-102.8308 50.3038,-102.8298 50.2669,-102.8234 50.2218,-102.8308 50.2221,-102.827 50.2218,-102.8249 50.1326,-102.8144</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063221</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705018</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705021</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Hazelwood south of Kipling</areaDesc>
+            <polygon>50.047,-102.4154 49.9106,-102.4074 49.7837,-102.4139 49.7791,-102.6108 49.7845,-102.8182 49.7846,-102.8192 49.8282,-102.8217 49.8722,-102.8188 49.872,-102.8213 49.8721,-102.824 49.9575,-102.8316 50.047,-102.8253 50.0522,-102.634 50.047,-102.4154</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063222</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701072</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Golden West including Ocean Man Res. and Handsworth</areaDesc>
+            <polygon>50.047,-102.8253 49.9521,-102.8182 49.8721,-102.824 49.8723,-102.8212 49.8722,-102.8188 49.8283,-102.816 49.7953,-102.8185 49.7846,-102.8192 49.7789,-103.0236 49.7847,-103.2252 49.829,-103.2279 49.8722,-103.2254 49.8721,-103.2341 49.9518,-103.2412 50.0475,-103.2339 50.0563,-103.0328 50.047,-102.8253</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063223</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701069</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701809</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701810</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701811</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701812</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701813</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701814</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701815</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701816</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701817</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701818</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Kingsley including Kipling</areaDesc>
+            <polygon>50.3098,-102.4182 50.2013,-102.4039 50.047,-102.4154 50.0426,-102.6365 50.047,-102.8253 50.1337,-102.8378 50.2218,-102.8249 50.2215,-102.8269 50.2218,-102.8308 50.2683,-102.8365 50.3039,-102.8316 50.3094,-102.8308 50.3191,-102.6125 50.3098,-102.4182</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063224</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705014</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705016</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Tecumseh including Stoughton Forget and Heward</areaDesc>
+            <polygon>49.5223,-102.819 49.5181,-103.0143 49.5226,-103.2167 49.5226,-103.2253 49.6563,-103.2349 49.7847,-103.2252 49.7896,-103.0252 49.7846,-102.8192 49.6507,-102.8084 49.5223,-102.819</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063311</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701066</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701067</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Brock including Arcola and Kisbey</areaDesc>
+            <polygon>49.7837,-102.4139 49.6542,-102.4044 49.5226,-102.4126 49.5192,-102.6119 49.5223,-102.8136 49.5223,-102.819 49.6511,-102.8297 49.7846,-102.8192 49.7884,-102.6091 49.7837,-102.4139</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063312</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701059</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Browning including Lampman</areaDesc>
+            <polygon>49.2608,-102.41 49.2557,-102.6086 49.2606,-102.811 49.2606,-102.8131 49.3844,-102.8192 49.5223,-102.8136 49.5261,-102.615 49.5226,-102.4126 49.5226,-102.4095 49.3881,-102.4009 49.2608,-102.41</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063321</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701032</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>R.M. of Coalfields including Bienfait and North Portal</areaDesc>
+            <polygon>48.9986,-102.4096 48.9987,-102.6151 48.999,-102.8124 49.1181,-102.8209 49.2606,-102.8131 49.2657,-102.608 49.2608,-102.41 49.119,-102.4038 48.9986,-102.4096</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063322</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701016</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701017</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701018</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701021</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>fr-CA</language>
+        <category>Met</category>
+        <event>tornade</event>
+        <responseType>AllClear</responseType>
+        <urgency>Past</urgency>
+        <severity>Minor</severity>
+        <certainty>Observed</certainty>
+        <audience>grand public</audience>
+        <eventCode>
+            <valueName>profile:CAP-CP:Event:0.4</valueName>
+            <value>tornado</value>
+        </eventCode>
+        <eventCode>
+            <valueName>SAME</valueName>
+            <value>TOA</value>
+        </eventCode>
+        <effective>2026-09-08T00:29:39-00:00</effective>
+        <expires>2026-09-08T01:29:39-00:00</expires>
+        <senderName>Environnement Canada</senderName>
+        <headline>veille jaune - tornade - terminée</headline>
+        <description>
+###
+</description>
+        <instruction/>
+        <web>https://meteo.gc.ca/</web>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Type</valueName>
+            <value>watch</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Broadcast_Intrusive</valueName>
+            <value>no</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:1.0:Broadcast_Immediately</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Parent_URI</valueName>
+            <value>msc/alert/environment/hazard/alert-3.0-ascii/consolidated-xml-2.0/20260908002939400/WW_13_73_CWWG/TRV/2204062372097865681202609070501_WW_13_73_CWWG/actual/en_proper_complete_u-fr_proper_complete_c/NinJo</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:CAP_count</valueName>
+            <value>A:23663 M:121801 C:140879</value>
+        </parameter>
+        <parameter>
+            <valueName>profile:CAP-CP:0.4:MinorChange</valueName>
+            <value>none</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Name</valueName>
+            <value>veille jaune - tornade</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.0:Alert_Coverage</valueName>
+            <value>sud de la Saskatchewan</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Designation_Code</valueName>
+            <value>WW_13_73_CWWG</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:SOREM:2.0:WirelessImmediate</valueName>
+            <value>No</value>
+        </parameter>
+        <parameter>
+            <valueName>layer:EC-MSC-SMC:1.1:Alert_Location_Status</valueName>
+            <value>ended</value>
+        </parameter>
+        <area>
+            <areaDesc>m.r. de Francis incluant Vibank Sedley et Odessa</areaDesc>
+            <polygon>50.3967,-103.7924 50.3999,-103.7171 50.3967,-103.6552 50.3039,-103.645 50.2222,-103.6548 50.2227,-103.6495 50.2219,-103.6435 50.1361,-103.6297 50.0473,-103.6438 50.0414,-103.8326 50.0471,-104.0528 50.1357,-104.0595 50.2219,-104.0531 50.222,-104.0673 50.3103,-104.0736 50.3968,-104.067 50.4009,-103.926 50.3967,-103.7924</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062342</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706004</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706006</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706007</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706008</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706009</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Montmartre incluant la rés. ind. Assiniboine</areaDesc>
+            <polygon>50.3968,-103.3806 50.3607,-103.3725 50.3095,-103.3803 50.3128,-103.3062 50.3093,-103.2432 50.2632,-103.2351 50.2224,-103.243 50.2224,-103.2335 50.1325,-103.2225 50.0475,-103.2339 50.0392,-103.4422 50.0473,-103.6438 50.1384,-103.6559 50.2219,-103.6435 50.2212,-103.6499 50.2222,-103.6548 50.3077,-103.6666 50.3967,-103.6552 50.4036,-103.5095 50.3968,-103.3813 50.3968,-103.3806</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062343</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706002</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706003</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706810</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Indian Head incluant Indian Head et Sintaluta</areaDesc>
+            <polygon>50.6797,-103.6549 50.6797,-103.6265 50.6854,-103.6063 50.6368,-103.5305 50.5819,-103.3855 50.5639,-103.3801 50.5448,-103.3765 50.4829,-103.3651 50.3968,-103.3806 50.3889,-103.5119 50.3967,-103.6552 50.3966,-103.6555 50.3934,-103.7214 50.3967,-103.7924 50.4954,-103.8007 50.5715,-103.7919 50.5708,-103.7992 50.5715,-103.8071 50.6192,-103.8113 50.659,-103.8081 50.6617,-103.7383 50.6592,-103.6757 50.6707,-103.6772 50.6797,-103.676 50.6797,-103.6549</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062362</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706038</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706041</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4706050</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Fillmore incluant Fillmore Creelman et Osage</areaDesc>
+            <polygon>50.0475,-103.2339 49.9517,-103.227 49.8721,-103.2341 49.8722,-103.2254 49.8286,-103.222 49.7847,-103.2252 49.7811,-103.4331 49.7847,-103.6316 49.8286,-103.6376 49.8721,-103.6318 49.8719,-103.6379 49.8722,-103.6442 49.9627,-103.6521 50.0473,-103.6438 50.0564,-103.4428 50.0475,-103.2339</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062522</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702076</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702077</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702078</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702079</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Griffin incluant Griffin et Froude</areaDesc>
+            <polygon>49.5226,-103.2253 49.5181,-103.4132 49.5225,-103.6193 49.5225,-103.6322 49.657,-103.6393 49.7847,-103.6316 49.7893,-103.4334 49.7847,-103.2252 49.6499,-103.2173 49.5226,-103.2253</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062524</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702042</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Cymri incluant Midale Macoun et Halbrite</areaDesc>
+            <polygon>49.2604,-103.217 49.2553,-103.4048 49.2606,-103.6197 49.3883,-103.6278 49.5225,-103.6193 49.5265,-103.4087 49.5226,-103.2253 49.5226,-103.2167 49.3903,-103.2081 49.2604,-103.217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062541</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702037</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702038</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702039</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702041</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Benson incluant Benson</areaDesc>
+            <polygon>49.2606,-102.8131 49.2566,-103.0116 49.2604,-103.217 49.3918,-103.2247 49.5226,-103.2167 49.5263,-103.0138 49.5223,-102.819 49.5223,-102.8136 49.3825,-102.8061 49.2606,-102.8131</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062542</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701027</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Cambria incluant Torquay et Outram</areaDesc>
+            <polygon>49.2604,-103.217 49.2184,-103.2133 49.1741,-103.2168 49.1741,-103.2117 49.1737,-103.2075 49.0834,-103.2014 48.9993,-103.2077 48.9988,-103.414 48.9989,-103.6083 48.9992,-103.6083 49.0869,-103.6133 49.1733,-103.6084 49.1729,-103.6144 49.1732,-103.6201 49.1735,-103.6202 49.2206,-103.6242 49.2606,-103.6197 49.2645,-103.4096 49.2604,-103.217</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062543</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702001</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4702002</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Estevan incluant Estevan et Hitchcock</areaDesc>
+            <polygon>49.2606,-102.8131 49.1192,-102.8052 48.999,-102.8124 48.9984,-103.0129 48.9993,-103.2077 49.0853,-103.2144 49.1737,-103.2075 49.1737,-103.2117 49.1741,-103.2168 49.2175,-103.2207 49.2604,-103.217 49.2647,-103.0112 49.2606,-102.8131</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>062544</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701022</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701024</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Wolseley incluant Wolseley et Summerberry</areaDesc>
+            <polygon>50.5482,-103.2388 50.5473,-103.1268 50.6169,-102.9931 50.6013,-102.9816 50.5916,-102.9817 50.5914,-102.9754 50.5862,-102.9754 50.5716,-102.9753 50.5719,-102.9716 50.5716,-102.9682 50.4473,-102.9577 50.3094,-102.9681 50.3036,-103.0964 50.3093,-103.2432 50.3053,-103.3124 50.3095,-103.3803 50.3558,-103.3883 50.3968,-103.3806 50.4786,-103.3949 50.5464,-103.3831 50.5639,-103.3801 50.5819,-103.3855 50.5498,-103.2465 50.5482,-103.2396 50.5482,-103.2388</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063211</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705024</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705027</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. d'Elcapo incluant Broadview et la rés. ind. Cowessess</areaDesc>
+            <polygon>50.6176,-102.7736 50.6098,-102.7592 50.6242,-102.7188 50.5472,-102.4999 50.5223,-102.4965 50.4914,-102.4922 50.4406,-102.4997 50.4407,-102.418 50.3791,-102.4096 50.3098,-102.4182 50.2981,-102.6941 50.3038,-102.8298 50.3039,-102.8316 50.3094,-102.9681 50.4476,-102.9781 50.5716,-102.9682 50.5713,-102.9717 50.5716,-102.9753 50.5862,-102.9754 50.5914,-102.9754 50.5916,-102.9817 50.6013,-102.9816 50.6169,-102.9931 50.6599,-102.9136 50.6589,-102.8425 50.6588,-102.838 50.6583,-102.8034 50.6306,-102.7633 50.6176,-102.7736</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063212</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705028</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705029</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705803</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705804</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705805</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Chester incluant Windthorst Glenavon et Peebles</areaDesc>
+            <polygon>50.1326,-102.8144 50.047,-102.8253 50.0402,-103.0321 50.0475,-103.2339 50.1322,-103.2485 50.2224,-103.2335 50.2224,-103.243 50.2643,-103.2519 50.3093,-103.2432 50.3152,-103.0987 50.3094,-102.9681 50.3146,-102.8896 50.3094,-102.8308 50.3038,-102.8298 50.2669,-102.8234 50.2218,-102.8308 50.2221,-102.827 50.2218,-102.8249 50.1326,-102.8144</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063221</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705018</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705021</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Hazelwood au sud de Kipling</areaDesc>
+            <polygon>50.047,-102.4154 49.9106,-102.4074 49.7837,-102.4139 49.7791,-102.6108 49.7845,-102.8182 49.7846,-102.8192 49.8282,-102.8217 49.8722,-102.8188 49.872,-102.8213 49.8721,-102.824 49.9575,-102.8316 50.047,-102.8253 50.0522,-102.634 50.047,-102.4154</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063222</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701072</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Golden West incluant la rés. ind. Ocean Man et Handsworth</areaDesc>
+            <polygon>50.047,-102.8253 49.9521,-102.8182 49.8721,-102.824 49.8723,-102.8212 49.8722,-102.8188 49.8283,-102.816 49.7953,-102.8185 49.7846,-102.8192 49.7789,-103.0236 49.7847,-103.2252 49.829,-103.2279 49.8722,-103.2254 49.8721,-103.2341 49.9518,-103.2412 50.0475,-103.2339 50.0563,-103.0328 50.047,-102.8253</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063223</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701069</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701809</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701810</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701811</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701812</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701813</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701814</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701815</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701816</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701817</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701818</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Kingsley incluant Kipling</areaDesc>
+            <polygon>50.3098,-102.4182 50.2013,-102.4039 50.047,-102.4154 50.0426,-102.6365 50.047,-102.8253 50.1337,-102.8378 50.2218,-102.8249 50.2215,-102.8269 50.2218,-102.8308 50.2683,-102.8365 50.3039,-102.8316 50.3094,-102.8308 50.3191,-102.6125 50.3098,-102.4182</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063224</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705014</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4705016</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Tecumseh incluant Stoughton Forget et Heward</areaDesc>
+            <polygon>49.5223,-102.819 49.5181,-103.0143 49.5226,-103.2167 49.5226,-103.2253 49.6563,-103.2349 49.7847,-103.2252 49.7896,-103.0252 49.7846,-102.8192 49.6507,-102.8084 49.5223,-102.819</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063311</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701063</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701064</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701066</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701067</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Brock incluant Arcola et Kisbey</areaDesc>
+            <polygon>49.7837,-102.4139 49.6542,-102.4044 49.5226,-102.4126 49.5192,-102.6119 49.5223,-102.8136 49.5223,-102.819 49.6511,-102.8297 49.7846,-102.8192 49.7884,-102.6091 49.7837,-102.4139</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063312</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701058</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701059</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701061</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701819</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Browning incluant Lampman</areaDesc>
+            <polygon>49.2608,-102.41 49.2557,-102.6086 49.2606,-102.811 49.2606,-102.8131 49.3844,-102.8192 49.5223,-102.8136 49.5261,-102.615 49.5226,-102.4126 49.5226,-102.4095 49.3881,-102.4009 49.2608,-102.41</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063321</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701031</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701032</value>
+            </geocode>
+        </area>
+        <area>
+            <areaDesc>m.r. de Coalfields incluant Bienfait et North Portal</areaDesc>
+            <polygon>48.9986,-102.4096 48.9987,-102.6151 48.999,-102.8124 49.1181,-102.8209 49.2606,-102.8131 49.2657,-102.608 49.2608,-102.41 49.119,-102.4038 48.9986,-102.4096</polygon>
+            <geocode>
+                <valueName>layer:EC-MSC-SMC:1.0:CLC</valueName>
+                <value>063322</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701016</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701017</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701018</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701019</value>
+            </geocode>
+            <geocode>
+                <valueName>profile:CAP-CP:Location:0.3</valueName>
+                <value>4701021</value>
+            </geocode>
+        </area>
+    </info>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="Environment Canada">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>oe+e7rTUyzqYy+XS+95aJm9LbW6n3HzmxXsZnWi+76k=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>sHDw4VWfA/1udpco8h3MkY6dBogxFevud6Eg/4PEWoZnAmYsDKj9tl3N2+9oV0nH
+lCDNsdQl6kmZXPCs10WqrPsbzBdRQ4+xPSa57w2yXkYZ1v6eyT8Dg+/27+6QIIpz
+jNQTvutzFTdNzq1L+5ek/EtOA9kXXltykuonjVtSXjx8REcNAtQ9qDaY0DnrLzCP
+UufIaDIvVbFd5GaPtsgkuGdabu58V9vUtvjEOoZjk21BdFT86rfD286ZudyvRpTZ
+HFUZkvQ+syyEBsiJKsTYkypX/fIHafBa7WMi7SrVYv2dULU+fJ5U0dHpLUDUJnh+
+H+Ic5h5rNV8lmnwcbXW5+Q==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>MIIHDDCCBfSgAwIBAgIQM2dJyev0XEPJoQlSaOQgYDANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0y
+NDA0MTkwOTQ3MDZaFw0yNTA1MTkwOTQ3MDRaMGwxCzAJBgNVBAYTAkNBMQ8wDQYD
+VQQIEwZRdWViZWMxETAPBgNVBAcTCEdhdGluZWF1MR8wHQYDVQQKExZTaGFyZWQg
+U2VydmljZXMgQ2FuYWRhMRgwFgYDVQQDDA8qLndlYXRoZXIuZ2MuY2EwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDARd6fBVAjKlOvocp442ydQbSCoxHW
+91i1r5TkucsGLkzm92HQsj4eVNCl6Uti3hd3yYL1QxFTImdyUs2ETlDoU/hVFEey
+IevKo3m3ufuv9YryXGtoRcthMITEPrIy6vOyNbGaxJw1J6/AkOs7oAm3kUlx6PS8
+vOnuoyik1r6Q9qx1XP9Z05cIyyIBhsyjdS124Jj01quCjz5COPMXKU1LlaU8LeSA
+qILe9DyC3XWluZGxZH+tGiw42mpiCD3JGlCsXQujU5y4jg2fq8/ePsM3OUzM/Dxs
+kGMMN7LAG9/H4CINJ+aXZQvlgTfIZp2eWLvHy5dnsbi3VAJOEtgRVzedAgMBAAGj
+ggNZMIIDVTAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSSLKB4osVSIvgfhk+6NayJ
+BDAXuDAfBgNVHSMEGDAWgBSConB03bxTP8971PfNf6dgxgpMvzBoBggrBgEFBQcB
+AQRcMFowIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLmVudHJ1c3QubmV0MDMGCCsG
+AQUFBzAChidodHRwOi8vYWlhLmVudHJ1c3QubmV0L2wxay1jaGFpbjI1Ni5jZXIw
+MwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5lbnRydXN0Lm5ldC9sZXZlbDFr
+LmNybDCBnQYDVR0RBIGVMIGSgg8qLndlYXRoZXIuZ2MuY2GCDXdlYXRoZXIuZ2Mu
+Y2GCC21ldGVvLmdjLmNhgg0qLm1ldGVvLmdjLmNhghUqLmFscGhhLndlYXRoZXIu
+Z2MuY2GCEyouYWxwaGEubWV0ZW8uZ2MuY2GCFCouYmV0YS53ZWF0aGVyLmdjLmNh
+ghIqLmJldGEubWV0ZW8uZ2MuY2EwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQG
+CCsGAQUFBwMBBggrBgEFBQcDAjATBgNVHSAEDDAKMAgGBmeBDAECAjCCAYAGCisG
+AQQB1nkCBAIEggFwBIIBbAFqAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzE
+uVCkR+cAAAGO9cCizQAABAMARzBFAiEA7hlkvyyYsnhbas5WDwoTkdGWf92Ukckw
+rGyUqMPZQjkCID8oQlHWS11haifx+i9tBr0epmrzkh2/bbneb9WNrlUvAHcATnWj
+J1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGO9cCi2AAABAMASDBGAiEA
+iE1jLaXrlPxrkIiq7NU0gH/sDiUlHCmMrT79KUy2V+YCIQCb2GrTID6NO3hb8bGs
+ctd8ipYRuu1FnDY8X3MGVDcWnAB3AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocy
+Hf0eN45QAAABjvXAovkAAAQDAEgwRgIhALRWB9aVOe3Zi9j6MEVKJl1NKQKIycr3
+8IfKeHxckblpAiEA85xjN3iBFvEVT4yIxO4qKRelbpFGomgSrYnfwTSUwHIwDQYJ
+KoZIhvcNAQELBQADggEBADGEK5tU92TqoTWPh1lfSRTDVCpk5qhqmIuaTeYQMonV
+AgHF5rktrUhXmMzRJEef8XRwLvApT4zOn+TV+NOUpi8q6tDWxx7dE8+moIf6tXq8
+d4OQ+VDO/C6nz/xA8FqvxAbPfqCJ6DqgitSyXhF01XkNMfVcknGAzhc/HemuukI1
+3DTuaATlbaXkHjSp+O0mXCykCIgH/9eMuOoFMzhdQhtJiLf2MMVclJ72/YzgVveA
+XrSTVE5F4BYdp9hX+0BTg5zNgg1wwvVVOwuIOTFqSSJCzGHjl/1i8IyyPLKB3ilt
+B+0V7IdmIxlvPbL//qNkzyUVufkewAoLMqCOUIZA0eY=</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></alert>
