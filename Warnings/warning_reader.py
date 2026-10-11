@@ -364,7 +364,7 @@ def writeAlertsToGoogleSheet(alerts, sheet):
     rows = []
     for alert in alerts:
         rows.append([
-            "",
+            ".",
             alert.startTime.strftime("%y/%m/%d"),
             alert.location,
             alert.stormGeometry,
